@@ -1,0 +1,15 @@
+.priv_title {
+    text-align: center;
+}
+
+main{
+    height: 90vh;
+    overflow: hidden;
+    overflow: scroll auto;
+}
+
+.qna_privacy_under_nav {
+    text-align: center;
+    width: 98%;
+    border: solid 1px;
+}

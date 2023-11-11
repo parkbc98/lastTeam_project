@@ -1,0 +1,40 @@
+* {
+    margin: auto;
+    text-align: center;
+}
+
+.prod_info {
+    padding: 5px;
+}
+
+.prod_info option {
+    text-align: left;
+}
+
+.prod_info_serchbar {
+    padding: 5px;
+    width: 80%;
+}
+
+.prod_info_btn {
+    padding: 5px;
+    background-color: #fff;
+}
+
+.search_result {
+    position: relative;
+    margin: 10px;
+}
+
+.search_result_show {
+    display: inline-block;
+    position: absolute;
+    right: 70%;
+
+}
+
+.search_result .show_prod {
+    display: inline-block;
+    position: absolute;
+    left: 80%;
+}
