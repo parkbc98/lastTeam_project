@@ -43,7 +43,8 @@ ul, ol, li{
 }
 
 .li_wrap{
-   display: table;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
    table-layout: fixed;
    width: 100%;
    padding: 14px 7px 0px;
@@ -52,11 +53,13 @@ ul, ol, li{
 }
 
 .li_wrap>li{
-   width: 33.333%;
+   width: 100%;
    display: inline-block;
    border-collapse: collapse;
    vertical-align: top;
    margin: 0px 0px 14px;
+   position: relative;
+   left: -2px;
 }
 
 .thumbnail{
