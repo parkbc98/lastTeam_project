@@ -1,0 +1,50 @@
+.mypage_wrap {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.top_box {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    list-style-type: none;
+}
+
+
+.tabcontents ul {
+    display: grid;
+   
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e .";
+
+    column-gap: 10px;
+
+    list-style-type: none;
+}
+
+.basket {
+    grid-area: a;
+}
+
+.profile {
+    grid-area: b;
+}
+
+.orderList {
+    grid-area: c;
+}
+
+.wishList {
+    grid-area: d;
+}
+
+.myqna {
+    grid-area: e;
+}
