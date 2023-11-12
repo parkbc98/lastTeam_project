@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* =============================================================================================================== */
+/* 메인 이미지 */
+
+.main-container {
+    display: grid;
+    grid-template: repeat(auto-fill, 800px) / 1fr;
+}
+
+.first-main-img,
+.second-main-img {
+    height: 800px;
+}
+
+.first-main-img{
+    background: url(https://cdn.pixabay.com/photo/2014/11/27/18/36/tent-548022_1280.jpg) 100%/cover;
+}
+
+.second-main-img{
+    background: url(https://cdn.pixabay.com/photo/2017/08/06/18/33/barn-2594975_1280.jpg) 100%/cover;
+}
+
+
+/* =============================================================================================================== */
+/* 메인 상품 리스트 */
+
+.main-product-list-container {
+    display: grid;
+    grid-template: 1fr / repeat(auto-fill, 19.2vw);
+    gap: 1vw;
+    grid-auto-flow:column; 
+    overflow: auto;
+
+    margin-bottom: 50px;
+}
+
+.main-product-img-container{
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-product-img-container>img {
+    width: 100%;
+}
+
+/* 메인 상품 내용 */
+.main-product-comment-container>ul *{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 1px;
+}
+
+.main-product-comment-container>ul>li:nth-child(1){
+    color: rgb(70, 70, 70);
+}
+
+.main-product-comment-container>ul>li:nth-child(2){
+    color: rgb(168, 10, 10);
+    font: 12px bold;
+}
