@@ -21,8 +21,16 @@ button {
 .tool_bar_top button:hover {
    background: #d6d6d6;
    border: 1px solid #d6d6d6;
-   border-radius:10px;
+   border-radius:6px;
    cursor: pointer;
+}
+
+.font_tool_wrap button:nth-child(n+4){
+   width: 28px;
+}
+
+.list_n_aline_tool_wrap button:nth-last-child(-n+4){
+   width:  28px;
 }
 
 .container{
