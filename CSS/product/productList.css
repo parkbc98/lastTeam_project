@@ -1,0 +1,26 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu > div {
+    margin-right: 10px;
+}
+
+.select {
+    display: flex;
+    justify-content: end;
+}
+
+main {
+    display: grid;
+    height: 70vh;
+    background-color: antiquewhite;
+    grid-template: repeat(5, 1fr) / repeat(3,1fr);
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+}
