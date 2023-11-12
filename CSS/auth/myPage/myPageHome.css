@@ -1,21 +1,26 @@
 .mypage_wrap {
+    /*  */
     display: flex;
 
     justify-content: center;
     align-items: center;
 
+    min-height: 100vh;
 }
 
 .top_box {
+    /* my etc info, my order info */
     display: grid;
-
     grid-template-columns: 1fr 1fr;
 
     list-style-type: none;
+
+    font-size: 10px;
 }
 
 
 .tabcontents ul {
+    /* 장바구니, 주문내역 리스트, 내 문의, 내 정보, 관심상품 */
     display: grid;
    
     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
@@ -24,9 +29,16 @@
     "c d"
     "e .";
 
-    column-gap: 10px;
+    gap: 30px;
 
     list-style-type: none;
+
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .basket {
