@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    width: 900px;
+    margin: auto;
+}
+
+.qna_main_top_nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.qna_main_content li {
+    border-bottom: solid 1px;
+    list-style: none;
+}
+
+.qna_main_under_nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.qna_main_under_nav_input {
+    width: 95%;
+}
