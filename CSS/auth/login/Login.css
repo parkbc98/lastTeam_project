@@ -11,16 +11,15 @@
 
 .top_box {
     /*  상단 로그인, 회원가입 */
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 3fr;
+    padding-left: 12px;
     
+    display: flex;
+    column-gap: 10px;
+    
+    box-sizing: border-box;
     list-style-type: none;
 
-    font-size: 10px;
-
-    padding-left: 0%;
-
+    font-size: 15px;
 }
 
 
@@ -29,6 +28,8 @@
     display: grid;
     
     width: 500px;
+
+    border: 0;
 }
 
 
@@ -38,6 +39,12 @@
     justify-content: space-between;
 
     font-size: 13px;
+}
+
+input {
+    width: 100%;
+    border: none;
+
 }
 
 hr {
@@ -78,5 +85,4 @@ a {
 
     margin: 10px;
 
-   
 }
