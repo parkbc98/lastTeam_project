@@ -126,6 +126,20 @@ button {
    justify-content: space-between;
 }
 
+
+
+#list_button,#list_button3{
+   border-top-right-radius: 0px;
+   border-bottom-right-radius: 0px;
+}
+
+#list_button2,#list_button4{
+   margin-left:-2px;
+   width: 10px;
+   border-top-left-radius: 0px;
+   border-bottom-left-radius: 0px;
+}
+
 .functional_tool_button{
    margin-right: 9px;
 }
