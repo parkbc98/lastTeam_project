@@ -33,6 +33,10 @@ button {
    width:  28px;
 }
 
+.functional_tool_button button{
+   width: 28px;
+}
+
 .container{
    padding: 180px 20px 50px 20px;
 }
