@@ -9,7 +9,45 @@ body {
     margin: auto;
 }
 
-.qna_main_top_nav li {
+/* top */
+.qna_main_top_nav {
+    text-decoration: none;
+}
+
+.qna_main_top_nav ul li a {
+    color: black;
+    font-size: 0.8em;
+}
+
+.qna_main_board_btn {
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+.qna_main_board_btn a {
+    color: black;
+}
+
+.qna_main_board_btn a button {
+    width: 4em;
+    height: 3em;
+    text-decoration: none;
+    background: #ffffff;
+}
+
+.qna_main_top_nav_listbox {
+    background: #dbdbdb;
+    padding-left: 1em;
+    
+}
+
+/* main */
+.qna_main_top_nav ul {
+    text-align: center;
+}
+
+.qna_main_top_nav ul li {
     display: inline-block;
     list-style: none;
 }
@@ -17,13 +55,43 @@ body {
 .qna_main_content li {
     border-bottom: solid 1px;
     list-style: none;
+    padding: 10px;
+}
+
+.qna_main_content li p {
+    padding-bottom: 5px;
+}
+
+/* under */
+.qna_main_under_nav ul {
+    margin: 20px 0px;
+    text-align: center;
 }
 
 .qna_main_under_nav ul li {
     display: inline-block;
     list-style: none;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.qna_main_under_nav_listbox {
+    padding-left: 1em;
+    margin-bottom: 10px;
 }
 
 .qna_main_under_nav_input {
-    width: 95%;
+    width: 90%;
+    height: 2em;
+}
+
+.qna_main_under_nav hr {
+    margin: 10px 0px;
+}
+
+.qna_main_under_nav button {
+    width: 3em;
+    height: 2em;
+    text-decoration: none;
+    background: #ffffff;
 }

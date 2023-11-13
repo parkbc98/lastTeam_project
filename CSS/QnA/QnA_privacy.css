@@ -1,8 +1,13 @@
+body {
+    width: 900px;
+    margin: auto;
+}
+
 .priv_title {
     text-align: center;
 }
 
-main{
+main {
     height: 90vh;
     overflow: hidden;
     overflow: scroll auto;
