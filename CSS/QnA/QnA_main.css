@@ -14,11 +14,17 @@ body {
     text-decoration: none;
 }
 
+/*문의게시판 공지사항 */
+.qna_main_top_nav ul li a {
+    margin: 0 1em;
+}
+
 .qna_main_top_nav ul li a {
     color: black;
     font-size: 0.8em;
 }
 
+/* 글쓰기버튼 */
 .qna_main_board_btn {
     margin-top: 3em;
     margin-bottom: 1em;
@@ -31,15 +37,18 @@ body {
 
 .qna_main_board_btn a button {
     width: 4em;
-    height: 3em;
+    height: 2.5em;
     text-decoration: none;
     background: #ffffff;
+    border: solid 1px;
 }
 
+/* 상단 리스트박스 2개*/
 .qna_main_top_nav_listbox {
     background: #dbdbdb;
-    padding-left: 1em;
-    
+    padding: 0 0 0.2em 1em;
+
+
 }
 
 /* main */
@@ -63,23 +72,32 @@ body {
 }
 
 /* under */
-.qna_main_under_nav ul {
+/* 페이지 번호 */
+.qna_main_pagenum ul {
     margin: 20px 0px;
     text-align: center;
 }
 
-.qna_main_under_nav ul li {
+.qna_main_pagenum ul li {
     display: inline-block;
     list-style: none;
     width: 1.5em;
     height: 1.5em;
 }
 
-.qna_main_under_nav_listbox {
-    padding-left: 1em;
-    margin-bottom: 10px;
+/* 하부 박스 구성*/
+.qna_main_under_nav {
+    display: grid;
 }
 
+/* 하단 리스트박스 */
+.qna_main_under_nav_listbox {
+    display: grid;
+    grid-template
+    
+}
+
+/* 검색어 입력창 */
 .qna_main_under_nav_input {
     width: 90%;
     height: 2em;
@@ -89,9 +107,11 @@ body {
     margin: 10px 0px;
 }
 
+/* 검색버튼 */
 .qna_main_under_nav button {
     width: 3em;
     height: 2em;
     text-decoration: none;
     background: #ffffff;
+    border: solid 1px;
 }
