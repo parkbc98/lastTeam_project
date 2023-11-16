@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="../../../CSS/auth/myPage/basket.css">
 </head>
 <body>
     <div class="total">
@@ -15,23 +17,35 @@
             </nav>
         </div>
         <hr> -->
-
-        <div>
+        <hr>
+        <div id="basketBox">
             <section class="MdContainer">
-                <label><input type="checkbox" name="checkedB" value="box" checked></label>
+                <label class="mdList"><input type="checkbox" name="checkedB" value="box" checked></label>
 
-                <div><a href=""><img src="" alt="">이미지</a></div>
+                <div class="mdList"><a href=""><img src="../../../CSS/auth/myPage/limsw/f22f95e5a67a45ef76538c7d51d03661.webp" alt="상품 이미지"></a></div>
 
-                <div>상품 이름</div>
+                <div class="mdList">
+                   <span>캐니언 라이트X / 패브릭</span>
+                   <span>배송: [무료]/기본배송</span>
+                </div>
 
-                <div>+개수-</div> <!--'+-'를 누르면, 개수가 증감-->
+                <div class="mdList">
+                    <a><span class="material-symbols-outlined">add</span></a>
+                    <input class="numF" type="text" value="">
+                    <a><span class="material-symbols-outlined">remove</span></a>
+                </div> 
 
-                <div>가격</div>
+                <div class="mdList">340,000원</div>
 
-                <div>[옵션:블랙]<br>                    
-                    <button>옵션 변경</button> <!--버튼을 눌러야 아래가 나옴(hidden)-->
-                    <div>
-                        <select name ="mdColor">색상
+                <div class="mdList">
+                    <div class="optionContainer"> 
+                        <p>[옵션:블랙]</p>                   
+                        <input type="button" value="옵션 변경"> <!--버튼을 눌러야 아래가 나옴(hidden)-->
+                    </div>
+                    
+                    <div class="optionBox">
+                        <p class="mdBox1">패턴 및 색상</p>
+                        <select class="mdBox2" name ="mdColor">색상
                             <option value="----">[필수]옵션을 선택해주세요</option>
                             <option value="----">----</option>
                             <option value="black">블랙</option>
@@ -39,15 +53,17 @@
                             <option value="white">화이트</option>
                             <option value="green">카키</option>
                         </select>
-                        <button>변경</button>
-                        <button>취소</button>
+                        <button class="mdBox3">변경</button>
+                        <button class="mdBox4">취소</button>
                     </div>
+
                 </div>
-
-                <button>삭제</button> 
-
-                <div>위시리스트</div> <!--클릭하면 얼럿창 실행 (Js에서 실행)-->
-
+                
+                <div class="mdList wishcontainer">
+                    <input class="wishBox" type="button" value="삭제">
+                    <input class="wishBox" type="button" value="WISH LIST">
+                     <!--클릭하면 얼럿창 실행 (Js에서 실행)-->
+                </div>
             </section>
             <hr>
             <button>견적서 출력</button>
@@ -66,5 +82,6 @@
         <button>선택 상품 주문</button>
         <button>전체 상품 주문</button>
     </div>
+    <hr>
 </body>
 </html>
