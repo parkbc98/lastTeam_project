@@ -18,9 +18,13 @@
         </div>
         <hr> -->
         <hr>
+
+<!-- 메인 박스 상품을 담는 곳 -->
         <div id="basketBox">
             <section class="MdContainer">
-                <label class="mdList"><input type="checkbox" name="checkedB" value="box" checked></label>
+                <label class="mdList">
+                    <input class="ckeckB" type="checkbox" name="checkedB" value="box" checked>
+                </label>
 
                 <div class="mdList"><a href=""><img src="../../../CSS/auth/myPage/limsw/f22f95e5a67a45ef76538c7d51d03661.webp" alt="상품 이미지"></a></div>
 
@@ -40,21 +44,21 @@
                 <div class="mdList">
                     <div class="optionContainer"> 
                         <p>[옵션:블랙]</p>                   
-                        <input type="button" value="옵션 변경"> <!--버튼을 눌러야 아래가 나옴(hidden)-->
+                        <input class="opChange" type="button" value="옵션 변경"> <!--버튼을 눌러야 아래가 나옴(hidden)-->
                     </div>
                     
                     <div class="optionBox">
                         <p class="mdBox1">패턴 및 색상</p>
                         <select class="mdBox2" name ="mdColor">색상
-                            <option value="----">[필수]옵션을 선택해주세요</option>
+                            <option value="option">[필수]옵션을 선택해주세요</option>
                             <option value="----">----</option>
                             <option value="black">블랙</option>
                             <option value="red">빨강</option>
                             <option value="white">화이트</option>
                             <option value="green">카키</option>
                         </select>
-                        <button class="mdBox3">변경</button>
-                        <button class="mdBox4">취소</button>
+                        <div class="mdBox3"><input class="btn1" type="button" value="변경"></div>
+                        <div class="mdBox4"><input class="btn1" type="button" value="취소"></div>
                     </div>
 
                 </div>
@@ -66,22 +70,98 @@
                 </div>
             </section>
             <hr>
-            <button>견적서 출력</button>
+            
         </div>
 
-        
-        <div>
-            <div>상품 금액</div>
-            <div>가격</div>
-            <div>배송료</div>
-            <div>가격</div>
-            <div>총 합계</div>
-            <div>가격</div>
+        <div id="basketBox">
+            <section class="MdContainer">
+                <label class="mdList">
+                    <input class="ckeckB" type="checkbox" name="checkedB" value="box" checked>
+                </label>
+
+                <div class="mdList"><a href=""><img src="../../../CSS/auth/myPage/limsw/ab87ec3ac74590998fe38992d08a7923.png" alt="상품 이미지"></a></div>
+
+                <div class="mdList">
+                   <span>나윈 윈 체어 / 무도장* 블랙 </span>
+                   <span>배송: [무료]/기본배송</span>
+                </div>
+
+                <div class="mdList">
+                    <a><span class="material-symbols-outlined">add</span></a>
+                    <input class="numF" type="text" value="">
+                    <a><span class="material-symbols-outlined">remove</span></a>
+                </div> 
+
+                <div class="mdList">213,000원</div>
+
+                <div class="mdList">
+                    <div class="optionContainer"> 
+                        <p>[옵션:블랙]</p>                   
+                        <input class="opChange" type="button" value="옵션 변경"> <!--버튼을 눌러야 아래가 나옴(hidden)-->
+                    </div>
+                    
+                    <div class="optionBox">
+                        <p class="mdBox1">패턴 및 색상</p>
+                        <select class="mdBox2" name ="mdColor">색상
+                            <option value="option">[필수]옵션을 선택해주세요</option>
+                            <option value="----">----</option>
+                            <option value="black">블랙</option>
+                            <option value="red">빨강</option>
+                            <option value="white">화이트</option>
+                            <option value="green">카키</option>
+                        </select>
+
+                        <div class="mdBox3"><input class="btn1" type="button" value="변경"></div>
+                        <div class="mdBox4"><input class="btn1" type="button" value="취소"></div>
+                    </div>
+
+                </div>
+                
+                <div class="mdList wishcontainer">
+                    <input class="wishBox" type="button" value="삭제">
+                    <input class="wishBox" type="button" value="WISH LIST">
+                     <!--클릭하면 얼럿창 실행 (Js에서 실행)-->
+                </div>
+            </section>
+            
         </div>
 
-        <button>선택 상품 주문</button>
-        <button>전체 상품 주문</button>
+<!--아래 상품 가격 및 주문 박스  -->
+    
+        <hr>
+        <div class="priceContainer" >
+            <div class="pricebox">
+                <div id="quota"><a href="#">견적서 출력</a></div>
+                <div class="lsBox" >
+                    <div class="lsContent">
+                        <p>상품 금액</p>
+                        <div>
+                            <p>100,000</p>
+                            <p>원</p> 
+                        </div>
+                    </div>
+                    <div class="lsContent">
+                        <p>배송료</p>
+                        <div>
+                            <p>100,000</p>
+                            <p>원</p> 
+                        </div>
+                    </div>
+                    <div class="lsContent">
+                        <p>총 합계</p>
+                        <div>
+                            <p>100,000</p>
+                            <p>원</p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#"><input class="mdOrder" type="button" value="선택 상품 주문"></a>
+                    <a href="#"><input class="mdOrder bcColor" type="button" value="전체 상품 주문"></a>    
+                </div>
+            </div>
+        </div>
     </div>
-    <hr>
 </body>
 </html>
