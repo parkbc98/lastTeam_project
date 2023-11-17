@@ -45,11 +45,17 @@ body {
 
 /* 상단 리스트박스 2개*/
 .qna_main_top_nav_listbox {
-    background: #dbdbdb;
-    padding: 0 0 0.2em 1em;
-
-
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    background: #c6c6c655;
 }
+
+.qna_main_top_nav_listbox>select {
+    width: 49%;
+}
+
+.qna_main_top
 
 /* main */
 .qna_main_top_nav ul {
@@ -92,15 +98,19 @@ body {
 
 /* 하단 리스트박스 */
 .qna_main_under_nav_listbox {
-    display: grid;
-    grid-template
-    
+    display: flex;
+    padding: 5px 0;
+    justify-content: space-between;
+}
+
+.qna_main_under_nav_listbox>select {
+    width: 49%;
+    height: 1.5em;
 }
 
 /* 검색어 입력창 */
 .qna_main_under_nav_input {
     width: 90%;
-    height: 2em;
 }
 
 .qna_main_under_nav hr {
