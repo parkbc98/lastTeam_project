@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    padding: 180px 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content_board{
+    max-width: 1130px;
+    display: inline-block;
+ 
+    margin: 0 auto;
+}
+
+.hide{
+    display: none;
+}
+
+.board_view{
+    height: 100%;
+}
+
+.board_wrap{
+    height: 100%;
+}
+
+.title{
+    width: 100%;
+}
