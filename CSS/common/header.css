@@ -1,0 +1,31 @@
+
+/* ===== header_wrap ============================================================== */
+.header_wrap *{
+    margin: 0;
+    padding: 0;
+}
+.header_wrap {
+    display: flex;
+}
+
+/* ===== hamber_momenu ============================================================= */
+.hamber_momenu{
+    width: 100px;
+}
+
+/* ===== logo_area ================================================================= */
+.logo_area{
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===== account_area ============================================================== */
+
+.artcate{
+    display: flex;
+    gap: 15px;
+}
