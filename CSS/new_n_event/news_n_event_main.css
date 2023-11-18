@@ -135,7 +135,7 @@ ul, ol, li{
 
 /* ================ 어사이드 css ================== */
 
-#aside{
+aside{
    position: fixed;
    background-color: #fff;
    left: 0;
@@ -143,9 +143,13 @@ ul, ol, li{
    bottom: 0;
    width: 265px;
    min-width: 265px;
-   transition: .5s ease-out;
-   overflow: auto;
+   transition: .4s;
+   overflow: auto ease-out;
    z-index: 500;
+}
+
+.active_aside{
+   left: -265px;;
 }
 
 .aside_container{
@@ -198,7 +202,7 @@ ul, ol, li{
    overflow: hidden;
 }
 
-#dimmer{
+.dimmer{
    position: fixed;
    left: 0;
    top: 0;
@@ -209,4 +213,17 @@ ul, ol, li{
    backdrop-filter: blur(5px);
    background: rgba(0,0,0,.4);
    transition: 0.3s ease-out;
+   visibility: visible;
+}
+
+.active_dimmer{
+   visibility: hidden;
+}
+
+.test_btn{
+   width: 45px;
+   height: 45px;
+   background-color: 000;
+   display: block;
+   margin-top: 4px;
 }
