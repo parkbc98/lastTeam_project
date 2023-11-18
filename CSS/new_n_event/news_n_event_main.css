@@ -146,6 +146,7 @@ aside{
    transition: .4s;
    overflow: auto ease-out;
    z-index: 500;
+   overflow:scroll;
 }
 
 .active_aside{
@@ -153,16 +154,13 @@ aside{
 }
 
 .aside_container{
+   height: 100%;
    padding-top: 50px;
 }
 
 .aside_wrap{
    margin: 0 15px;
-}
-
-.nav_parent_li{
-   border-top: 1px solid #d6d6d6;
-
+   padding-bottom: 60px;
 }
 
 .nav_parent_li>a{
@@ -173,20 +171,34 @@ aside{
    line-height: 44px;
    padding-left: 5px;
    position: relative;
+   border-top: 1px solid #d6d6d6;
 }
 
 .nav_child_li{
-   padding: 6px 30px;
+   padding: 9px 30px;
 }
 
 .nav_child_li>a{
+   font-size: 13px;
    display: block;
 }
 
 .nav_child_wrap1,.nav_child_wrap2{
-   display: none;
-   margin: -3px 0 15px;
+   transition: all 0.4s ease-in-out;
+   overflow: hidden;
+   height: 0;
 }
+
+.nav_child_wrap1.active{
+   transition: all 0.4s ease-in-out;
+   height: 515px;
+}
+
+.nav_child_wrap2.active{
+   transition: all 0.4s ease-in-out;
+   height: 80px;
+}
+
 
 /* js에서 버튼 클래스 네임 right->down으로 바꾸면 바뀜 */
 .xi-angle-right-thin,.xi-angle-down-thin{
