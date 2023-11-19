@@ -1,0 +1,156 @@
+
+body,.total{
+    width: 1130px;
+    margin: 0 auto;
+}
+p {
+    margin: 0;
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+input{
+    background-color: white;
+    border: solid 1px lightgray;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.ckeckB{
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}
+#basketBox {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+.wishBox {
+    border: none;
+}
+.numF{
+    width: 20px;
+    height: 20px;
+}
+.mdList{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mdList>span:nth-child(2){
+    font-size: 12px;
+    color: cadetblue;
+}
+.MdContainer{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2.5fr 0.5fr 1.5fr 4fr 1fr;
+}
+.opChange {
+    margin-top: 10px;
+}
+.optionBox {
+    border: solid 1px;
+    border-color: darkgrey;
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c c"
+    "d d";
+    width: 300px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    gap: 5px;
+    margin-top: 10px;
+} 
+.optionBox.active {
+    display: none;
+}
+.mdBox1 {
+    grid-area: a;
+    color: cadetblue;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mdBox2 {
+    grid-area: b;
+}
+.mdBox3 {
+    grid-area: c;   
+}
+.mdBox3,.mdBox4{
+    font-size: 17px;
+}
+.mdBox3>input{
+    background-color: black;
+    color: white;
+}
+.mdBox4 {
+    grid-area: d;   
+}
+.btn1 {
+    width: 300px;
+    height: 100%;
+}
+.priceContainer {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pricebox {
+    text-align: end;
+    box-sizing: border-box;
+    width: 470px;
+    /* padding: 10px; */
+    height: auto;
+}
+.lsBox {
+    text-align: initial;
+}
+.lsContent{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+.lsContent>p {
+    width: 70%;
+    height: auto;
+}
+.lsContent>div {
+    display: inline-block;
+    text-align: end;
+    width: 30%;
+}
+.lsContent>div>p {
+    display: inline-block;
+    text-align: end;
+
+}
+.mdOrder{
+    width: 220px;
+    height: 50px;
+}
+.bcColor {
+    background-color: black;
+    color: white;
+}
+#quota {
+    text-align: center;
+    display: inline-block;
+    border: solid 1px lightgray;
+    width: 25%;
+    line-height: 30px ;
+    margin: 10px 0;
+}
+#quota>a {
+    text-decoration: none;
+    color: black;
+}
