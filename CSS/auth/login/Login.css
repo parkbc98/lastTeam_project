@@ -76,13 +76,14 @@ a {
 }
 
 .another_page {
-    /* 네이버, 카카오로 시작하기 */
+    /* 네이버 로그인, 카카오로 시작하기 ul */
     list-style-type: none;
 
     padding-left: 0%;
 }
 
 .another_page a {
+    height: 30px;
     border: 1px solid;
 
     margin: 10px;
@@ -90,13 +91,14 @@ a {
 }
 
 .naver a {
-    height: 30px;
+    /* 네이버 로그인 */
     background-color: #2DB400;
     color: white;
 }
 
 .KakaoTalk a {
-    height: 30px;
+    /* 카카오로 시작하기 */
     background-color: #F7E600;
     border-color: #F7E600;
+    color: #3A1D1D;
 }
