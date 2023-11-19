@@ -1,0 +1,128 @@
+a{
+   text-decoration: none;
+   font-size: 12px;
+   color: #000;
+}
+
+p{
+   font-size: 12px;
+   color : #757575
+}
+
+ul, ol, li{
+   list-style: none;
+   padding-inline-start: 0px;
+}
+
+.container{
+   padding: 180px 20px 50px 20px;
+   width: 100%;
+}
+
+.content_board{
+   max-width: 1130px;
+   margin: 0 auto;
+}
+
+.menu_wrap{
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+.menu_wrap>a{
+   font-size: 12px;
+   margin: 15px 10px;
+}
+
+.menu_wrap>a:nth-child(2){
+   color: #000;
+}
+
+.menu_wrap>a:not(:nth-child(2)){
+   color: #999;
+}
+
+.li_wrap{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   table-layout: fixed;
+   width: 100%;
+   padding: 14px 7px 0px;
+   box-sizing: border-box;
+   margin-bottom: 0px;
+}
+
+.li_wrap>li{
+   width: 100%;
+   display: inline-block;
+   border-collapse: collapse;
+   vertical-align: top;
+   margin: 0px 0px 14px;
+   position: relative;
+   left: -2px;
+}
+
+.thumbnail{
+   padding: 0 7px;
+   margin: 0 0 14px;
+}
+
+.img{
+   vertical-align: top;
+   background-color: #fff;
+   width: 248.594px;
+   height: 357.984px;
+}
+
+.summary{
+   padding: 0px 7px;
+}
+
+.subject{
+   display: block;
+   margin: 0px 0px 10px;
+}
+
+.name{
+   margin: 0px 0px 7px;
+}
+
+.date{
+   margin: 0px
+}
+
+.pageButton_wrap{
+   text-align: center;
+   border-top: 1px solid #ddd;
+   padding: 30px 0px;
+   color: #000;
+   vertical-align: middle;
+}
+
+.pageButton_list,.pageButton_list>li{
+   display: inline-block;
+   padding: 0px 8px;
+   margin: 0;
+}
+
+.pageButton_left,.pageButton_right{
+   font-size: 12px;
+   color: #999;
+}
+
+.writeButton_wrap{
+   margin: 10px 0;
+   text-align: right;
+}
+
+.writeButton{
+   display: inline-block;
+   height: 36px;
+   line-height: 36px;
+   text-align: center;
+   color: #000;
+   border: 1px solid #000;
+   background-color: #fff;
+   box-sizing: border-box;
+   padding: 0 10px;
+}
