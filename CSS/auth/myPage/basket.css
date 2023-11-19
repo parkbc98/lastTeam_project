@@ -68,6 +68,9 @@ input{
     gap: 5px;
     margin-top: 10px;
 } 
+.optionBox.active {
+    display: none;
+}
 .mdBox1 {
     grid-area: a;
     color: cadetblue;

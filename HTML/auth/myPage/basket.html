@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="../../../CSS/auth/myPage/basket.css">
+    <script defer src="../../../JS/auth/myPage/basket.js"></script>
 </head>
 <body>
     <div class="total">
@@ -39,12 +40,12 @@
                     <a><span class="material-symbols-outlined">remove</span></a>
                 </div> 
 
-                <div class="mdList">340,000원</div>
+                <div class="mdList pricetag">340,000원</div>
 
                 <div class="mdList">
                     <div class="optionContainer"> 
                         <p>[옵션:블랙]</p>                   
-                        <input class="opChange" type="button" value="옵션 변경"> <!--버튼을 눌러야 아래가 나옴(hidden)-->
+                        <input class="opChange" type="button" value="옵션 변경" onclick="openoptionBox()"> <!--버튼을 눌러야 아래가 나옴(hidden)-->
                     </div>
                     
                     <div class="optionBox">
@@ -92,7 +93,7 @@
                     <a><span class="material-symbols-outlined">remove</span></a>
                 </div> 
 
-                <div class="mdList">213,000원</div>
+                <div class="mdList pricetag">213,000원</div>
 
                 <div class="mdList">
                     <div class="optionContainer"> 
@@ -127,11 +128,10 @@
         </div>
 
 <!--아래 상품 가격 및 주문 박스  -->
-    
         <hr>
         <div class="priceContainer" >
             <div class="pricebox">
-                <div id="quota"><a href="#">견적서 출력</a></div>
+                <div id="quota"><a href="javascript:void(0);">견적서 출력</a></div>
                 <div class="lsBox" >
                     <div class="lsContent">
                         <p>상품 금액</p>
