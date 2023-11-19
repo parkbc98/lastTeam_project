@@ -35,7 +35,7 @@ main {
 
 .grid {
     display: grid;
-    grid-template: repeat(5, 1fr) / repeat(3,1fr);
+    grid-template: repeat(2, 1fr) / repeat(3,1fr);
 }
 
 .grid>div {
@@ -43,6 +43,7 @@ main {
     justify-items: center;
     align-items: end;     
     margin: 40px 0 40px 0;
+    /* margin-bottom: 80px */
 }
 .grid>div>a {
     display: flex;
