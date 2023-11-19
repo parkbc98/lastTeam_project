@@ -1,0 +1,109 @@
+
+/* ================ 어사이드 css ================== */
+
+a{
+   text-decoration: none;
+   color: #000;
+}
+
+aside{
+   position: fixed;
+   background-color: #fff;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   width: 265px;
+   min-width: 265px;
+   transition: .4s;
+   overflow: auto ease-out;
+   z-index: 500;
+   overflow:scroll;
+}
+
+.active_aside{
+   left: -265px;;
+}
+
+.aside_container{
+   height: 100%;
+   padding-top: 50px;
+}
+
+.aside_wrap{
+   margin: 0 15px;
+   padding-bottom: 200px;
+}
+
+.nav_parent_li>a{
+   display: block;
+   font-size: 15px;
+   font-weight: bold;
+   height: 44px;
+   line-height: 44px;
+   padding-left: 5px;
+   position: relative;
+   border-top: 1px solid #d6d6d6;
+}
+
+.nav_child_li{
+   padding: 9px 30px;
+}
+
+.nav_child_li>a{
+   font-size: 13px;
+   display: block;
+}
+
+.nav_child_wrap1,.nav_child_wrap2{
+   transition: all 0.4s ease-in-out;
+   overflow: hidden;
+   height: 0;
+}
+
+.nav_child_wrap1.active{
+   transition: all 0.4s ease-in-out;
+   height: 540px;
+}
+
+.nav_child_wrap2.active{
+   transition: all 0.4s ease-in-out;
+   height: 80px;
+}
+
+.xi-angle-right-thin,.xi-angle-down-thin{
+   position: absolute;
+   color: #a6a6a6; 
+   right: 6px;
+   top: 15px;
+   line-height: 47px;
+}
+
+.flow{
+   overflow: hidden;
+}
+
+.dimmer{
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 300;
+   background-color: rgba(18,18,18,0.36);
+   backdrop-filter: blur(5px);
+   background: rgba(0,0,0,.4);
+   transition: 0.3s ease-out;
+   visibility: visible;
+}
+
+.active_dimmer{
+   visibility: hidden;
+}
+
+.test_btn{
+   width: 45px;
+   height: 45px;
+   background-color: 000;
+   display: block;
+   margin-top: 4px;
+}
