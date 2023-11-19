@@ -1,0 +1,66 @@
+.mypage_wrap {
+    /*  */
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.top_box {
+    /* my etc info, my order info */
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+
+    list-style-type: none;
+
+    font-size: 10px;
+}
+
+
+.tabcontents ul {
+    /* 장바구니, 주문내역 리스트, 내 문의, 내 정보, 관심상품 */
+    display: grid;
+   
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e .";
+
+    gap: 30px;
+
+    list-style-type: none;
+
+    font-size: 13px;
+}
+
+.tabcontents ul>li {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.basket {
+    grid-area: a;
+}
+
+.profile {
+    grid-area: b;
+}
+
+.orderList {
+    grid-area: c;
+}
+
+.wishList {
+    grid-area: d;
+}
+
+.myqna {
+    grid-area: e;
+}

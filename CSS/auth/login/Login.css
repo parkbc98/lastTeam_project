@@ -1,0 +1,104 @@
+.login_wrap {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    row-gap: 30px;
+}
+
+.top_box {
+    /*  상단 로그인, 회원가입 */
+    padding-left: 12px;
+    
+    display: flex;
+    column-gap: 10px;
+    
+    box-sizing: border-box;
+    list-style-type: none;
+
+    font-size: 15px;
+}
+
+
+.inside_box {
+    /* 로그인 */
+    display: grid;
+    
+    width: 500px;
+
+    border: 0;
+}
+
+
+.forget {
+    display: flex;
+    
+    justify-content: space-between;
+
+    font-size: 13px;
+}
+
+input {
+    width: 100%;
+    border: none;
+
+}
+
+hr {
+    width: 100%;
+}
+
+
+.forget a {
+    /* Forget id, 비밀번호 찾기 */
+    color: gray;
+}
+
+a {
+    /* 로그인, 회원가입, 주문조회, 네이버, 카카오로 시작하기 */
+    text-decoration: none;
+    color: black;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_box a {
+    border: 1px solid;
+    
+    margin: 10px;
+
+    height: 30px;
+}
+
+.another_page {
+    /* 네이버 로그인, 카카오로 시작하기 ul */
+    list-style-type: none;
+
+    padding-left: 0%;
+}
+
+.another_page a {
+    height: 30px;
+    border: 1px solid;
+
+    margin: 10px;
+
+}
+
+.naver a {
+    /* 네이버 로그인 */
+    background-color: #2DB400;
+    color: white;
+}
+
+.KakaoTalk a {
+    /* 카카오로 시작하기 */
+    background-color: #F7E600;
+    border-color: #F7E600;
+    color: #3A1D1D;
+}
