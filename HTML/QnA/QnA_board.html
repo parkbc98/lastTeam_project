@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글쓰기</title>
     <link rel="stylesheet" href="../../CSS/QnA/QnA_board.css">
+
+    <script src="../../JS/QnA/QnA_board.js"></script>
 </head>
 
 <body>
+    <!-- 상품정보선택 새 팝업창 540 400 -->
+
     <!-- 900px이상 너비고정 vw-->
     <!-- 좌측상단 이미지박스 상품정보선택버튼 -->
     <!-- 버튼 누르면 blank 작은 박스로 띄우기 -->
@@ -30,88 +34,112 @@
     <!--좌측  개인정보처리방침 동의  우측 내용보기blank-->
     <!-- 등록 취소버튼 -->
     <nav class="qna_board_top_nav">
-        <div>
-            상품이미지
+        <div class="prod_image">
+            <p>상품 이미지</p>
         </div>
-        <button>
-            <a href="./prod_choice/prod_choice.html" target="_blank">상품정보선택</a>
+        <button class="qna_prod_choice_btn">
+            상품정보선택
         </button>
     </nav>
 
     <main>
-        <div>
-            <h3>제목</h3>
-            <select name="" id="">
-                <option value="상품문의">상품문의</option>
-                <option value="배송문의">배송문의</option>
-                <option value="취소/교환/환불문의">취소&#47;교환&#47;환불문의</option>
-                <option value="A/S문의">A&#47;S문의</option>
-            </select>
-            <input type="text">
+        <div class="qna_board_title">
+            <p>제목</p>
+            <div>
+                <select name="qna_board_title_listbox" id="qna_board_title_listbox">
+                    <option value="상품문의">상품문의</option>
+                    <option value="배송문의">배송문의</option>
+                    <option value="취소/교환/환불문의">취소&#47;교환&#47;환불문의</option>
+                    <option value="A/S문의">A&#47;S문의</option>
+                </select>
+                <input type="text" class="qna_board_title_input">
+            </div>
         </div>
 
-        <div>
-            <h3>작성자</h3>
-            <input type="text">
+        <div class="qna_board_username">
+            <p>작성자</p>
+            <input type="text" class="qna_board_username_input">
         </div>
 
-        <div class="board_topnav">
-            <select name="" id="">
-                <option value="표준">표준</option>
-                <option value="제목1">제목1</option>
-                <option value="제목2">제목2</option>
-                <option value="제목3">제목3</option>
-                <option value="제목4">제목4</option>
-            </select>
-            <select name="" id="">
-                <option value="malgun_gothic">Malgun&nbsp;Gothic</option>
-                <option value="dotum">Dotum</option>
-                <option value="gulim">Gulim</option>
-                <option value="batang">Batang</option>
-                <option value="arial">Arial</option>
-            </select>
-            <select name="" id="">
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="12">12</option>
-                <option value="14">14</option>
-                <option value="16">16</option>
-                <option value="18">18</option>
-                <option value="20">20</option>
-                <option value="22">22</option>
-                <option value="24">24</option>
-            </select>
-            <button>Bold</button>
-            <button>itelic</button>
-            <button>font other style</button>
-            <!-- 버튼액션 하단바 -->
-            <button>순서 있는 목록</button>
-            <button>순서 있는 목록 리스트바</button>
-            <button>순서 없는 목록</button>
-            <button>순서 없는 목록 리스트바</button>
-            <button>왼쪽 정렬</button>
-            <button>중앙 정렬</button>
-            <button>오른쪽 정렬</button>
-            <button>text other style</button>
-            <!-- 버튼액션 하단바 -->
+        <div class="board_textarea">
+            <div class="board_textarea_topnav">
+                <select name="" id="">
+                    <option value="표준">표준</option>
+                    <option value="제목1">제목1</option>
+                    <option value="제목2">제목2</option>
+                    <option value="제목3">제목3</option>
+                    <option value="제목4">제목4</option>
+                </select>
+                <select name="" id="">
+                    <option value="malgun_gothic">Malgun&nbsp;Gothic</option>
+                    <option value="dotum">Dotum</option>
+                    <option value="gulim">Gulim</option>
+                    <option value="batang">Batang</option>
+                    <option value="arial">Arial</option>
+                </select>
+                <select name="" id="">
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                    <option value="24">24</option>
+                </select>
+                <button>Bold</button>
+                <button>itelic</button>
+                <button>font other style</button>
+                <!-- 버튼액션 하단바 -->
+                <button>순서 있는 목록</button>
+                <button>순서 있는 목록 리스트바</button>
+                <button>순서 없는 목록</button>
+                <button>순서 없는 목록 리스트바</button>
+                <button>왼쪽 정렬</button>
+                <button>중앙 정렬</button>
+                <button>오른쪽 정렬</button>
+                <button>text other style</button>
+                <!-- 버튼액션 하단바 -->
+            </div>
 
+            <textarea name="board_textarea_main" class="board_textarea_main" id="board_textarea_main"></textarea>
+
+            <div class="board_textarea_undnav">
+                <p>문자 : 0</p>
+            </div>
         </div>
 
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-
-        <div class="board_undnav">
-
+        <div class="qna_url">
+            <p>UCC URL</p><input type="text">
         </div>
 
-        <h3>UCC URL</h3><input type="text">
-        <h3>첨부파일1</h3><input type="file">
-        <h3>첨부파일2</h3><input type="file">
-        <h3>첨부파일3</h3><input type="file">
-        <h3>첨부파일4</h3><input type="file">
-        <h3>첨부파일5</h3><input type="file">
-        <input type="password">
-        <div>
+        <div class="qna_fileupload">
+            <div class="qna_fileupload1">
+                <p>첨부파일1</p><input type="file">
+            </div>
+            <div class="qna_fileupload1">
+                <p>첨부파일2</p><input type="file">
+            </div>
+            <div class="qna_fileupload1">
+                <p>첨부파일3</p><input type="file">
+            </div>
+            <div class="qna_fileupload1">
+                <p>첨부파일4</p><input type="file">
+            </div>
+            <div class="qna_fileupload1">
+                <p>첨부파일5</p><input type="file">
+            </div>
+        </div>
+
+        <div class="qna_board_pw">
+            <p>비밀번호</p>
+            <input type="password">
+        </div>
+
+        <div class="qna_board_public">
+            <p>비밀글설정</p>
             <label>
                 <input type="radio" name="board_type" value="public" checked>
                 공개글
@@ -123,10 +151,19 @@
         </div>
     </main>
 
-    <nav class="qna_board_under_nav">
-        <h3>개인정보처리방침 동의</h3>
-        <a href="./privacy/privacy.html" target="_blank">내용보기</a>
+    <nav class="qna_board_privacy">
+        <p>개인정보처리방침 동의</p>
+        <a href="./QnA_privacy.html" target="_blank">내용보기</a>
     </nav>
+
+    <div class="qna_board_upload">
+        <button>
+            등록
+        </button>
+        <a href="./QnA_main.html">
+            취소
+        </a>
+    </div>
 
 </body>
 
