@@ -6,6 +6,7 @@
 body {
     width: 900px;
     margin: auto;
+    font-size: 0.8em;
 }
 
 .prod_image {
@@ -80,6 +81,8 @@ body {
 .qna_url {
     border: solid 1px;
     border-top: none;
+    padding: 0 1em;
+    line-height: 2em;
 }
 
 .qna_url * {
@@ -87,8 +90,11 @@ body {
 }
 
 .qna_fileupload div {
+    line-height: 2em;
     border: solid 1px;
     border-top: none;
+    padding: 0 1em;
+    line-height: 2em;
 }
 
 .qna_fileupload p {
@@ -98,6 +104,8 @@ body {
 .qna_board_pw {
     border: solid 1px;
     border-top: none;
+    padding: 0 1em;
+    line-height: 2em;
 }
 
 .qna_board_pw * {
@@ -110,18 +118,52 @@ body {
 }
 
 .qna_board_public * {
+    padding: 0 1em;
+    line-height: 2em;
     display: inline-block;
 }
 
 .qna_board_privacy {
+    display: flex;
+    margin-top: 0.5em;
     border: solid 1px;
-    border-top: none;
+    justify-content: space-between;
+    line-height: 2em;
+}
+
+.qna_board_privacy a {
+    color: #000;
 }
 
 .qna_board_privacy * {
     display: inline-block;
+    padding: 0 1em;
+}
+
+.qna_board_upload {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qna_board_upload button {
+    display: inline-block;
+    background-color: #000;
+    color: #ffffff;
+    width: 49.8%;
+    padding: 2px;
+    height: 2em;
+    cursor: pointer;
 }
 
 .qna_board_upload a {
+    display: inline-block;
     text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    border: solid 1px;
+    line-height: 2em;
+    width: 49.8%;
+    height: 2em;
 }

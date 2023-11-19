@@ -9,14 +9,16 @@ body {
     margin: auto;
 }
 
+@media(max-width:930px) {
+    body {
+        width: 90vw;
+        margin: 1em auto;
+    }
+}
+
 /* top */
 .qna_main_top_nav {
     text-decoration: none;
-}
-
-/*문의게시판 공지사항 */
-.qna_main_top_nav ul li a {
-    margin: 0 1em;
 }
 
 .qna_main_top_nav ul li a {
@@ -24,7 +26,6 @@ body {
     font-size: 0.8em;
 }
 
-/* 글쓰기버튼 */
 .qna_main_board_btn {
     margin-top: 3em;
     margin-bottom: 1em;
@@ -37,25 +38,16 @@ body {
 
 .qna_main_board_btn a button {
     width: 4em;
-    height: 2.5em;
+    height: 3em;
     text-decoration: none;
     background: #ffffff;
-    border: solid 1px;
 }
 
-/* 상단 리스트박스 2개*/
 .qna_main_top_nav_listbox {
-    display: flex;
-    padding: 5px;
-    justify-content: space-between;
-    background: #c6c6c655;
-}
+    background: #dbdbdb;
+    padding-left: 1em;
 
-.qna_main_top_nav_listbox>select {
-    width: 49%;
 }
-
-.qna_main_top
 
 /* main */
 .qna_main_top_nav ul {
@@ -78,49 +70,42 @@ body {
 }
 
 /* under */
-/* 페이지 번호 */
-.qna_main_pagenum ul {
+.qna_main_under_nav ul {
     margin: 20px 0px;
     text-align: center;
 }
 
-.qna_main_pagenum ul li {
+.qna_main_under_nav ul li {
     display: inline-block;
     list-style: none;
     width: 1.5em;
     height: 1.5em;
 }
 
-/* 하부 박스 구성*/
-.qna_main_under_nav {
-    display: grid;
-}
-
-/* 하단 리스트박스 */
 .qna_main_under_nav_listbox {
-    display: flex;
-    padding: 5px 0;
-    justify-content: space-between;
+    padding-left: 1em;
+    margin-bottom: 10px;
 }
 
-.qna_main_under_nav_listbox>select {
-    width: 49%;
-    height: 1.5em;
-}
-
-/* 검색어 입력창 */
 .qna_main_under_nav_input {
-    width: 90%;
+    width: 91.5%;
+    height: 2em;
+    margin-left: 1.2em;
+}
+
+@media(max-width:930px) {
+    .qna_main_under_nav_input {
+        width: 90%;
+    }
 }
 
 .qna_main_under_nav hr {
     margin: 10px 0px;
 }
 
-/* 검색버튼 */
 .qna_main_under_nav button {
     width: 3em;
-    height: 2em;
+    height: 2.2em;
     text-decoration: none;
     background: #ffffff;
     border: solid 1px;
