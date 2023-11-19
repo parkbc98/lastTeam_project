@@ -11,6 +11,7 @@ let onlineshop_btn = document.getElementById('onlineshop_btn'),
     nav_child_wrap2 = document.getElementsByClassName('nav_child_wrap2');
 
 function aside_open(){
+    document.getElementById('aside').scrollTo(0,0);
     document.getElementById('aside').classList.toggle('active_aside');
     document.getElementById('dimmer').classList.toggle('active_dimmer');
 }
@@ -18,13 +19,13 @@ function aside_open(){
 function aside_close(){
     document.getElementById('aside').classList.add('active_aside');
     document.getElementById('dimmer').classList.add('active_dimmer');
+    
 }
 
 function onlineshop_btn_op(){
     nav_child_wrap1[0].classList.add('active');
     document.getElementById('arrow1').setAttribute('class','xi-angle-down-thin');
     onlineshop_btn.setAttribute('onclick','onlineshop_btn_close()');
-
 }
 
 function onlineshop_btn_close(){
@@ -37,7 +38,6 @@ function brand_btn_op(){
     nav_child_wrap2[0].classList.add('active');
     document.getElementById('arrow2').setAttribute('class','xi-angle-down-thin');
     brand_btn.setAttribute('onclick','brand_btn_close()');
-
 }
 
 function brand_btn_close(){
@@ -45,6 +45,5 @@ function brand_btn_close(){
     document.getElementById('arrow2').setAttribute('class','xi-angle-right-thin');
     brand_btn.setAttribute('onclick','brand_btn_op()');
 }
-
 
 

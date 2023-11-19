@@ -160,7 +160,7 @@ aside{
 
 .aside_wrap{
    margin: 0 15px;
-   padding-bottom: 60px;
+   padding-bottom: 200px;
 }
 
 .nav_parent_li>a{
@@ -191,7 +191,7 @@ aside{
 
 .nav_child_wrap1.active{
    transition: all 0.4s ease-in-out;
-   height: 515px;
+   height: 540px;
 }
 
 .nav_child_wrap2.active{
