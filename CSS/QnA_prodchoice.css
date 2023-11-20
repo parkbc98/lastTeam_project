@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    width: 900px;
+    height: 865px;
+    font-size: 0.8em;
+    margin: 1em auto;
+}
+
+@media(max-width:930px) {
+    body {
+        width: 90vw;
+        font-size: 0.8em;
+        margin: 1em auto;
+
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0.1em;
+}
+
+@media(max-width:930px) {
+    main * {
+        font-size: 0.8em;
+        margin: 1em 0.1em;
+    }
+}
+
+.prod_info {
+    padding: 5px;
+}
+
+.prod_info option {
+    text-align: left;
+}
+
+.prod_info_serchbar {
+    padding: 5px;
+    text-align: left;
+    width: 80%;
+}
+
+@media(min-width:931px) {
+    .prod_info_serchbar {
+        width: 80%;
+        text-align: left;
+    }
+}
+
+
+.prod_info_btn {
+    background-color: #fff;
+    border: solid 1px;
+    padding: 5px;
+}
+
+.qna_prod_choice_under_nav {
+    margin: 1em;
+}
+
+.search_result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_result_show {
+    display: inline-block;
+    text-align: left;
+
+}
+
+.search_result .show_prod {
+    display: inline-block;
+}
