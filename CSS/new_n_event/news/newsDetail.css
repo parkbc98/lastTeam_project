@@ -27,8 +27,14 @@ body{
 }
 
 .content{
-    height: 400px;
+    height: 100%;
     border-bottom: 1px solid #d6d6d6;
+    text-align: center;
+    padding: 20px;
+}
+
+content img{
+    max-width: 100%;
 }
 
 .title{
