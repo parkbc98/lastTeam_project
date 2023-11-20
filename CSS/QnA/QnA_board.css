@@ -9,6 +9,13 @@ body {
     font-size: 0.8em;
 }
 
+@media(max-width:930px) {
+    body {
+        width: 90vw;
+        margin: 1em auto;
+    }
+}
+
 .prod_image {
     display: inline-block;
     background-image: none;

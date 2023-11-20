@@ -26,6 +26,10 @@ body {
     font-size: 0.8em;
 }
 
+.qna_main_top_nav ul li a:nth-of-type(1) {
+    margin-left: 20px;
+}
+
 .qna_main_board_btn {
     margin-top: 3em;
     margin-bottom: 1em;
@@ -46,7 +50,7 @@ body {
 .qna_main_top_nav_listbox {
     background: #dbdbdb;
     padding-left: 1em;
-
+    padding-bottom: 1em;
 }
 
 /* main */
@@ -80,6 +84,7 @@ body {
     list-style: none;
     width: 1.5em;
     height: 1.5em;
+    cursor: pointer;
 }
 
 .qna_main_under_nav_listbox {
