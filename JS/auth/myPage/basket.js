@@ -1,77 +1,69 @@
-// 버튼 클릭시 mdbox2가 내려와야함. 
+
 // quota 팝업창 생성 (HTML CSS 필요)
 // 상품을 담은 경우 늘어나는 칸 자체 
 // 상품 가격 계산하기 
 
+let MdContainer_list = [
+    'img : ../../../CSS/auth/myPage/limsw/edbacbcd8589cbdd53ebdefb11af12f3.jpg',
+    'name : 브라이스 이너(CT-02/카키)',
+    'package : 배송: [무료]/기본배송',
+    'number : 1',
+    'price : 130,000',
+    'option : [옵션:35cm(=10,000)]'
+];
+
+let MdContainer_list2 = [
+    'img : ../../../CSS/auth/myPage/limsw/f22f95e5a67a45ef76538c7d51d03661.webp',
+    'name : 캐니언 라이트X / 패브릭',
+    'package : 배송: [무료]/기본배송',
+    'number : 1',
+    'price : 340,000',
+    'option : [옵션:블랙]'
+];
+let MdContainer_list3 = [
+    'img : ../../../CSS/auth/myPage/limsw/f22f95e5a67a45ef76538c7d51d03661.webp',
+    'name : 나윈 윈 체어 / 무도장* 블랙',
+    'package : 배송: [무료]/기본배송',
+    'number : 1',
+    'price : 213,000',
+    'option : [옵션:블랙]'
+];
+
+
+// ==== 변수선언 =========================================================
 
 // quota [견적서]
 let quotaS= document.getElementsByTagName('a');
-let mdlist=document.getElementsByClassName('mdList');
-console.log(document.getElementsByClassName('optionBox'));
-let optionBox=document.getElementsByClassName('optionBox');
-let pricetag=document.getElementsByClassName('pricetag');
-let opChange=document.getElementsByClassName('opChange');
+let optionWarp=document.querySelectorAll('.optionWarp');
+let newBox = `<div class= basketBox>${MdContainer_list}<div/>`
+
+console.log(newBox)
+// ==== 견적서 본문 ====================================================
 
 // quota 견적서 출력 링크
 quotaS[6].addEventListener('click',
-    ()=> {window.open('../../../HTML/auth/login/Login.html');
+()=> {window.open('../../../HTML/auth/login/Login.html','팝업견적서','width=600px, height=700px');
 });
 
+// ====================================================================
+// ====== 옵션박스 본문 ================================================
 
-//버튼 클릭시 mdbox2가 내려갔다가 올라와야 함. 
-// 커서가 옵션변경 버튼을 클릭하는 경우, optionBox가 display 가 none으로 변하게 됨.
-//eventlistener을 활용(?)
-// 옵션 박스 디스플레이가 일반 일때 옵션 박스 디스플레이를 히든으로 바꿈
+for(let i = 0; i < optionWarp.length; i++){
+    let opChange = optionWarp[i].querySelector('.opChange');
+    let optionBox = optionWarp[i].querySelector('.optionBox');
 
-
-// let btn_func = function() {
-//     if(optionBox.display =='grid'){
-//         function btn_hidden(){
-//         optionBox.style.display='hidden';
-//         }
-//     }
-// };
-
-// mdlist[5].addEventListener('click', btn_func());
-//안되네^^
-// ..? 디스플레이가 지금 그리드 인데..? 
-// 캭!!!!!
-
-// mdlist[5].addEventListener('click' , () => {
-//     if(optionBox[0].style.display!='none')optionBox[0].style.display='none';
-// });
-
-// 버튼을 누른 경우 옵션창이 없어졌다가 있다가 하기
-console.log(optionBox[0]);
-
-function openoptionBox() {
-    optionBox[0].classList.add('active');
-    opChange[0].setAttribute('onclick','closeoptionBox()');
-}
-function closeoptionBox() {
-    optionBox[0].classList.toggle('active'); //없애기
-    opChange[0].setAttribute('onclick','openoptionBox()');
+    console.log(opChange);
+    console.log(optionBox);
+    
+    opChange.addEventListener('click', ()=>{
+        optionBox.classList.toggle('active');
+    });
 }
 
-
-// 이걸 반복문으로 만들어 보자. 
-// 크게 function 2개를 반복 할거야. 언제까지 인덱스-1까지. 
-
+// ====================================================================
+// ====== 상자 칸 늘어나기 =============================================
 
 
-
-
-
-
-
-//상품을 담은 경우, section class Mdcontianer 자체를 복사해서 넣기. 
-//차라리 팝업창을 만들까.. 되는게 없는데... ㅎ...
-
-
-//상품 가격 계산하기
-//계산해야 할 값을 같은 클래스를 주면 더 생겨도 가능?
-//인덱스  - 1 만큼 반복하겠네?
-
-// for(;;){
-//     pricetag[i]+
-// }
+console.log(MdContainer_list);
+console.log(MdContainer_list2);
+console.log(MdContainer_list3);

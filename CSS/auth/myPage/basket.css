@@ -23,7 +23,7 @@ input{
     height: 20px;
     accent-color: black;
 }
-#basketBox {
+.basketBox {
     margin: 0 auto;
     width: 80%;
     height: auto;
