@@ -5,6 +5,8 @@
    font-size: 11px;
 }
 
+input:focus, textarea{outline:none;}
+
 select{
    background-color: transparent;
    cursor: pointer;
@@ -211,8 +213,9 @@ textarea{
    padding-top: 10px;
 }
 
-.push_cancel_wrap>button{
+.push_cancel_wrap input{
    border: 1px solid #000;
+   cursor: pointer;
 }
 
 

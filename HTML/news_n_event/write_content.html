@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../../CSS/new_n_event/write_content.css">
    <script src="https://kit.fontawesome.com/17d026183e.js" crossorigin="anonymous"></script>
+   <script defer src="../../JS/new_n_event/write_content.js"></script>
    <title>콤마나인 공식 홈페이지</title>
    <style type="text/css">
    </style>
@@ -17,8 +18,8 @@
       <!-- 전체 마진, 패딩 -->
       <div class="content">
          <!-- 컨텐츠 wrap -->
+         <!-- <form action="../news_n_event/"></form> -->
          <div class="boardWriteForm">
-
             <div class="board_wrap">
                <!-- 제목영역 -->
                <div class="title_wrap">
@@ -27,13 +28,13 @@
                   </div>
                   <div class="board_category">
                      <div class="board_select_box">
-                        <select name="" id="" class="category_list_select_box">
+                        <select name="" id="category_box" class="category_list_select_box">
                            <option value="">NEWS</option>
                            <option value="">EVENT</option>
                         </select>
                      </div>
                      <div class="title_input_box">
-                        <input type="text">
+                        <input id="title_section" type="text">
                      </div>
                   </div>
                </div>
@@ -131,7 +132,7 @@
                   <div class="main_text_line"></div>
                   <div class="main_text">
                      <div class="main_text_body">
-                        <textarea name="" id="" cols="30" rows="10">
+                        <textarea name="" id="main_text" cols="30" rows="10">
                         </textarea>
                      </div>
                   </div>
@@ -178,8 +179,8 @@
             </div>
             <div>
                <div class="push_cancel_wrap">
-                  <button id="push_button">등록</button>
-                  <button id="cancel_button">취소</button>
+                  <input type="submit" value="등록" id="push_button">
+                  <input type="reset" value="취소" id="cancel_button">
                </div>
             </div>
          </div>
