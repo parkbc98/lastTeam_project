@@ -5,160 +5,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../CSS/auth/login/signUpPage/signUpPage.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <title>Document</title>
-
 </head>
 
 <body>
-    <div>
-        <div>
-            <div>
-                <!-- 로그인 / 회원가입 블럭 -->
-                <ul>
-                    <li><a href="">로그인</a></li>
-                    <li><a href="">회원 가입</a></li>
-                </ul>
-            </div>
-            <!-- 회원가입 양식 블럭 -->
-            <div>
-                <div>
-                    <ul>
-                        <li>회원구분<i></i></li>
-                        <li><input type="radio" name="client_type">
-                            <label for="">개인회원</label>
-                            <input type="radio" name="client_type"><label for="">사업자회원</label>
+    <div class="container">
+        <div class="signUp_wrap">
+            <div class="signUp_second_wrap">
+                <div class="login_signUp_wrap">
+                    <!-- 로그인 / 회원가입 블럭 -->
+                    <ul class="switch_button_wrap">
+                        <li class="switch_button"><a href="">로그인</a></li>
+                        <li class="switch_button"><a href="">회원 가입</a></li>
+                    </ul>
+                </div>
+                <!-- 회원가입 양식 블럭 -->
+                <div class="signUp_form_wrap">
+                    <div class="client_type_select_box">
+                        <ul>
+                            <li class="category">회원구분<i class="xi-star"></i></li>
+                            <li class="client_type_radio_wrap">
+                                <input type="radio" name="client_type" id="personal">
+                                <label for="personal">개인회원</label>
+                                <input type="radio" name="client_type" id="business">
+                                <label for="business">사업자회원</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Basic info 필수입력사항 -->
+                    <div>
+                        <h3 class="info_logo">BASIC INFO</h3>
+                        <div class="category right_info"><i class="xi-star"></i>필수입력사항</div>
+                    </div>
+                    <ul class="ct1_wrap">
+                        <!-- 아이디 -->
+                        <li class="category ct1">아이디<i class="xi-star"></i><div class="right_info2">(영문소문자/숫자,4~16자)</div><br>
+                            <input type="text">
+                        </li>
+                        <!-- 비밀번호 -->
+                        <li class="category ct1">비밀번호<i class="xi-star"></i><div class="right_info2">(영문 대소문자/숫자/특수문자 중 3가지 이상 조합,8자~16자)</div><br>
+                            <input type="password" name="" id="">
+                        </li>
+                        <!-- 비밀번호 확인 -->
+                        <li class="category ct1">비밀번호 확인<i class="xi-star"></i><br>
+                            <input type="password" name="" id="">
+                        </li>
+                        <!-- 이름 -->
+                        <li class="category ct1">이름<i class="xi-star"></i><br>
+                            <input type="text">
+                        </li>
+                        <!-- Address -->
+                        <li class="category">Address<i class="xi-star"></i><br>
+                            <input type="text" id="sample6_postcode" placeholder="우편번호">
+                            <input type="button" onclick="sample6_execDaumPostcode()" value="주소검색" id="address_search_box"><br>
+                            <input type="text" id="sample6_address" placeholder="기본주소"><br>
+                            <input type="text" id="sample6_detailAddress" placeholder="나머지 주소(선택 입력 가능)">
+                        </li>
+                        <!-- Phone -->
+                        <li class="category">Phone<i class="xi-star"></i><br>
+                            <select name="" id="" class="phone">
+                                <option value="">02</option>
+                                <option value="">031</option>
+                                <option value="">032</option>
+                                <option value="">033</option>
+                                <option value="">041</option>
+                                <option value="">042</option>
+                                <option value="">043</option>
+                                <option value="">044</option>
+                                <option value="">051</option>
+                                <option value="">052</option>
+                                <option value="">053</option>
+                                <option value="">054</option>
+                                <option value="">055</option>
+                                <option value="">061</option>
+                                <option value="">062</option>
+                                <option value="">063</option>
+                                <option value="">064</option>
+                                <option value="">0504</option>
+                                <option value="">0505</option>
+                                <option value="">0506</option>
+                                <option value="">0507</option>
+                                <option value="">070</option>
+                                <option value="">010</option>
+                                <option value="">011</option>
+                                <option value="">016</option>
+                                <option value="">017</option>
+                                <option value="">018</option>
+                                <option value="">019</option>
+                                <option value="">0508</option>
+                            </select>
+                            -<input type="" class="phone">-
+                            <input type="text" class="phone">
+                        </li>
+                        <!-- 핸드폰 -->
+                        <li class="category">핸드폰<i class="xi-star"></i><br>
+                            <select name="" id="" class="cell_phone">
+                                <option value="">010</option>
+                                <option value="">011</option>
+                                <option value="">016</option>
+                                <option value="">017</option>
+                                <option value="">018</option>
+                                <option value="">019</option>
+                            </select>
+                            -<input type="text" class="cell_phone">-
+                            <input type="text" class="cell_phone">
+                        </li>
+                        <!-- 이메일 -->
+                        <li class="category ct1">이메일<i class="xi-star"></i><br>
+                            <input type="email">
                         </li>
                     </ul>
-                    <ul>
-                        <li>회원인증<i></i></li>
-                        <li>법인명<br><input type="text"></li>
-                        <li>법인번호<br><input type="text"></li>
-                    </ul>
                 </div>
-                <!-- Basic info 필수입력사항 -->
                 <div>
-                    <h3>BASIC INFO</h3>
-                    <div><i></i>필수입력사항</div>
-                </div>
-                <ul>
-                    <!-- 아이디 -->
-                    <li>아이디<i></i><span>(영문소문자/숫자,4~16자)</span><br>
-                        <input type="text">
-                    </li>
-                    <!-- 비밀번호 -->
-                    <li>비밀번호<i></i><span>(영문 대소문자/숫자/특수문자 중 3가지 이상 조합,8자~16자)</span><br>
-                        <input type="password" name="" id="">
-                    </li>
-                    <!-- 비밀번호 확인 -->
-                    <li>비밀번호 확인<i></i><br>
-                        <input type="password" name="" id="">
-                    </li>
-                    <!-- 이름 -->
-                    <li>이름<i></i><br>
-                        <input type="text">
-                    </li>
-                    <!-- Address -->
-                    <li>Address<i></i><br>
-                        <input type="text" id="sample6_postcode" placeholder="우편번호">
-                        <input type="button" onclick="sample6_execDaumPostcode()" value="주소검색"><br>
-                        <input type="text" id="sample6_address" placeholder="기본주소"><br>
-                        <input type="text" id="sample6_detailAddress" placeholder="나머지 주소(선택 입력 가능)">
-                    </li>
-                    <!-- Phone -->
-                    <li>Phone<i></i><br>
-                        <select name="" id="">
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                        <input type="">
-                        <input type="text">
-                    </li>
-                    <!-- 핸드폰 -->
-                    <li>핸드폰<i></i><br>
-                        <select name="" id="">
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </select>
-                        <input type="text">
-                        <input type="text">
-                    </li>
-                    <!-- 이메일 -->
-                    <li>이메일<i></i><br>
-                        <input type="email">
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div>
-                    <!-- ADD info -->
-                    <h3>ADD INFO</h3>
                     <div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <!-- 이용약관 동의 box -->
-                    <div>
-                        <div>
-                            <input type="checkbox">
-                            <p>모두 동의합니다.</p>
+                        <!-- ADD info -->
+                        <h3 class="info_logo">ADD INFO</h3>
+                        <div class="add_info_border">
+                            <div class="add_info_container"><p>생년월일</p></div>
+                            <div>
+                                <div class="add_info_wrap1">
+                                    <input type="radio" name="birth" id="sun">
+                                    <label for="sun">양력</label>
+                                    <input type="radio" name="birth" id="moon">
+                                    <label for="moon">음력</label>
+                                </div>
+                                <div class="add_info_wrap2">
+                                    <input type="text" class="birth year">년
+                                    <input type="text" class="birth month">월
+                                    <input type="text" class="birth day">일
+                                </div>
+                            </div>
                         </div>
+                        <!-- 이용약관 동의 box -->
                         <div>
                             <div>
-                                <h3>[필수] 이용약관 동의</h3>
-                                <p></p>
                                 <input type="checkbox">
+                                <p class="info_logo2">모두 동의합니다.</p>
                             </div>
                             <div>
-                                <h3>[필수] 개인정보 수집 및 이용 동의</h3>
-                                <p></p>
-                                <input type="checkbox">
-                            </div>
-                            <div>
-                                <h3>[선택] 쇼핑정보 수신 동의</h3>
-                                <p></p>
-                                <input type="checkbox">
-                                <input type="checkbox">
+                                <div>
+                                    <h3 class="info_logo3">[필수] 이용약관 동의</h3>
+                                    <p></p>
+                                    <input type="checkbox">
+                                </div>
+                                <div>
+                                    <h3 class="info_logo3">[필수] 개인정보 수집 및 이용 동의</h3>
+                                    <p></p>
+                                    <input type="checkbox">
+                                </div>
+                                <div>
+                                    <h3 class="info_logo3">[선택] 쇼핑정보 수신 동의</h3>
+                                    <p></p>
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- 회원가입 submit -->
-            <div>
-                <input type="submit" value="회원가입">
+                <!-- 회원가입 submit -->
+                <div>
+                    <input type="submit" value="회원가입">
+                </div>
             </div>
         </div>
     </div>
