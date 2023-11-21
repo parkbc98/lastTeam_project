@@ -20,7 +20,7 @@ body {
     color: #000;
 }
 
-body pre:nth-of-type(1) {
+.comment {
     padding: 0.7em;
     border-top: solid 1px;
     border-bottom: solid 1px;
@@ -52,7 +52,7 @@ body p {
     color: #000;
 }
 
-body pre:nth-of-type(2) {
+.recomment {
     margin: 1em 0;
 }
 
@@ -87,17 +87,22 @@ body pre:nth-of-type(2) {
     cursor: pointer;
 }
 
-.QnA_bc_pagelist ul li:not(:nth-last-of-type(1)):not(:last-child) {
+.QnA_bc_pagelist ul li {
     color: black;
     letter-spacing: 1em;
 }
 
-.QnA_bc_text {
-    border-bottom: solid 1px #a8a7a7;
+.QnA_bc_pagelist ul li.pagelist_btn {
+    color: #a8a7a7;
 }
 
-.QnA_bc_text div:nth-of-type(1) {
+.QnA_bc_page {
+    margin-top: 3em;
     border-top: solid 1px #a8a7a7;
+}
+
+.QnA_bc_text {
+    border-bottom: solid 1px #a8a7a7;
 }
 
 .QnA_bc_text * {

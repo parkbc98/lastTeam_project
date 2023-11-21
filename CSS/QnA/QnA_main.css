@@ -36,6 +36,9 @@ body {
     text-align: right;
 }
 
+.qna_main_board_btn button {
+    border: solid 1px;
+}
 .qna_main_board_btn a {
     color: black;
 }
@@ -50,7 +53,7 @@ body {
 .qna_main_top_nav_listbox {
     background: #dbdbdb;
     padding-left: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.2em;
 }
 
 /* main */
