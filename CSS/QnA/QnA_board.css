@@ -88,30 +88,35 @@ body {
 .qna_url {
     border: solid 1px;
     border-top: none;
-    padding: 0 1em;
+    padding: 0.2em 1em;
     line-height: 2em;
 }
 
 .qna_url * {
     display: inline-block;
 }
+.qna_url p {
+    display: inline-block;
+    padding-right: 2.3em;
+}
 
 .qna_fileupload div {
     line-height: 2em;
     border: solid 1px;
     border-top: none;
-    padding: 0 1em;
+    padding: 0.2em 1em;
     line-height: 2em;
 }
 
 .qna_fileupload p {
     display: inline-block;
+    padding-right: 1.8em;
 }
 
 .qna_board_pw {
     border: solid 1px;
     border-top: none;
-    padding: 0 1em;
+    padding: 0.2em 1em;
     line-height: 2em;
 }
 
@@ -119,14 +124,18 @@ body {
     display: inline-block;
 }
 
+.qna_board_pw p {
+    padding-right: 2em;
+}
+
 .qna_board_public {
     border: solid 1px;
     border-top: none;
+    padding: 0.5em 0;
 }
 
 .qna_board_public * {
     padding: 0 1em;
-    line-height: 2em;
     display: inline-block;
 }
 
