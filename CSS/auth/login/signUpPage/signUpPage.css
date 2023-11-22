@@ -89,9 +89,10 @@ select {
     margin-top: 20px;
 }
 
-#sample6_address,
-#sample6_detailAddress {
+#address-1,
+#address-2{
     width: 100%;
+    padding-top: 15px;
 }
 
 .info_logo {
@@ -221,4 +222,8 @@ span{
     text-align: center;
     height: 40px;
     cursor: pointer;
+}
+
+form.was-validated input:invalid {
+    border-color: red;
 }
