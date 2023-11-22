@@ -39,6 +39,7 @@ body {
 .qna_main_board_btn button {
     border: solid 1px;
 }
+
 .qna_main_board_btn a {
     color: black;
 }
@@ -48,6 +49,7 @@ body {
     height: 3em;
     text-decoration: none;
     background: #ffffff;
+    cursor: pointer;
 }
 
 .qna_main_top_nav_listbox {
@@ -70,19 +72,25 @@ body {
     border-bottom: solid 1px;
     list-style: none;
     padding: 10px;
+    cursor: pointer;
 }
 
 .qna_main_content li p {
     padding-bottom: 5px;
 }
 
+.qna_main_content li div {
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
 /* under */
-.qna_main_under_nav ul {
+.qna_main_pagelist ul {
     margin: 20px 0px;
     text-align: center;
 }
 
-.qna_main_under_nav ul li {
+.qna_main_pagelist ul li {
     display: inline-block;
     list-style: none;
     width: 1.5em;
@@ -95,14 +103,14 @@ body {
     margin-bottom: 10px;
 }
 
-.qna_main_under_nav_input {
+.qna_search_input {
     width: 91.5%;
     height: 2em;
     margin-left: 1.2em;
 }
 
 @media(max-width:930px) {
-    .qna_main_under_nav_input {
+    .qna_search_input {
         width: 90%;
     }
 }
@@ -111,10 +119,11 @@ body {
     margin: 10px 0px;
 }
 
-.qna_main_under_nav button {
+.search_btn {
     width: 3em;
     height: 2.2em;
     text-decoration: none;
     background: #ffffff;
     border: solid 1px;
+    cursor: pointer;
 }

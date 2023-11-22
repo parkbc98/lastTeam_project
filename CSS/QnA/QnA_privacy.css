@@ -32,6 +32,7 @@ main {
     height: 90vh;
     margin: 1em 0;
     overflow: scroll auto;
+    overflow-x: hidden;
     word-break: keep-all;
     font-size: 0.8em;
 }
