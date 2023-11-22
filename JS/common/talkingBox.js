@@ -1,7 +1,5 @@
 'use strict'
 
-
-
 let talkingBtnInclude = document.querySelector('.talkingBtn-include'),
     talkingBoxInclude = document.querySelector('.talkingBox-include'),
     talkingBoxSlideGroup = talkingBoxInclude.querySelector('#talkingBox-slideGroup'),
@@ -35,8 +33,9 @@ function slideEvent (index) {
             }
             
 // ====================================================================================================
-
+console.log('talkingBox.js is loaded!');
 talkingBtnInclude.addEventListener('click', ()=>{
+    console.log('talkingBtnInclude is click');
     talkingBtnInclude.style.visibility = 'hidden';
     talkingBoxInclude.classList.remove('visibilityHidden');
 
