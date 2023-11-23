@@ -95,17 +95,19 @@ select {
     padding-top: 15px;
 }
 
+.client_type_select_box{
+    margin-bottom: 30px;
+}
+
 .info_logo {
     display: inline-block;
     color: #757575;
     font-size: 16px;
     font-weight: bold;
-    padding-top: 30px;
 }
 
 .right_info {
-    display: block;
-    padding: 0;
+    margin: 0;
     float: right;
     font-size: 12px;
 }
