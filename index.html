@@ -11,6 +11,9 @@
     <script defer src=".\JS\common\includeHTML.js" type="module"></script>
     <link rel="stylesheet" href="./CSS/common/talkingBtn.css">
     <link rel="stylesheet" href="./CSS/common/talkingBox.css">
+    <!-- 임시 -->
+    <link rel="stylesheet" href="./CSS/common/asideTest.css"> 
+    <script defer src="./JS/common/asideTest.js"></script>
     <link rel="stylesheet" href="./CSS/common/header.css">
     <link rel="stylesheet" href="./CSS/common/footer.css">
     <!-- 아이콘 -->
@@ -27,7 +30,10 @@
     <div class="talkingBox-include visibilityHidden" w3-include-html=".\HTML\common\talkingBox.html"></div>
     <!-- include header -->
     <div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
-
+    <!-- include aside -->
+    <!-- 임시 -->
+    <aside id="aside" w3-include-html=".\HTML\common\asideTest.html" class="active_aside"></aside>
+    <div id="dimmer" class="dimmer active_dimmer" onclick="aside_close()"></div>
     <main>
         <div class="main-container">
             <!-- 메인 이미지1 -->
@@ -37,7 +43,8 @@
 
             <!-- 메인 상품목록 -->
             <div class="main-product-list-container">
-                <!-- 상품 1 -->
+
+                <!-- 상품 -->
                 <div class="main-product-container">
                     <!-- 상품 링크 a태그 -->
                     <a href="#">
@@ -65,117 +72,6 @@
                     </a>
                 </div>
 
-                <!-- 상품 2 -->
-                <div class="main-product-container">
-                    <!-- 상품 링크 a태그 -->
-                    <a href="#">
-                        <!-- 상품이미지 -->
-                        <div class="main-product-img-container">
-                            <img src="https://cdn.pixabay.com/photo/2023/04/24/03/16/camping-7947056_1280.jpg" alt="">
-                        </div>
-                        <!-- 상품 설명 -->
-                        <div class="main-product-comment-container">
-                            <ul>
-                                <!-- 상품 이름 -->
-                                <li>
-                                    <p>나인원 체어</p>
-                                </li>
-                                <!-- 상품 가격 -->
-                                <li>
-                                    <p>000,000 원</p>
-                                </li>
-                                <!-- 상품 정보 (신상 등) -->
-                                <li>
-                                    <img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 상품 3 -->
-                <div class="main-product-container">
-                    <!-- 상품 링크 a태그 -->
-                    <a href="#">
-                        <!-- 상품이미지 -->
-                        <div class="main-product-img-container">
-                            <img src="https://cdn.pixabay.com/photo/2023/04/24/03/16/camping-7947056_1280.jpg" alt="">
-                        </div>
-                        <!-- 상품 설명 -->
-                        <div class="main-product-comment-container">
-                            <ul>
-                                <!-- 상품 이름 -->
-                                <li>
-                                    <p>나인원 체어</p>
-                                </li>
-                                <!-- 상품 가격 -->
-                                <li>
-                                    <p>000,000 원</p>
-                                </li>
-                                <!-- 상품 정보 (신상 등) -->
-                                <li>
-                                    <img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 상품 4 -->
-                <div class="main-product-container">
-                    <!-- 상품 링크 a태그 -->
-                    <a href="#">
-                        <!-- 상품이미지 -->
-                        <div class="main-product-img-container">
-                            <img src="https://cdn.pixabay.com/photo/2023/04/24/03/16/camping-7947056_1280.jpg" alt="">
-                        </div>
-                        <!-- 상품 설명 -->
-                        <div class="main-product-comment-container">
-                            <ul>
-                                <!-- 상품 이름 -->
-                                <li>
-                                    <p>나인원 체어</p>
-                                </li>
-                                <!-- 상품 가격 -->
-                                <li>
-                                    <p>000,000 원</p>
-                                </li>
-                                <!-- 상품 정보 (신상 등) -->
-                                <li>
-                                    <img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 상품 5 -->
-                <div class="main-product-container">
-                    <!-- 상품 링크 a태그 -->
-                    <a href="#">
-                        <!-- 상품이미지 -->
-                        <div class="main-product-img-container">
-                            <img src="https://cdn.pixabay.com/photo/2023/04/24/03/16/camping-7947056_1280.jpg" alt="">
-                        </div>
-                        <!-- 상품 설명 -->
-                        <div class="main-product-comment-container">
-                            <ul>
-                                <!-- 상품 이름 -->
-                                <li>
-                                    <p>나인원 체어</p>
-                                </li>
-                                <!-- 상품 가격 -->
-                                <li>
-                                    <p>000,000 원</p>
-                                </li>
-                                <!-- 상품 정보 (신상 등) -->
-                                <li>
-                                    <img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
     </main>
