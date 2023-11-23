@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    /* 취소/교환/반품 신청은 주문완료일 기준 7일까지 가능합니다. */
+    margin-bottom: 0;
+
+    color: gray;
+}
+
+hr {
+    margin: 5px;
+}
+
+
+.orderList_wrap {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.top_box {
+    /* 주문내역 조회, 취소/교환/반품 내역 */
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+
+    font-size: 12px;
+
+
+}
+
+fieldset {
+    border: none;
+}
+
+.pro_box {
+    /* visibility: hidden; */
+} 
+
+
+.active {
+    visibility: hidden;
+}
+
+
+.search_select {
+    /* 검색기간설정 */
+    display: grid;
+
+    gap: 10px;
+
+    font-size: 12px;
+
+}
+
+select {
+    height: 40px;
+
+    border-color: lightslategray;
+}
+
+.btn_selectList {
+    /* 오늘, 1개월, 3개월, 6개월, 기간설정 */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn_selectList a {
+    /* 오늘, 1개월, 3개월, 6개월, 기간설정 */
+    display: inline-block;
+    border: 1px solid black;
+
+    height: 30px;
+    width: 110px;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.order_listTop {
+    /* 주문일자, 주문번호, 상세보기 */
+    display: flex;
+    justify-content: space-between;
+
+   margin-top: -10px;
+
+   font-size: 15px;
+
+}
+
+.btn_ViewDetails {
+    /* 상세보기 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+   
+}
+
+.pro_inlineBox {
+    display: flex;
+}
+
+.pro_infoList {
+    /* 상품명, 판매가, 수량, 옵션 */
+    display: grid;
+}   
+
+.info {
+    /* 판매가, 수량 */
+    display: flex;
+    
+}
+
+.price {
+    /* 판매가 */
+    flex: 1 1 0;
+}
+.pieces {
+     /* 수량 */
+    flex: 1 1 0;
+    margin: 10px;
+}
+
+.pro_changes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pro_foot {
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+.pro_changes a {
+    /* 주문취소, 교환신청 */
+    border: 1px solid gray;
+
+    width: 80px;
+    height: 40px;
+    margin: 5px;
+
+    text-align: center;
+    line-height: 40px;
+}
+
+.date_none {
+    /* display: flex; */
+}
+
+.date_list {
+    /* 기간설정, 조회 */
+    padding: 0;
+    display: flex;
+    gap: 10px;
+
+    /* display: none; */
+}
+
+.date_list a {
+    width: 45px;
+    
+    background-color: navy;
+    color: white;
+
+    box-sizing: border-box;
+    border-radius: 10px / 10px;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.date_list.visibility {
+    display: none;
+}
+
+.btn_selectList a:hover {
+    background-color: black;
+    color: white;
+}
+

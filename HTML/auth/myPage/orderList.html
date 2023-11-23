@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orderList</title>
+
+    <link rel="stylesheet" href="../../../CSS/auth/myPage/orderList.css">
+    <script defer src="../../../JS/auth/myPage/orderList.js"></script>
+</head>
+
+<body>
+    <div class="orderList_wrap">
+        <div class="orderList_box">
+            <ul class="top_box">
+                <!-- 주문내역 개수 정보 -->
+                <li>
+                    <a href="#">주문내역 조회(_건)</a>
+                </li>
+                <li>
+                    <a href="">취소/교환/반품 내역(_건)</a>
+                </li>
+            </ul>
+
+            <form action="#">
+                <fieldset>
+                    <div class="search_select">
+                        <span>상태</span>
+                        <select name="order_select" id="order_select" class="list_check">
+                            <option value="전체 주문처리상태">전체 주문처리상태</option>
+                            <option value="입금전">입금전</option>
+                            <option value="배송준비중">배송준비중</option>
+                            <option value="배송중">배송중</option>
+                            <option value="배송완료">배송완료</option>
+                            <option value="취소">취소</option>
+                            <option value="교환">교환</option>
+                            <option value="반품">반품</option>
+                        </select>
+
+                        <span>기간</span>
+                        <div class="btn_select">
+                            <ul class="btn_selectList">
+                                <li>
+                                    <a href="#" class="btn_normal">오늘</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn_normal1">1개월</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn_normal2">3개월</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn_normal3">6개월</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn_dataSelect">기간설정</a>
+                                </li>
+                            </ul>
+                            <div class="date_none">
+                                <div class="date_list">
+                                    <input type="date" value="기간설정">
+                                    <p>~</p>
+                                    <input type="date" value="기간설정">
+                                    <a href="#">조회</a>
+                                </div>
+                            </div>
+                           
+
+                            <p>취소/교환/반품 신청은 주문완료일 기준 7일까지 가능합니다.</p>
+
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <hr>
+            <div class="order_list">
+                <div class="order_listTop">
+                    <h3>
+                        <span class="data" title="주문일자">2023-11-23</span>
+                        <span class="number" title="주문번호">
+                            <a href="">(20231123-00000000)</a>
+                        </span>
+                    </h3>
+                    <div class="btn_ViewDetails">
+                        <a href="../myPage/orderDetail.html">상세보기</a>
+                    </div>
+                </div>
+
+                <div class="pro_box active">
+                    <div class="pro_inlineBox">
+                        <div class="pro_detail">
+                            <a href="../../product/productDetail.html">
+                                <img src="../../../CSS/auth/myPage/limsw/ab87ec3ac74590998fe38992d08a7923.png"
+                                    alt="상품이미지" width="80px" height="80px">
+                            </a>
+                        </div>
+
+                        <div class="main_ConList">
+                            <div class="pro_infoList">
+                                <strong class="pro_name" title="상품명">
+                                    <a href="../../product/productDetail.html">나인 원 체어/무도장*블랙</a>
+                                </strong>
+
+                                <ul class="info">
+                                    <li>
+                                        <span class="price" title="판매가">
+                                            <strong>213,000</strong>
+                                            "원"
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="pieces" title="수량">
+                                            <strong>1</strong>
+                                            "개"
+                                        </span>
+                                    </li>
+                                </ul>
+                                <p class="option">[옵션: 블랙]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="border: 1px dashed gray;">
+                    <div class="pro_foot" title="주문처리상태">
+                        <span>
+                            <strong>입금전</strong>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="pro_changes">
+                        <a href="#">주문취소</a>
+                        <a href="#">교환신청</a>
+                    </div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+<!-- <script>
+    let normal = document.querySelector(".btn_normal");
+    console.log(normal)
+
+    normal.addEventListener('click', () => {
+    let pro_box = document.querySelector('.pro_box');
+    pro_box.classList.remove('active');
+});
+</script> -->
+
+</html>
