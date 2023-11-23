@@ -65,8 +65,6 @@ selValues[5]
 // ===================================================================
 
 
-console.log(selValues);
-
 // 약관 동의 체크박스 전체 선택 및 각개 선택 로직
 function allAgreeChecker() {
    console.log(agreeCheckBox[0].checked)
@@ -84,7 +82,7 @@ function allAgreeChecker() {
 function allAgreeChecker_off() {
    if (agreeCheckBox[1].checked && agreeCheckBox[2].checked && agreeCheckBox[3].checked) {
       agreeCheckBox[0].checked = true;
-   } else if (agreeCheckBox[1].checked || agreeCheckBox[2].checked || agreeCheckBox[3].checked) {
+   } else if (agreeCheckBox[3].checked || agreeCheckBox[2].checked || agreeCheckBox[1].checked) {
       agreeCheckBox[0].checked = false;
    }
 }
@@ -93,7 +91,7 @@ function allAgreeChecker_off() {
 
 // 회원가입 버튼 시작
 
-submitBtn.addEventListener('click', (e) => { validation(e) });
+submitBtn.addEventListener('click', e => { validation(e) });
 
 
 function validation() {
@@ -108,14 +106,12 @@ function validation() {
       }
    }
 
-
    // 2. client type 확인 체크
    for (let i = 0; i < client_type.length; i++) {
       if (client_type[i].checked) {
          clientType = client_type[i].value;                                       // seccess     0.  clientType
       }
    }
-
 
    // 3. 아이디 체크 (영문대문자, 숫자 자릿수 체크)  ==> 3 번부터 reValues[] 인덱싱 시작
    if (reValues[0].value.length >= 4 && reValues[0].value.length <= 16) {
@@ -131,7 +127,6 @@ function validation() {
       reValues[0].focus();
       return false;
    }
-
 
    // 4. 비밀번호 (조합 확인)
    if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,16}$/.test(reValues[1].value)) {
@@ -175,11 +170,9 @@ function validation() {
       email = reValues[13].value;                                                  // sucess     12. email
    }
 
-   
-   
+
    // 10. 선택사항 입력 (생일)
 
-   
 
    
    // 11. 선택사항 입력 (수신확인)
@@ -187,10 +180,7 @@ function validation() {
 
 
 
-
    e.preventDefault();  // 새로 렌더링되는 것을 막음
-
-   
 }
 
 
