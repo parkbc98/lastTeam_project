@@ -17,8 +17,8 @@
                 <div class="login_signUp_wrap">
                     <!-- 로그인 / 회원가입 블럭 -->
                     <ul class="switch_button_wrap">
-                        <li class="switch_button"><a href="">로그인</a></li>
-                        <li class="switch_button"><a href="">회원 가입</a></li>
+                        <li class="switch_button login"><a href="../Login.html">로그인</a></li>
+                        <li class="switch_button"><a href="../signUpPage/signUpPage.html">회원 가입</a></li>
                     </ul>
                 </div>
                 <!-- 회원가입 양식 블럭 -->
@@ -44,35 +44,33 @@
                         <!-- 아이디 -->
                         <li class="category ct1">아이디<i class="xi-star"></i>
                             <div class="right_info2">(영문/숫자,4~16자)</div><br>
-                            <input class="value" type="text" id="client_id" name="client_id" value="hyuk1217">
+                            <input class="value" type="text" id="client_id" name="client_id">
                         </li>
                         <!-- 비밀번호 -->
                         <li class="category ct1">비밀번호<i class="xi-star"></i>
                             <div class="right_info2">(영문/숫자/특수문자 중 3가지 이상 조합,8자~16자)</div><br>
-                            <input type="password" name="client_password" id="client_password" class="value"
-                                value="1234!abcd">
+                            <input type="password" name="client_password" id="client_password" class="value">
                         </li>
                         <!-- 비밀번호 확인 -->
                         <li class="category ct1">비밀번호 확인<i class="xi-star"></i><br>
                             <input type="password" name="client_password_confirm" id="client_password_confirm"
-                                class="value" value="1234!abcd">
+                                class="value">
                         </li>
                         <!-- 이름 -->
                         <li class="category ct1">이름<i class="xi-star"></i><br>
-                            <input type="text" name="client_name" id="client_name" class="value" value="이정혁">
+                            <input type="text" name="client_name" id="client_name" class="value">
                         </li>
                         <!-- Address -->
                         <li class="category">Address<i class="xi-star"></i><br>
-                            <input type="text" id="zip-code" placeholder="우편번호" name="client_add_zip-code" class="value"
-                                value="51685" readonly>
+                            <input type="text" id="zip-code" placeholder="우편번호" name="client_add_zip-code" class="value" readonly>
                             <input type="button" onclick="execDaumPostcode()" value="주소검색" id="address_search_box"
                                 name="client_add_1">
                             <br>
                             <input type="text" id="address-1" placeholder="도로명주소" style="width: 500px"
-                                name="client_add_2" class="value" value="경기도 화성시 동탄기흥로 353번길 75" readonly>
+                                name="client_add_2" class="value" readonly>
                             <br>
                             <input type="text" id="address-2" placeholder="상세주소" style="width: 500px"
-                                name="client_add_3" class="value" value="중흥 s클래스 1631동 303호">
+                                name="client_add_3" class="value">
                         </li>
                         <!-- Phone -->
                         <li class="category">Phone<i class="xi-star"></i><br>
@@ -107,8 +105,8 @@
                                 <option value="018">018</option>
                                 <option value="019">019</option>
                             </select>
-                            -<input type="" class="phone value" name="client_phone_2" value="502">-
-                            <input type="text" class="phone value" name="client_phone_3" value="3292">
+                            -<input type="" class="phone value" name="client_phone_2">-
+                            <input type="text" class="phone value" name="client_phone_3">
                         </li>
                         <!-- 핸드폰 -->
                         <li class="category">핸드폰<i class="xi-star"></i><br>
@@ -120,14 +118,12 @@
                                 <option value="018">018</option>
                                 <option value="019">019</option>
                             </select>
-                            -<input type="text" class="cell_phone value" id="cell_phone2" name="cell_phone2"
-                                value="4104">-
-                            <input type="text" class="cell_phone value" id="cell_phone3" name="cell_phone3"
-                                value="3292">
+                            -<input type="text" class="cell_phone value" id="cell_phone2" name="cell_phone2">-
+                            <input type="text" class="cell_phone value" id="cell_phone3" name="cell_phone3">
                         </li>
                         <!-- 이메일 -->
                         <li class="category ct1">이메일<i class="xi-star"></i><br>
-                            <input type="email" name="e-mail" id="e-mail" class="value" value="huck1217@naver.com">
+                            <input type="email" name="e-mail" id="e-mail" class="value">
                         </li>
                     </ul>
                 </div>
@@ -141,9 +137,9 @@
                             </div>
                             <div>
                                 <div class="add_info_wrap1">
-                                    <input type="radio" name="birth" id="sun" class="selValue" checked>
+                                    <input type="radio" name="birth" id="sun" class="selValue" value="양력" checked>
                                     <label for="sun">양력</label>
-                                    <input type="radio" name="birth" id="moon" class="selValue">
+                                    <input type="radio" name="birth" id="moon" class="selValue" value="음력">
                                     <label for="moon">음력</label>
                                 </div>
                                 <div class="add_info_wrap2">

@@ -63,7 +63,10 @@ select {
     display: inline-block;
     font-size: 14px;
     margin: 0 8px;
-    /* background-color: aqua; */
+}
+
+.switch_button.login>a{
+    color: #959595;
 }
 
 .client_type_radio_wrap {
@@ -136,6 +139,11 @@ select {
 #sample6_postcode{
     width: 50px;
     margin-top: 12px;
+}
+
+input::placeholder{
+    padding-left: 1px;
+    color: #c5c5c5;
 }
 
 #sample6_address,#sample6_detailAddress{
