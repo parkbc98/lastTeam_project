@@ -177,6 +177,11 @@ textarea{
    color: #999;
 }
 
+.letter_count{
+   display: inline-block;
+   padding: 0 5px;
+}
+
 .attach_block_wrap>div{
    display: grid;
    grid-template-columns: 1fr 9fr;

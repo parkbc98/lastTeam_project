@@ -1,26 +1,19 @@
 'use strict'
 
-let push_button = document.getElementById('push_button');
+// 1. 작성자 ID 가져오기
+// 2. 카테고리 가져오기
+// 3. 제목 가져오기
+// 4. 본문 가져오기
+//  -> 텍스트에어리어 구현하기
+//     1) 개행(Enter) 감지해서 p태그 추가하기
+//     2) 예시로 볼드 이테릭체 정렬 1~2개 정도만 구현하기
+//  -> 문자 카운팅 구현하기
+// 5. url 가져오기
+// 6. 첨부파일 가져오기
+// 7. 게시글 비밀번호 가져오기
+// 8. 등록하기
+//  -> 등록한 날짜 가져오기
+//  -> 서버에 보내기
 
-let category = document.getElementById('category_box');
-let title = document.getElementById('title_section');
-let main_text = document.getElementById('main_text');
+// =================================================================
 
-
-// 항목 {
-//     1. news or event        완
-//     2. 제목                  완
-//     3. 작성자                
-//     4. 등록 시간
-//     5. 본문 내용
-//     6. url
-//     7. 이미지 첨부
-//     8. 비밀번호
-// }
-
-function create_content() {
-
-    
-}
-
-push_button.addEventListener('click', create_content());

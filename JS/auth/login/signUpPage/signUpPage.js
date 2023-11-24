@@ -96,6 +96,7 @@ function allAgreeChecker_off() {
 
 submitBtn.addEventListener('click', (e) => {
    if (!validation(e)) {
+
       e.preventDefault();  // 새로 렌더링되는 것을 막음
    } else {
       // 서버로 post 하는 구간!!!!!!!!
@@ -104,7 +105,7 @@ submitBtn.addEventListener('click', (e) => {
 
       async function postClientData() {
          try {
-            const response = await axios.post('http://localhost:3000/clientData', clientData);
+            const response = await axios.post('http://localhost:3000/clientData/', clientData);
 
             console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터
             console.log('상태 코드:', response.status);       // HTTP 상태 코드
@@ -118,7 +119,7 @@ submitBtn.addEventListener('click', (e) => {
       postClientData();
 
       alert(`'${clientData.clientName}'님 콤마나인에 오신것을 환영합니다!`);
-      // location.href = '../../../../index.html';     // 현재 페이지에서 이동을해 페이지 정보를 갖고 있음
+      location.href = '../../../../index.html';     // 현재 페이지에서 이동을해 페이지 정보를 갖고 있음
 
       // location.replace('../../../../index.html');   // 실제 서비스 처럼 메인 화면으로 가기
    }

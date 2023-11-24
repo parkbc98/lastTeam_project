@@ -1,5 +1,31 @@
 {
-    "clientData" :[
-        
-    ]
+  "clientData": [
+    {
+      "clientType": "개인회원",
+      "clientId": "hyuk1217",
+      "clientPassward": "qwer!1234",
+      "clientName": "이정혁",
+      "clientZipcode": "18480",
+      "clientAdd": "경기 화성시 동탄기흥로353번길 76\n1631-303",
+      "phone1": "02",
+      "phone2": "502",
+      "phone3": "3292",
+      "cell1": "010",
+      "cell2": "4104",
+      "cell3": "3292",
+      "email": "huck1217@naver.com",
+      "solunar": "양력",
+      "birthYear": "1990",
+      "birthMonth": "12",
+      "birthDay": "17",
+      "useAgree": true,
+      "privateInfoAgree": true,
+      "sendAgree": true,
+      "id": 1
+    }
+  ],
+
+  "board": [
+
+  ]
 }
