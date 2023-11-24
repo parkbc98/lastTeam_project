@@ -130,7 +130,7 @@ for (let i=0; i<optionWarp.length;i++){
     function openclose(){
         optionBox.classList.toggle('active');
     }
-    console.log(optionBox);
+    // console.log(optionBox);
 
     opChange.addEventListener('click',openclose);
 
@@ -144,6 +144,8 @@ for (let i=0; i<optionWarp.length;i++){
 let numbering=document.getElementsByClassName('numF');
 let icon_plus=document.getElementsByClassName('icon_plus');
 let icon_minus=document.getElementsByClassName('icon_minus');
+let pricetag = document.querySelectorAll('.pricetag');
+let tot_price = document.querySelector('.lsContent>div>p:first-child');
 
 console.log(icon_plus)
 
@@ -151,53 +153,58 @@ for(let i=0; i < numbering.length; i++){
     
     icon_plus[i].addEventListener('click',()=>{
         let numbering_Plus = +(numbering[i].value) ;
-        
         numbering[i].value = ++(numbering_Plus);
     
-        MdContainer_list[i].number = numbering[i].value;
-        console.log(MdContainer_list[i].number)
-        
         // 가격 계산하기
+        MdContainer_list[i].number = numbering[i].value;
         let MdContainer_price = MdContainer_list[i].number * MdContainer_list[i].price;
+            
+        // 가격 출력하기                
+        pricetag[i].innerText = `${MdContainer_price}`
 
-        // 문석 (가격 출력하기 )
+// ========= 곱한 MdContainer_price값을 더하면 배열 값을 더할 거라고 생각했으나 실패.  
+        // { 
+        // let totalAmount = 0;
+        // totalAmount += MdContainer_price;
 
-        {
-            let pricetag = event.target.closest('.MdContainer').getElementsByClassName('pricetag');
-            console.log(pricetag)
+        // tot_price.innerText = `${totalAmount}`
+        // console.log(totalAmount)
+        // }
 
-            pricetag[0].innerText = `${MdContainer_price}`
-        }
+// ========= 금액을 넣어보자=======================================================================================================
 
+        // tot_price.innerText = `${MdContainer_list[0].price}`
+        // console.log(`${MdContainer_list[0].price}원`);
     })
 }
 
-
+// 가격 클래스 선언하기 
+console.log(pricetag);
 
 for (let i=0;i<numbering.length;i++){
     icon_minus[i].addEventListener('click',()=>{
         let numbering_minus = +(numbering[i].value);
 
-        numbering[i].value = (numbering_minus-1);
 
-        
-        // 마이너스 가격 계산 및 출력하기 
-        {   
+        if(numbering_minus > 0){
+
+            numbering[i].value = (numbering_minus-1);
+            
+            // 마이너스 가격 계산 및 출력하기
             MdContainer_list[i].number = numbering[i].value;
-            // console.log(MdContainer_list[i].number )
             let MdContainer_price = MdContainer_list[i].number * MdContainer_list[i].price;
-            // console.log(MdContainer_price);
-
-            let pricetag = document.querySelectorAll('.pricetag');
-            // console.log(pricetag);
 
             pricetag[i].innerText = `${MdContainer_price}`
+            
+            
         }
+        
+        //
+
     })
 }
 
-
-//======총 선택상품 가격 계산하기========================================
+// 가격을 전부 가져오기. 
 
 
 
