@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orderDetail</title>
+
+    <link rel="stylesheet" href="../../../CSS/auth/myPage/orderDetail.css">
+    <script defer src="../../../JS/auth/myPage/orderDetail.js"></script>
+</head>
+
+<body>
+    <div class="orderDetails_wrap">
+        <div class="orderDetails_container">
+            <div><strong>주문정보</strong></div>
+            <div class="orderDetails_box">
+                <!-- 주문번호, 주문일자, 주문자, 주문처리상태 -->
+                <div>주문번호</div>
+                <div>20231123-00000000</div>
+                <div>주문일자</div>
+                <div>2023-11-23 11:11:11</div>
+                <div>주문자</div>
+                <div>전모모</div>
+                <div>주문처리상태</div>
+                <div>입금</div>
+            </div>
+        </div>
+        <hr>
+        <div class="orderProduct_box">
+            <div class="pro_photo">
+                <!-- 상품사진 -->
+                <a href="../../product/productDetail.html">
+                    <img src="../../../CSS/auth/myPage/limsw/ab87ec3ac74590998fe38992d08a7923.png" alt="상품이미지"
+                        width="80px" height="80px">
+                </a>
+            </div>
+            <div>
+                <!-- 주문상품, 상품명, 배송정보, 수량, 금액, 옵션 -->
+                <div>
+                    <strong>
+                        <a href="../../product/productDetail.html">나인 원 체어/무도장*블랙</a>
+                    </strong>
+                </div>
+                <div class="proBox_list">
+                    <div>배송 :</div>
+                    <div>기본배송</div>
+                    <div>수량 :</div>
+                    <div>1개</div>
+                    <div>상품구매금액 :</div>
+                    <div>213,000원</div>
+                    <div>[옵션: 블랙]</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order_cancel"><strong>[기본배송]</strong>
+            <!-- 주문취소 -->
+            <div class="cancelBox_list">
+                <a href="#">주문취소</a>
+            </div>
+        </div>
+        <hr>
+        <div class="payment_info">
+            <div>
+                <strong>결제 정보</strong>
+            </div>
+            <div class="paymentBox_list">
+                <!-- 결제 정보, 결제 수단, 총 결제금액 -->
+                <div>결제수단</div>
+                <div>무통장입금
+                    <p>입금자 : 전모모, 계좌번호 : 냥냥은행 444-181818-44-82((주)냠냠냠냠)</p>
+                </div>
+                <!-- <div>총 결제금액</div>
+                <div>213,000원</div> -->
+            </div>
+            <div class="payment_footBox">
+                <div>총 결제금액</div>
+                <div>213,000원</div>
+            </div>
+
+
+            <div class="shippping_info">
+                <!-- 총 주문금액, 상품 금액, 배송비, 지역별 배송비 -->
+                <div>총 주문금액</div>
+                <div>213,000원</div>
+                <div>상품 금액</div>
+                <div>213,000원</div>
+                <div>배송비</div>
+                <div>0원</div>
+                <div>지역별 배송비</div>
+                <div>0원</div>
+            </div>
+        </div>
+        <hr>
+        <div class="client_info">
+            <div><strong>배송지 정보</strong></div>
+            <div class="client_list">
+                <!-- 배송지 정보: 받으시는분, 우편번호, 주소, 휴대전화, 배송메세지, 주문목록보기 -->
+                <div>받으시는분</div>
+                <div>전모모</div>
+                <div>우편번호</div>
+                <div>181818</div>
+                <div>주소</div>
+                <div>서울 특별시 뉴욕주 시발 </div>
+                <div>휴대전화</div>
+                <div>010-0000-0000</div>
+                <div>배송메시지</div>
+                <div>배송 전에 미리 연락바랍니다.</div>
+            </div>
+            <div class="last_box">
+                <a href="../myPage/orderList.html">주문목록보기</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
