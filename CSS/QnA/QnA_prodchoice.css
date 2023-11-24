@@ -16,7 +16,10 @@ body {
         width: 90vw;
         font-size: 0.8em;
         margin: 1em auto;
+    }
 
+    .prod_info_btn {
+        width: 4em;
     }
 }
 

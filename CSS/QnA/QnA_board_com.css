@@ -10,6 +10,13 @@ body {
     color: #a8a7a7;
 }
 
+@media(max-width:930px) {
+    body {
+        width: 90vw;
+        margin: 1em auto;
+    }
+}
+
 .QnA_bc_topnav {
     display: inline-block;
     margin: 1em 0;
@@ -84,12 +91,12 @@ body p {
     align-items: center;
     list-style: none;
     letter-spacing: 1.5em;
-    cursor: pointer;
 }
 
 .QnA_bc_pagelist ul li {
     color: black;
     letter-spacing: 1em;
+    cursor: pointer;
 }
 
 .QnA_bc_pagelist ul li.pagelist_btn {
