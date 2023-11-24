@@ -94,15 +94,32 @@ function allAgreeChecker_off() {
 
 // < 본문 > -- 회원가입 버튼 시작
 
-submitBtn.addEventListener('click', (e) => { 
-   if( !validation(e) ){
+submitBtn.addEventListener('click', (e) => {
+   if (!validation(e)) {
       e.preventDefault();  // 새로 렌더링되는 것을 막음
    } else {
       // 서버로 post 하는 구간!!!!!!!!
 
+      console.log(clientData);
+
+      async function postClientData() {
+         try {
+            const response = await axios.post('http://localhost:3000/clientData', clientData);
+
+            console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터
+            console.log('상태 코드:', response.status);       // HTTP 상태 코드
+            console.log('상태 텍스트:', response.statusText); // HTTP 상태 코드 설명
+            console.log('응답 헤더:', response.headers);      // 응답 헤더 정보
+         } catch (err) {
+            console.log(err);
+         }
+      }
+
+      postClientData();
+
       alert(`'${clientData.clientName}'님 콤마나인에 오신것을 환영합니다!`);
       // location.href = '../../../../index.html';     // 현재 페이지에서 이동을해 페이지 정보를 갖고 있음
-      
+
       // location.replace('../../../../index.html');   // 실제 서비스 처럼 메인 화면으로 가기
    }
 });
@@ -111,16 +128,16 @@ submitBtn.addEventListener('click', (e) => {
 
 
 
-// 유효성 검사 함수
+// 유효성 검사 / validation check 함수
 function validation() {
 
    // 1. value 클래스 들 빈칸 확인
-   for (let i = 0; i < reValues.length-2; i++) {
-      if (reValues[i].value==='') {
+   for (let i = 0; i < reValues.length - 2; i++) {
+      if (reValues[i].value === '') {
          alert('필수 입력 항목이 입력되지 않았습니다.');
          reValues[i].focus();
          return false;
-      } else if (!reValues[14].checked || !reValues[15].checked){
+      } else if (!reValues[14].checked || !reValues[15].checked) {
          alert('필수 약관에 동의하지 않았습니다.')
          reValues[14].focus();
          return false;
@@ -151,7 +168,7 @@ function validation() {
 
 
    // 4~5. 비밀번호 (조합 확인) & 재입력 비교
-   if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,16}$/.test(reValues[1].value)) {
+   if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&;:()])[A-Za-z\d@$!%*#?&;:()]{8,16}$/.test(reValues[1].value)) {
       if (reValues[1].value === reValues[2].value) {
       } else {
          alert("재입력 비밀번호와 일치하지 않습니다.");
@@ -159,7 +176,7 @@ function validation() {
          return false;
       }
    } else {
-      alert("비밀번호는 8글자 이상 16글자 이하 영문, 숫자, 특수문자를 조합해서 입력하십시오.");
+      alert("비밀번호는 8글자 이상 16글자 이하 영문, 숫자, 특수문자( @$!%*#?&;:() )를 조합해서 입력하십시오.");
       reValues[1].focus();
       return false;
    }
@@ -176,8 +193,8 @@ function validation() {
 
    // 9. 이메일 형식 확인
    let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
-   
-   if(!regex.test(reValues[13].value)){
+
+   if (!regex.test(reValues[13].value)) {
       alert('이메일 형식이 아닙니다. 다시 한번 확인 바랍니다.');
       reValues[13].focus();
       return false;
@@ -190,30 +207,30 @@ function validation() {
    } else {
       solunar = selValues[1].value;
    }
-   
+
 
    // clientData 객체 생성
-    clientData = {
-      'clientType' : clientType,
-      'clientId' : reValues[0].value,
-      'clientPassward' : reValues[1].value,
-      'clientName' : reValues[3].value,
-      'clientZipcode' : reValues[4].value,
-      'clientAdd' : `${reValues[5].value}\n${reValues[6].value}`,
-      'phone1' : reValues[7].value,
-      'phone2' : reValues[8].value,
-      'phone3' : reValues[9].value,
-      'cell1' : reValues[10].value,
-      'cell2' : reValues[11].value,
-      'cell3' : reValues[12].value,
-      'email' : reValues[13].value,
-      'solunar' : solunar,
-      'birthYear' : selValues[2].value,
-      'birthMonth' : selValues[3].value,
-      'birthDay' : selValues[4].value,
-      'useAgree' : reValues[14].checked,
-      'privateInfoAgree' : reValues[15].checked,
-      'sendAgree' : selValues[5].checked,
+   clientData = {
+      'clientType': clientType,
+      'clientId': reValues[0].value,
+      'clientPassward': reValues[1].value,
+      'clientName': reValues[3].value,
+      'clientZipcode': reValues[4].value,
+      'clientAdd': `${reValues[5].value}\n${reValues[6].value}`,
+      'phone1': reValues[7].value,
+      'phone2': reValues[8].value,
+      'phone3': reValues[9].value,
+      'cell1': reValues[10].value,
+      'cell2': reValues[11].value,
+      'cell3': reValues[12].value,
+      'email': reValues[13].value,
+      'solunar': solunar,
+      'birthYear': selValues[2].value,
+      'birthMonth': selValues[3].value,
+      'birthDay': selValues[4].value,
+      'useAgree': reValues[14].checked,
+      'privateInfoAgree': reValues[15].checked,
+      'sendAgree': selValues[5].checked,
    }
 
    console.log(clientData);
