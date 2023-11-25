@@ -7,7 +7,9 @@
    <link rel="stylesheet" href="../../CSS/new_n_event/news_n_event_main.css">
    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
    <script src="https://kit.fontawesome.com/17d026183e.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    <script defer src="./aside_nav_module.js"></script>
+   <script defer src="../../JS/new_n_event/news_n_event_main.js"></script>
    <title>뉴스/이벤트 - 콤마나인</title>
 </head>
 
@@ -72,12 +74,11 @@
       <div id="dimmer" class="dimmer active_dimmer" onclick="aside_close()"></div>
       <div class="content_board">
          <div class="menu_wrap">
-            <a href="./news_n_event_main.html">전체</a><a href="./news/newsList.html">NEWS</a><a
-               href="./event/eventList.html">EVENT</a>
+            <span>전체</span><span>NEWS</span><span>EVENT</span>
          </div>
          <!-- 리스트 컨테이너 -->
          <ul class="li_wrap">
-            <li>
+            <!-- <li>
                <div class="thumbnail">
                   <a href="./news/newsDetail.html" class="img">
                      <img src="./img_src/img_src1.jpg" alt="">
@@ -88,150 +89,17 @@
                   <p class="name">멤버or관리자ID</p>
                   <p class="date">2023-09-07</p>
                </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="./news/newsDetail2.html" class="img">
-                     <img src="./img_src/img_src2.jpg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">제 2회 콤마나인 카페 벙캠 후기</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src3.jpg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">신제품 출시 안내 -캐니언 TF(IGT 1UNIT)</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src4.png" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인 in 대만 타이페이 PLAY WILD [LOVE 2023 FESTIVAL]</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src5.jpg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">(뉴스)콤마나인 엠배서더 2기 발대식</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src6.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인과 함께하는 크리스마스캠핑</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src7.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인 시드니라인은 사랑입니다. 이모지</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src8.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인과 함께한 2022년</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src9.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인 이벤트 참여해 봅니다</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src10.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">2023년에도 콤마나인과 함께</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src11.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">연말이벤트 참여합니다</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src12.jpg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인 처음 만나다</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-         </ul>
+            </li> -->
          <!-- 페이지 버튼 블럭 -->
-         <div class="pageButton_wrap">
-            <a href="" class="pageButton_left"><i class="fa-solid fa-chevron-left"></i></a>
-            <ol class="pageButton_list">
-               <li><a href="">1</a></li>
-               <li><a href="">2</a></li>
-               <li><a href="">3</a></li>
-            </ol>
-            <a href="" class="pageButton_right"><i class="fa-solid fa-chevron-right"></i></a>
-         </div>
+      </div>
+      <div class="pageButton_wrap">
+         <a href="" class="pageButton_left"><i class="fa-solid fa-chevron-left"></i></a>
+         <ol class="pageButton_list">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+         </ol>
+         <a href="" class="pageButton_right"><i class="fa-solid fa-chevron-right"></i></a>
          <!-- 글쓰기 버튼 블럭 -->
          <div class="writeButton_wrap">
             <a href="./write_content.html" class="writeButton">글쓰기</a>

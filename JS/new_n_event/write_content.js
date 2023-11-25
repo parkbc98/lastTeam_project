@@ -32,7 +32,7 @@ let clientId;
 // 서버 보낼 게시물
 var getBoard = {};
 
-async function getClientData() {
+async function getClientData(){
    try {
       const response = await axios.get('http://localhost:3000/clientData/1');
       clientId = response.data.clientId;
@@ -101,7 +101,7 @@ getClientData();
 push_button.addEventListener('click', (e) => {
    if(!pushBoard()){
       e.preventDefault();
-   } else {  
+   } else {
       postBoardData();
       alert('작성이 완료되었습니다.');
       location.href = '../../HTML/news_n_event/news_n_event_main.html';
