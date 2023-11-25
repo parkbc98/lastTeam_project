@@ -218,7 +218,7 @@ textarea{
    padding-top: 10px;
 }
 
-.push_cancel_wrap input{
+.push_cancel_wrap input,a{
    border: 1px solid #000;
    cursor: pointer;
 }
@@ -238,3 +238,9 @@ textarea{
    color: cadetblue; 
 }
 
+a{
+   display: flex;
+   text-decoration: none;
+   align-items: center;
+   justify-content: center;
+}

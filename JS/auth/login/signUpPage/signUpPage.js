@@ -90,7 +90,18 @@ function allAgreeChecker_off() {
    }
 }
 
+async function postClientData() {
+   try {
+      const response = await axios.post('http://localhost:3000/clientData/', clientData);
 
+      console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터
+      console.log('상태 코드:', response.status);       // HTTP 상태 코드
+      console.log('상태 텍스트:', response.statusText); // HTTP 상태 코드 설명
+      console.log('응답 헤더:', response.headers);      // 응답 헤더 정보
+   } catch (err) {
+      console.log(err);
+   }
+}
 
 // < 본문 > -- 회원가입 버튼 시작
 
@@ -100,21 +111,8 @@ submitBtn.addEventListener('click', (e) => {
       e.preventDefault();  // 새로 렌더링되는 것을 막음
    } else {
       // 서버로 post 하는 구간!!!!!!!!
-
+      
       console.log(clientData);
-
-      async function postClientData() {
-         try {
-            const response = await axios.post('http://localhost:3000/clientData/', clientData);
-
-            console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터
-            console.log('상태 코드:', response.status);       // HTTP 상태 코드
-            console.log('상태 텍스트:', response.statusText); // HTTP 상태 코드 설명
-            console.log('응답 헤더:', response.headers);      // 응답 헤더 정보
-         } catch (err) {
-            console.log(err);
-         }
-      }
 
       postClientData();
 
