@@ -46,15 +46,15 @@
 
     <main>
         <div class="qna_board_title">
-            <p>제목</p>
+            <p class="post_title">제목</p>
             <div class="qna_board_title_listbox" id="qna_board_title_listbox">
-                <select name="qna_board_qna_type" id="qna_board_qna_type" class="qna_board_qna_type">
+                <select name="qna_type" id="qna_type" class="qna_type">
                     <option value="상품문의">상품문의</option>
                     <option value="배송문의">배송문의</option>
                     <option value="취소/교환/환불문의">취소&#47;교환&#47;환불문의</option>
                     <option value="A/S문의">A&#47;S문의</option>
                 </select>
-                <input type="text" class="qna_board_title_input">
+                <input type="text" id="qna_post_title">
             </div>
         </div>
 
@@ -63,7 +63,7 @@
                 <p>작성자</p>
             </div>
             <div class="qna_user_div">
-                <input type="text" class="qna_username_input">
+                <input type="text" id="qna_username">
             </div>
         </div>
 
@@ -171,7 +171,7 @@
     </nav>
 
     <div class="qna_board_upload">
-        <button>
+        <button id="post_uploadbtn">
             등록
         </button>
         <a href="./QnA_main.html">

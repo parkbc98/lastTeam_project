@@ -97,12 +97,13 @@ body {
 }
 
 /* under */
-.qna_main_pagelist ul {
+/* 페이지 리스트 */
+#qna_main_pagelist>ul {
     margin: 20px 0px;
     text-align: center;
 }
 
-.qna_main_pagelist ul li {
+#qna_main_pagelist>ul>li {
     display: inline-block;
     list-style: none;
     width: 1.5em;
@@ -110,6 +111,24 @@ body {
     cursor: pointer;
 }
 
+#pagelist li a{
+    opacity: 0.5;
+    color: black;
+    text-decoration: none;
+}
+
+#pagelist li a:hover {
+    opacity: 1;
+}
+
+#pagelist li a.active {
+    opacity: 1;
+    font-weight: 700;
+    color: black;
+}
+
+
+/* 리스트박스 */
 .qna_main_under_nav_listbox {
     padding-left: 1em;
     margin-bottom: 10px;

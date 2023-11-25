@@ -79,11 +79,11 @@ body {
     width: 90.9%;
 }
 
-.qna_board_qna_type {
+.qna_type {
     width: 99.5%;
 }
 
-.qna_board_title_input {
+#qna_post_title {
     margin: 0.4em 0;
     width: 99%;
 }
@@ -106,7 +106,7 @@ body {
     margin: 0.4em 1.7em 0 0;
 }
 
-.qna_username_input {
+#qna_username {
     width: 100%;
 }
 
