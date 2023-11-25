@@ -22,58 +22,9 @@
       "privateInfoAgree": true,
       "sendAgree": true,
       "id": 1
-    },
-    {
-      "clientType": "개인회원",
-      "clientId": "hyuk1217",
-      "clientPassward": "qwert!1234",
-      "clientName": "이정혁",
-      "clientZipcode": "17102",
-      "clientAdd": "경기 용인시 기흥구 동탄기흥로 653\nㅁㄴㅇㅁㄴㅇ",
-      "phone1": "02",
-      "phone2": "ㅁㄴㅇ",
-      "phone3": "ㅁㄴㅇ",
-      "cell1": "010",
-      "cell2": "ㅁㅇㄴㅁ",
-      "cell3": "ㅁㄴㅇ",
-      "email": "asdasd@asda",
-      "solunar": "양력",
-      "birthYear": "",
-      "birthMonth": "",
-      "birthDay": "",
-      "useAgree": true,
-      "privateInfoAgree": true,
-      "sendAgree": true,
-      "id": 2
     }
   ],
   "boardData": [
-    {
-      "category": "EVENT",
-      "title": "asdasds",
-      "main_text": "                        asdasdasd",
-      "url": "asdasd",
-      "file1": "",
-      "file2": "",
-      "file3": "",
-      "file4": "",
-      "file5": "",
-      "boardPassword": "asdasd",
-      "id": 1
-    },
-    {
-      "category": "NEWS",
-      "title": "",
-      "main_text": "                        ",
-      "url": "",
-      "file1": "",
-      "file2": "",
-      "file3": "",
-      "file4": "",
-      "file5": "",
-      "boardPassword": "",
-      "writer": "hyuk1217",
-      "id": 2
-    }
+
   ]
 }
