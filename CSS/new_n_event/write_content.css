@@ -233,3 +233,8 @@ textarea{
    background-color: #000;
    color: white;
 }
+
+.font_tool_wrap button:focus, .list_tool_wrap button:focus,.functional_tool_button button:focus{
+   color: cadetblue; 
+}
+

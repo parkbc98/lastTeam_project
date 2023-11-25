@@ -24,8 +24,33 @@
       "id": 1
     }
   ],
-
-  "board": [
-
+  "boardData": [
+    {
+      "category": "EVENT",
+      "title": "asdasds",
+      "main_text": "                        asdasdasd",
+      "url": "asdasd",
+      "file1": "",
+      "file2": "",
+      "file3": "",
+      "file4": "",
+      "file5": "",
+      "boardPassword": "asdasd",
+      "id": 1
+    },
+    {
+      "category": "NEWS",
+      "title": "",
+      "main_text": "                        ",
+      "url": "",
+      "file1": "",
+      "file2": "",
+      "file3": "",
+      "file4": "",
+      "file5": "",
+      "boardPassword": "",
+      "writer": "hyuk1217",
+      "id": 2
+    }
   ]
 }

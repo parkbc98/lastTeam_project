@@ -17,3 +17,78 @@
 
 // =================================================================
 
+let category = document.getElementById('category_box'),
+   title = document.getElementById('title_section'),
+   main_text = document.getElementById('main_text'),
+   url = document.getElementById('insert_url'),
+   file = document.getElementsByClassName('insert_file'),
+   board_password = document.getElementById('board_password'),
+   push_button = document.getElementById('push_button'),
+   letter_count = document.getElementsByClassName('letter_count');
+
+let clientId;
+
+// 서버 보낼 게시물
+var getBoard = {};
+
+
+async function getClientData() {
+   try {
+      const response = await axios.get('http://localhost:3000/clientData/1');
+
+      clientId = response.data.clientId;
+
+      console.log(clientData);
+
+   } catch (err) {
+      console.log('데이터를 가져오는 중 오류 발생');
+      console.log(err.message);
+   }
+
+
+}
+
+function pushBoard() {
+
+   getBoard = {
+      'category': category.value,
+      'title': title.value,
+      'main_text': main_text.value,
+      'url': url.value,
+      'file1': file[0].value,
+      'file2': file[1].value,
+      'file3': file[2].value,
+      'file4': file[3].value,
+      'file5': file[4].value,
+      'boardPassword': board_password.value,
+      'writer': clientId,
+   }
+
+   console.log(getBoard);
+
+
+   async function postBoardData() {
+      try {
+         const response = await axios.post('http://localhost:3000/boardData/', getBoard);
+
+         console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터
+         console.log('상태 코드:', response.status);       // HTTP 상태 코드
+         console.log('상태 텍스트:', response.statusText); // HTTP 상태 코드 설명
+         console.log('응답 헤더:', response.headers);      // 응답 헤더 정보
+      } catch (err) {
+         console.log(err);
+      }
+   }
+
+   postBoardData();
+
+}
+
+function letterCount(){
+   letter_count[0].textContent = main_text.value.length;
+}
+
+getClientData();
+
+// < 본문 시작 > => submit 버튼 누르면 이벤트 발생
+push_button.addEventListener('click', () => {pushBoard()});
