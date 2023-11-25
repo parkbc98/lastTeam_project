@@ -93,6 +93,8 @@ ul, ol, li{
 
 .name{
    margin: 0px 0px 7px;
+   display: flex;
+   justify-content: space-between;
 }
 
 .date{
@@ -134,6 +136,11 @@ ul, ol, li{
    background-color: #fff;
    box-sizing: border-box;
    padding: 0 10px;
+}
+
+.xi-lock-o{
+   display: inline-block;
+   margin-right: 10px;
 }
 
 /* ================ 어사이드 css ================== */

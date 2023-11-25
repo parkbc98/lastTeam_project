@@ -2,11 +2,10 @@
 
 let category_menu = document.querySelectorAll('.menu_wrap>span');
 
-let category, title, main_text, url, file1, file2, file3, file4, file5,
-   boardPassword, writer, submitDate, id, boardInfo, allBoardInfo;
+let boardPassword, id, boardInfo, allBoardInfo;
 
 let showBoardLength, categoryArray;
-let pastSpan = category_menu[0]
+let pastSpan = category_menu[0];
 
 async function getboardInfo() {
    try {
@@ -54,12 +53,19 @@ function boardClone(Array) {
          </div>
          <div class="summary">
             <a href="./news/newsDetail.html" class="subject">${Array[i].title}</a>
-            <p class="name">${Array[i].writer}</p>
+            <p class="name">${Array[i].writer}${Array[i].boardPassword!==""?'<i class="xi-lock-o"></i>':''}</p>
             <p class="date">${Array[i].submitDate}</p>
          </div>
         </li> `;
    }
 }
+
+// 이벤트 위임에 대해서
+// li_wrap 에다 이벤트를 걸고 요소 생성 후
+// 이벤트를 위임받아 생성된 자식 li요소에 이벤트를 걸게해주는 방법을 찾아라
+
+// 그 후 그 게시글에 비밀번호가 있는 게시글이라면
+// 비밀번호 확인 후 상세페이지로 갈 수 있게 하기
 
 for (let i = 0; i < category_menu.length; i++) {
    category_menu[i].addEventListener('click', (e) => {
@@ -67,5 +73,6 @@ for (let i = 0; i < category_menu.length; i++) {
       pastSpan.style.color = '#999';
       e.target.style.color = '#000';
       pastSpan = e.target;
-   })
+   });
 }
+
