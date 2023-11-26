@@ -2,33 +2,20 @@
 
 // 작성된 게시글 제목 작성자이름 작성시간 내용 가져오기
 
-let clientData;
+'use strict';
 
-async function getClientData() {
-    try {
-        const response = await axios.get('http://localhost:3000/clientData');
+// 작성된 게시글 제목 작성자이름 작성시간 내용 가져오기
 
-        /* 
-            axios 를 통한 JSON 데이터를 가져오면 JSON.parse() 메서드를 통한
-            별도의 js 객체 변환이 필요치 않음.
-        */
-        clientData = response.data;
+// 게시글 등록버튼 눌렀을 때
+// 2.더미상품정보 받아오기 후 post data에 같이 묶어서 저장해주기
+// 3,등록버튼 누르면 메인페이지로 돌아가기
 
-        console.log(clientData);
+// 메인페이지
+// 4. 카테고리 선택해서 해당 카테고리 글만 나오게하기
+// 5. 나온 글들에서 검색박스에 쓴 내용이 있는 글만 나오게하기
 
-        /* 
-            json 객체의 엔드포인트를 제외한 json 객체 내의 특정 배열 요소나
-            프로퍼티를 URL 경로를 통한 직접 조회는 불가.
-            따라서 아래와같이 조회한 json 객체를 별도로 js 내에서 가공하여
-            특정 데이터를 추출.
-            단, JSON 서버에서 생성된 id 값을 URL 에 매핑하는 방법은 가능.
-        */
-        console.log(clientData[1]);
-
-    } catch (err) {
-        console.log('데이터를 가져오는 중 오류 발생');
-        console.log(err.message);
-    }
-}
-
-getClientData();
+// 상품정보선택
+// 1. 검색 결과 수 나눠서 표시하기
+// 4. 상품 선택시 글쓰는 곳에 정보주면서 창닫기
+// 4. 상품카테고리 선택해서 해당 카테고리 글만 나오게하기
+// 5. 나온 글들에서 검색박스에 쓴 내용이 있는 글만 나오게하기
