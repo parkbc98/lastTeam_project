@@ -26,7 +26,7 @@ let category = document.getElementById('category_box'),
    board_password = document.getElementById('board_password'),
    push_button = document.getElementById('push_button'),
    letter_count = document.getElementsByClassName('letter_count');
-
+   letter_count[0].textContent = 0;
 let clientId;
 
 // 서버 보낼 게시물

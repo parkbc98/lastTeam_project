@@ -10,7 +10,7 @@ let pastSpan = category_menu[0];
 async function getboardInfo() {
    try {
       const response = await axios.get('http://localhost:3000/boardData');
-      boardInfo = response.data;;
+      boardInfo = response.data;
       allBoardInfo = response.data;
       categoryArray = boardInfo.reduce((acc, curr) => {
          const { category } = curr;
@@ -40,24 +40,27 @@ function categorySelect(e) {
    }
 }
 
+
+
 function boardClone(Array) {
    let li_wrap = document.getElementsByClassName('li_wrap');
-   li_wrap[0].innerHTML = '';
-   for (let i = 0; i < Array.length; i++) {
-      li_wrap[0].innerHTML += `
-         <li>
+      
+      li_wrap[0].innerHTML = '';
+      for (let i = Array.length-1; i >= 0; i--) {
+         li_wrap[0].innerHTML += `
+         <li class="board_li" value="${Array[i].boardPassword}">
          <div class="thumbnail">
-            <a href="./news/newsDetail.html" class="img">
-               <img src="${Array[i].file1}">               
-            </a>
+         <a href="./news/newsDetail.html" class="img">
+         <img src="${Array[i].url}">
+         </a>
          </div>
          <div class="summary">
-            <a href="./news/newsDetail.html" class="subject">${Array[i].title}</a>
-            <p class="name">${Array[i].writer}${Array[i].boardPassword!==""?'<i class="xi-lock-o"></i>':''}</p>
-            <p class="date">${Array[i].submitDate}</p>
+         <a href="./news/newsDetail.html" class="subject">${Array[i].title}</a>
+         <p class="name">${Array[i].writer}${Array[i].boardPassword!==""?'<i class="xi-lock-o"></i>':''}</p>
+         <p class="date">${Array[i].submitDate}</p>
          </div>
-        </li> `;
-   }
+         </li> `;
+      }
 }
 
 // 이벤트 위임에 대해서
@@ -75,4 +78,3 @@ for (let i = 0; i < category_menu.length; i++) {
       pastSpan = e.target;
    });
 }
-
