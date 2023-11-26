@@ -1,5 +1,7 @@
 'use strict'
 
+import { slideImg } from "./slideImg.js";
+
 // ====== 더미데이터 ===========================================================
 
 const mainProductArrya = [
@@ -29,14 +31,14 @@ const mainProductArrya = [
         imgUrl: 'https://cdn.pixabay.com/photo/2023/04/24/03/16/camping-7947056_1280.jpg',
         productName: '나인4 체어',
         productPrice: 105000,
-        isNew: 'https://comma9.co.kr/web/upload/custom_116708980383884.gif'
+        isNew: ''
     },
     {
         id: 5,
         imgUrl: 'https://cdn.pixabay.com/photo/2023/04/24/03/16/camping-7947056_1280.jpg',
         productName: '나인5 체어',
         productPrice: 120000,
-        isNew: 'https://comma9.co.kr/web/upload/custom_116708980383884.gif'
+        isNew: ''
     },
     {
         id: 6,
@@ -50,7 +52,7 @@ const mainProductArrya = [
         imgUrl: 'https://cdn.pixabay.com/photo/2023/04/24/03/16/camping-7947056_1280.jpg',
         productName: '나인7 체어',
         productPrice: 870000,
-        isNew: 'https://comma9.co.kr/web/upload/custom_116708980383884.gif'
+        isNew: ''
     },
     {
         id: 8,
@@ -64,7 +66,7 @@ const mainProductArrya = [
 // isNew true => 'https://comma9.co.kr/web/upload/custom_116708980383884.gif'
 
 // ====== 참조변수 =============================================================
-let mainProductListContainer = document.querySelector('.main-product-list-container');
+let slideContainer = document.querySelector('.slide-container');
 
 // 요소 append
 for(let i  =  0; i < mainProductArrya.length; i++){
@@ -102,8 +104,8 @@ for(let i  =  0; i < mainProductArrya.length; i++){
         let p = document.createElement('p');
 
         //  p 내용
-        if (j == 3){
-4444444444433333333333333333333333333333333333            // 3번 p태그에는 isNew img 태그 추가
+        if (j == 2){
+            // 3번 p태그에는 isNew img 태그 추가
             let isNewImg = document.createElement('img');
             isNewImg.src = `${pContentArray[j]}`;
             p.appendChild(isNewImg);
@@ -131,7 +133,11 @@ for(let i  =  0; i < mainProductArrya.length; i++){
     // 상품 컨테이너 div
     mainProductContainer.appendChild(mainProductA);
 
-    console.log(mainProductContainer);
-    mainProductListContainer.appendChild(mainProductContainer);
+    slideContainer.appendChild(mainProductContainer);
 }
 
+// ===== 슬라이드 이미지 ===========================================================
+// slideContainer 재참조
+let slideItems = slideContainer.querySelectorAll(".main-product-container");
+
+slideImg(slideContainer, slideItems);

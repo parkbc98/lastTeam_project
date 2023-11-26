@@ -7,13 +7,17 @@
     <!-- 타이틀 -->
     <title>LastTeam Project</title>
 
+    <!-- noto sans 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
     <!-- include javascript -->
     <script defer src=".\JS\common\includeHTML.js" type="module"></script>
     <link rel="stylesheet" href="./CSS/common/talkingBtn.css">
     <link rel="stylesheet" href="./CSS/common/talkingBox.css">
     <!-- 임시 -->
     <link rel="stylesheet" href="./CSS/common/asideTest.css"> 
-    <script defer src="./JS/common/asideTest.js"></script>
+    <!-- <script defer src="./JS/common/asideTest.js"></script> -->
     <link rel="stylesheet" href="./CSS/common/header.css">
     <link rel="stylesheet" href="./CSS/common/footer.css">
     <!-- 아이콘 -->
@@ -32,8 +36,8 @@
     <div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
     <!-- include aside -->
     <!-- 임시 -->
-    <aside id="aside" w3-include-html=".\HTML\common\asideTest.html" class="active_aside"></aside>
-    <div id="dimmer" class="dimmer active_dimmer" onclick="aside_close()"></div>
+    <aside id="aside" class="active_aside aside-include" w3-include-html=".\HTML\common\asideTest.html"></aside>
+    <div id="dimmer" class="dimmer active_dimmer"></div>
     <main>
         <div class="main-container">
             <!-- 메인 이미지1 -->
@@ -43,6 +47,9 @@
 
             <!-- 메인 상품목록 -->
             <div class="main-product-list-container">
+                <div class="slide-container">
+
+                </div>
             </div>
         </div>
     </main>

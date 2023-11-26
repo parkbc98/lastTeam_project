@@ -2,7 +2,6 @@
 
 export function talkingBoxRun () {
 
-    console.log('talkingBoxRun is runned');
     let talkingBtnInclude = document.querySelector('.talkingBtn-include'),
         talkingBoxInclude = document.querySelector('.talkingBox-include'),
         talkingBoxSlideGroup = talkingBoxInclude.querySelector('#talkingBox-slideGroup'),

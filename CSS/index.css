@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 
@@ -32,16 +33,26 @@
 /* 메인 상품 리스트 */
 
 .main-product-list-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;   
+    height: 355px;
+    margin: 20px 0 50px 0;
+}
+
+.slide-container {
     display: grid;
     grid-template: 1fr / repeat(auto-fill, 19.2vw);
     gap: 1vw;
     grid-auto-flow:column; 
-    overflow: auto;
-
-    margin-bottom: 50px;
+    overflow: hidden;
+    position: absolute;
+    left: -0vw; 
+    /* -21vw 마다 */
 }
 
 .main-product-img-container{
+    width: 19vw;
     height: 270px;
     display: flex;
     justify-content: center;

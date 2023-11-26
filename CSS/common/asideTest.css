@@ -1,27 +1,39 @@
 /* ================ 어사이드 css ================== */
 
+aside * {
+   color: black;
+   text-decoration: none;
+}
+
 aside{
-    position: fixed;
-    background-color: #fff;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 265px;
-    min-width: 265px;
-    transition: .4s;
-    overflow: auto ease-out;
-    z-index: 500;
-    overflow:scroll;
- }
- 
- .active_aside{
-    left: -265px;;
- }
- 
- .aside_container{
-    height: 100%;
-    padding-top: 50px;
- }
+   position: fixed;
+   background-color: #fff;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   width: 265px;
+   min-width: 265px;
+   transition: .4s;
+   overflow: auto ease-out;
+   z-index: 500;
+   overflow:scroll;
+   -ms-overflow-style: none; /* IE */
+   scrollbar-width: none; /* 파이어폭스 */
+}
+
+aside::-webkit-scrollbar {
+   display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+.active_aside{
+   left: -265px;;
+}
+
+.aside_container{
+   height: 100%;
+   padding-top: 50px;
+   box-sizing: border-box;
+}
  
  .aside_wrap{
     margin: 0 15px;
