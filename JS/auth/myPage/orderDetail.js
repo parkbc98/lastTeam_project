@@ -101,7 +101,7 @@ paymentFootBoxDIV[1].innerText = paymentInfomation.paymentAmount;
 paymentInfomation2 =
 {
     totalOrderAmount: '270,000원',
-    commodityAmount: '240,000원',
+    commodityAmount: '240,000원\n 30,000원',
     delivery: '0원',
     deliveryRegion: '0원'
 }
