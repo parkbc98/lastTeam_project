@@ -49,6 +49,11 @@
     position: absolute;
     left: -0vw; 
     /* -21vw 마다 */
+    transition: left .5s;
+}
+.slide-container.goFirst{
+    left: -0vw; 
+    transition: unset;
 }
 
 .main-product-img-container{
