@@ -10,7 +10,9 @@ body {
     display: flex;
 
     justify-content: center;
+    align-items: center;
     width: 100vw;
+    height: 100vh;
 
     font-size: 12px;
 }
@@ -20,11 +22,9 @@ body {
     /* grid-template-columns: 1fr 1fr 1fr; */
 
     width: 40%;
+    height: fit-content;
 
-    justify-content: center;
-    align-items: center;
-
-    margin: 150px 10px;
+    /*margin: 150px 10px;*/
 }
 
 .orderDetails_container {
@@ -41,14 +41,16 @@ body {
 
 }
 
-.orderProduct_box {
-    /* 주문상품: 상품사진 / 상품명, 배송정보, 수량, 금액, 옵션 */
-    display: flex;
-
+.pro_info {
+    /* 주문상품 */
     border-top: 1px solid gray;
 
     padding-top: 10px;
+}
 
+.orderProduct_box {
+    /* 상품사진 / 상품명, 배송정보, 수량, 금액, 옵션 */
+    display: flex;
 }
 
 .proBox_list {
@@ -65,19 +67,23 @@ body {
 
 }
 
-.order_cancel a {
+.cancelBox_list a {
     /* 주문취소 버튼 */
     display: inline-block;
     border: 1px solid black;
 
+
     width: 80px;
-    height: 40px;
+    height: 35px;
 
     text-align: center;
-    line-height: 40px;
+    line-height: 35px;
+
 }
 
-.payment_info {
+
+
+.payment_title {
     border-top: 1px solid gray;
 
     padding-top: 10px;
@@ -106,7 +112,7 @@ body {
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
 }
 
-.client_info {
+.client_title {
     /* 배송지 정보 */
     border-top: 1px solid gray;
 
@@ -132,4 +138,8 @@ body {
 
     background-color: black;
     color: white;
+}
+
+.active {
+    display: none;
 }
