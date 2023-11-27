@@ -143,6 +143,11 @@ ul, ol, li{
    margin-right: 10px;
 }
 
+.pageNation{
+   color: #999;
+   cursor: pointer;
+}
+
 /* ================ 어사이드 css ================== */
 
 aside{

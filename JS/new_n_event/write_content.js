@@ -36,7 +36,6 @@ async function getClientData(){
    try {
       const response = await axios.get('http://localhost:3000/clientData/1');
       clientId = response.data.clientId;
-      console.log(clientData);
    } catch (err) {
       console.log(err.message);
    }
@@ -96,14 +95,14 @@ function pushBoard() {
 
 // < 본문 시작 > => submit 버튼 누르면 이벤트 발생
 
-getClientData();
+// getClientData();
 
 push_button.addEventListener('click', (e) => {
    if(!pushBoard()){
-      e.preventDefault();
+      // e.preventDefault();
    } else {
       postBoardData();
       alert('작성이 완료되었습니다.');
-      location.href = '../../HTML/news_n_event/news_n_event_main.html';
-   }
+      window.location.replace() = "https://www.naver.com";
+   }  
 });
