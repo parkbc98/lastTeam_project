@@ -63,13 +63,13 @@ proInfo.addEventListener("click", () => {
 });
 //======================== 주문취소 ⬇️===========================
 
-// window, location, history back > 뒤로가기 >  
-
 // 주문취소
 canceBoxListA.addEventListener("click", () => {
-    let choiceCancel;
-
-    choiceCancel = confirm('주문을 취소하시겠습니까?');
+    
+    if (confirm('주문을 취소하시겠습니까?')) {
+        window.location.href = '../myPage/orderList.html';
+        alert('주문이 취소되었습니다.');
+    } 
 });
 
 //======================== 결제정보 ⬇️===========================
