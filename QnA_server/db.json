@@ -1,824 +1,996 @@
 {
   "post_info": [
     {
-      "post_type": "상품문의",
-      "post_title": "post_title",
-      "username": "writer",
-      "post_date": "2023.10.24 19:29",
-      "id": 1
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
       "id": 2
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
       "id": 3
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 4
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
       "id": 5
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
       "id": 6
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
       "id": 7
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
       "id": 8
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "123",
+      "post_username": "123",
+      "post_date": "2023.10.28 14:38",
+      "content": "123",
       "id": 9
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 10
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "상품문의",
+      "post_title": "123",
+      "post_username": "123",
+      "post_date": "2023.10.28 14:57",
+      "content": "123",
       "id": 11
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "상품문의",
+      "post_title": "123",
+      "post_username": "123",
+      "post_date": "2023.10.28 14:58",
+      "content": "123",
       "id": 12
     },
     {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
+      "post_type": "상품문의",
+      "post_title": "1233",
+      "post_username": "1233",
+      "post_date": "2023.10.28 14:59",
+      "content": "1233",
       "id": 13
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 14
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 15
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 16
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 17
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 18
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 19
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 20
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 21
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 22
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 23
-    },
-    {
-      "post_type": "취소/교환/환불문의",
-      "post_title": "24post_title",
-      "username": "24writer",
-      "post_date": "2023.10.24 21:15",
-      "id": 24
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "25tile",
-      "username": "25writer",
-      "post_date": "2023.10.24 21:16",
-      "id": 25
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "27",
-      "username": "27",
-      "post_date": "2023.10.24 21:17",
-      "id": 26
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "28",
-      "username": "28",
-      "post_date": "2023.10.24 21:21",
-      "id": 28
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "123",
-      "username": "123",
-      "post_date": "2023.10.24 21:25",
-      "content": "123",
-      "id": 29
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "조카랑 노는게 너무 힘들어요 제 체력 A/S 되나요?",
-      "username": "조카바보",
-      "post_date": "2023.10.25 17:49",
-      "content": "",
-      "id": 30
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "post_title",
-      "username": "writer",
-      "post_date": "2023.10.24 19:29",
-      "id": 31
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 32
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 33
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 34
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 35
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 36
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 37
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 38
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 39
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 40
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 41
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 42
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 43
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 44
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 45
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 46
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 47
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 48
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 49
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 50
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 51
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 52
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 53
-    },
-    {
-      "post_type": "취소/교환/환불문의",
-      "post_title": "24post_title",
-      "username": "24writer",
-      "post_date": "2023.10.24 21:15",
-      "id": 54
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "25tile",
-      "username": "25writer",
-      "post_date": "2023.10.24 21:16",
-      "id": 55
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "27",
-      "username": "27",
-      "post_date": "2023.10.24 21:17",
-      "id": 56
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "28",
-      "username": "28",
-      "post_date": "2023.10.24 21:21",
-      "id": 57
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "123",
-      "username": "123",
-      "post_date": "2023.10.24 21:25",
-      "content": "123",
-      "id": 58
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "조카랑 노는게 너무 힘들어요 제 체력 A/S 되나요?",
-      "username": "조카바보",
-      "post_date": "2023.10.25 17:49",
-      "content": "",
-      "id": 59
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "post_title",
-      "username": "writer",
-      "post_date": "2023.10.24 19:29",
-      "id": 61
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 62
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 63
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 64
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 65
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 66
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 67
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 68
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 69
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 70
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 71
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 72
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 73
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 74
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 75
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 76
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 77
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 78
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 79
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 80
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 81
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 82
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 83
-    },
-    {
-      "post_type": "취소/교환/환불문의",
-      "post_title": "24post_title",
-      "username": "24writer",
-      "post_date": "2023.10.24 21:15",
-      "id": 84
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "25tile",
-      "username": "25writer",
-      "post_date": "2023.10.24 21:16",
-      "id": 85
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "27",
-      "username": "27",
-      "post_date": "2023.10.24 21:17",
-      "id": 87
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "28",
-      "username": "28",
-      "post_date": "2023.10.24 21:21",
-      "id": 88
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "123",
-      "username": "123",
-      "post_date": "2023.10.24 21:25",
-      "content": "123",
-      "id": 89
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "조카랑 노는게 너무 힘들어요 제 체력 A/S 되나요?",
-      "username": "조카바보",
-      "post_date": "2023.10.25 17:49",
-      "content": "",
-      "id": 90
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "post_title",
-      "username": "writer",
-      "post_date": "2023.10.24 19:29",
-      "id": 91
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 92
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 93
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 94
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 95
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 96
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 97
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 98
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 99
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 100
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 101
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 102
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 103
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 104
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 105
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 106
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 107
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 118
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 119
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 120
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 121
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 122
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "post_title2",
-      "username": "writer2",
-      "post_date": "2023.10.24 19:29",
-      "id": 123
-    },
-    {
-      "post_type": "취소/교환/환불문의",
-      "post_title": "24post_title",
-      "username": "24writer",
-      "post_date": "2023.10.24 21:15",
-      "id": 124
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "25tile",
-      "username": "25writer",
-      "post_date": "2023.10.24 21:16",
-      "id": 125
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "27",
-      "username": "27",
-      "post_date": "2023.10.24 21:17",
-      "id": 127
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "28",
-      "username": "28",
-      "post_date": "2023.10.24 21:21",
-      "id": 128
-    },
-    {
-      "post_type": "상품문의",
-      "post_title": "123",
-      "username": "123",
-      "post_date": "2023.10.24 21:25",
-      "content": "123",
-      "id": 129
-    },
-    {
-      "post_type": "A/S문의",
-      "post_title": "조카랑 노는게 너무 힘들어요 제 체력 A/S 되나요?",
-      "username": "조카바보",
-      "post_date": "2023.10.25 17:49",
-      "content": "",
-      "id": 130
     }
   ],
   "buy_history": [
@@ -851,168 +1023,6 @@
       "prod_name": "1번상품",
       "prod_price": "prod_price",
       "id": 5
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 6
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 7
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 8
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 9
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 10
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 11
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 12
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 13
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 14
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 15
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 16
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 17
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 18
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 19
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 20
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 21
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 22
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 23
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 24
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 25
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 26
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 27
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 28
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 29
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 30
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 31
-    },
-    {
-      "prod_img": "img",
-      "prod_name": "1번상품",
-      "prod_price": "prod_price",
-      "id": 32
     }
   ],
   "buyhistory_info": [
@@ -1024,6 +1034,15 @@
     },
     {
       "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
     }
   ]
 }

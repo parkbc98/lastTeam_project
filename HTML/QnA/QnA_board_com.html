@@ -5,12 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../CSS/QnA_board_com.css">
-    <script defer src="../../JS/QnA_board_com.js"></script>
+    <link rel="stylesheet" href="../../CSS/QnA/QnA_board_com.css">
+    <script defer src="../../JS/QnA/QnA_board_com.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- noto sans 폰트 -->
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- 아이콘 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- include javascript -->
+    <script defer src=".\JS\common\includeHTML.js" type="module"></script>
+    <link rel="stylesheet" href="./CSS/common/talkingBtn.css">
+    <link rel="stylesheet" href="./CSS/common/talkingBox.css">
+    <!-- 임시 -->
+    <link rel="stylesheet" href="./CSS/common/asideTest.css">
+    <!-- <script defer src="./JS/common/asideTest.js"></script> -->
+    <link rel="stylesheet" href="./CSS/common/header.css">
+    <link rel="stylesheet" href="./CSS/common/footer.css">
+
+    <!-- index -->
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script defer src="./JS/index.js" type="module"></script>
+
 </head>
 
 <body>
+    <!-- talking btn -->
+    <div class="talkingBtn-include"></div>
+    <!-- talking box -->
+    <div class="talkingBox-include visibilityHidden" w3-include-html=".\HTML\common\talkingBox.html"></div>
+    <!-- include header -->
+    <div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
+    <!-- include aside -->
+    <aside id="aside" class="active_aside aside-include" w3-include-html=".\HTML\common\asideTest.html"></aside>
+    <div id="dimmer" class="dimmer active_dimmer"></div>
+
     <!-- board에 있는 문의글 누르면 들어오고 그 제목이랑 디테일 내용 -->
     <nav class="QnA_bc_topnav">
         <h3>
@@ -32,56 +65,58 @@
     <!-- 목록 버튼리스트 위아래 선 -->
     <div class="backbtn_QnA_main">
         <button><a href="./QnA_main.html">
-            목록
-        </a>
-    </button>
-</div>
-<!-- 댓글목록 -->
-<p>
-    댓글목록
-</p>
-<!-- 별점 작성자명 작성시간 -->
-<div>별이5개 작성자 작성시간
-</div>
-<!-- 댓글 내용 -->
-<pre class="recomment">작성내용칸입니다
+                목록
+            </a>
+        </button>
+    </div>
+    <!-- 댓글목록 -->
+    <p>
+        댓글목록
+    </p>
+    <!-- 별점 작성자명 작성시간 -->
+    <div>별이5개 작성자 작성시간
+    </div>
+    <!-- 댓글 내용 -->
+    <pre class="recomment">작성내용칸입니다
 작성내용칸입니다
 작성내용칸입니다
 작성내용칸입니다
 작성내용칸입니다</pre>
 
-<!-- 댓글의 댓글  수정 삭제-->
-<div class="QnA_bc_udnav">
-    <p>
-        댓글의 댓글
-    </p>
+    <!-- 댓글의 댓글  수정 삭제-->
+    <div class="QnA_bc_udnav">
+        <p>
+            댓글의 댓글
+        </p>
 
-    <div class="QnA_bc_udnav_btn">
-        <button>수정</button>
-        <button>삭제</button>
+        <div class="QnA_bc_udnav_btn">
+            <button>수정</button>
+            <button>삭제</button>
+        </div>
     </div>
-</div>
-<!-- 페이지 버튼 -->
-<div class="QnA_bc_pagelist">
-    <ul>
-        <li class="pagelist_btn">&lt;</li>
-        <li>1</li>
-        <li class="pagelist_btn">&gt;</li>
-    </ul>
-</div>
-<!-- 회원에게만 댓글 작성 권한이 있습니다 -->
+    <!-- 페이지 버튼 -->
+    <div class="QnA_bc_pagelist">
+        <ul>
+            <li class="pagelist_btn">&lt;</li>
+            <li>1</li>
+            <li class="pagelist_btn">&gt;</li>
+        </ul>
+    </div>
+    <!-- 회원에게만 댓글 작성 권한이 있습니다 -->
 
-<!-- 선 이전글 선 다음글 선 -->
-<div class="QnA_bc_page">
-    <div class="QnA_bc_text">
-        <p>이전글</p>
-        <p>이전글내용</p>
+    <!-- 선 이전글 선 다음글 선 -->
+    <div class="QnA_bc_page">
+        <div class="QnA_bc_text">
+            <p>이전글</p>
+            <p>이전글내용</p>
+        </div>
+        <div class="QnA_bc_text">
+            <p>다음글</p>
+            <p>다음글내용</p>
+        </div>
     </div>
-    <div class="QnA_bc_text">
-        <p>다음글</p>
-        <p>다음글내용</p>
-    </div>
-</div>
+    <!-- include footer -->
+    <div class="footer-include" w3-include-html=".\HTML\common\footer.html"></div>
 </body>
 
 </html>

@@ -9,32 +9,42 @@
     <script src="https://kit.fontawesome.com/17d026183e.js" crossorigin="anonymous"></script>
     <script defer src="../../JS/QnA/QnA_board.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- noto sans 폰트 -->
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- 아이콘 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- include javascript -->
+    <script defer src=".\JS\common\includeHTML.js" type="module"></script>
+    <link rel="stylesheet" href="./CSS/common/talkingBtn.css">
+    <link rel="stylesheet" href="./CSS/common/talkingBox.css">
+    <!-- 임시 -->
+    <link rel="stylesheet" href="./CSS/common/asideTest.css">
+    <!-- <script defer src="./JS/common/asideTest.js"></script> -->
+    <link rel="stylesheet" href="./CSS/common/header.css">
+    <link rel="stylesheet" href="./CSS/common/footer.css">
+
+    <!-- index -->
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script defer src="./JS/index.js" type="module"></script>
+
 </head>
 
 <body>
-    <!-- 상품정보선택 새 팝업창 540 400 -->
+    <!-- talking btn -->
+    <div class="talkingBtn-include"></div>
+    <!-- talking box -->
+    <div class="talkingBox-include visibilityHidden" w3-include-html=".\HTML\common\talkingBox.html"></div>
+    <!-- include header -->
+    <div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
+    <!-- include aside -->
+    <aside id="aside" class="active_aside aside-include" w3-include-html=".\HTML\common\asideTest.html"></aside>
+    <div id="dimmer" class="dimmer active_dimmer"></div>
 
-
-    <!-- 900px이상 너비고정 vw-->
-    <!-- 좌측상단 이미지박스 상품정보선택버튼 -->
-    <!-- 버튼 누르면 blank 작은 박스로 띄우기 -->
-    <!-- 제목 박스 안에 리스트박스 카테고리 제목입력-->
-    <!-- 얇은선 -->
-    <!-- 작성자박스  작성자입력-->
-    <!-- 게시글입력박스
-    리스트박스 문단 글꼴 폰트 / 버튼 굵게 기울임 글꼴더보기액션하단바/ 이미지-리스트박스 순서있는목록 순서없는목록 / 버튼 왼쪽정렬 가운데정렬 오른쪽정렬 문단더보기액션하단바 더많은내용삽입액션하단바 뒤로돌리기 앞으로돌리기 기타더보기액션하단바
-    얇은선
-글쓰는 공간
-얇은선
-우측하단 텍스트숫자 표시-->
-    <!-- ucc url 입력박스 -->
-    <!-- 얇은선 -->
-    <!-- 첨부파일 박스 얇은선 *5 -->
-    <!-- 비밀글 비밀번호 입력박스 -->
-    <!-- 비밀글 설정 -->
-
-    <!--좌측  개인정보처리방침 동의  우측 내용보기blank-->
-    <!-- 등록 취소버튼 -->
     <nav class="qna_board_top_nav">
         <div class="prod_image">
             <p>상품 이미지</p>
@@ -51,8 +61,10 @@
                 <select name="qna_type" id="qna_type" class="qna_type">
                     <option value="상품문의">상품문의</option>
                     <option value="배송문의">배송문의</option>
-                    <option value="취소/교환/환불문의">취소&#47;교환&#47;환불문의</option>
-                    <option value="A/S문의">A&#47;S문의</option>
+                    <option value="취소문의">취소문의</option>
+                    <option value="교환문의">교환문의</option>
+                    <option value="환불문의">환불문의</option>
+                    <option value="AS문의">AS문의</option>
                 </select>
                 <input type="text" id="qna_post_title">
             </div>
@@ -178,7 +190,8 @@
             취소
         </a>
     </div>
-
+    <!-- include footer -->
+    <div class="footer-include" w3-include-html=".\HTML\common\footer.html"></div>
 </body>
 
 </html>

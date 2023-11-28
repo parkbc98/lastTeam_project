@@ -1,15 +1,16 @@
 'use strict';
+//axios 33
 
-// 상품정보선택
 const prodchoicebtn = document.getElementsByTagName('button');
 let post_uploadbtn = document.getElementById('post_uploadbtn');
 
+
+//상품정보선택 팝업창
 prodchoicebtn[0].addEventListener('click', () => {
     window.open('./QnA_prodchoice.html', 'prodchoice', 'width=825, height=500, top=120, left=200');
 });
 
 // 문의종류 게시글제목 작성자이름 작성시간 서버에 저장
-
 const date = new Date();
 let qna_type = document.getElementById('qna_type'),
     qna_post_title = document.getElementById('qna_post_title'),
@@ -27,6 +28,8 @@ post_uploadbtn.addEventListener('click', (e) => {
         'content': post_content[0].value,
     }
 
+    window.location.href = "../../HTML/QnA/QnA_main.html";
+
     axios.post('http://localhost:3000/post_info', post_info)
 
         .then(response => {
@@ -34,10 +37,13 @@ post_uploadbtn.addEventListener('click', (e) => {
             console.log('상태 코드:', response.status);       // HTTP 상태 코드
             console.log('상태 텍스트:', response.statusText); // HTTP 상태 코드 설명
             console.log('응답 헤더:', response.headers);      // 응답 헤더 정보
+
+
         })
         .catch(err => {
             console.log(err);
         });
+
 
     e.preventDefault;
 })

@@ -9,6 +9,11 @@ body {
     margin: auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 @media(max-width:930px) {
     body {
         width: 90vw;
@@ -102,7 +107,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.7;
 }
 
 #qna_main_pagelist * {
@@ -121,22 +125,9 @@ body {
     height: 1.5em;
 }
 
-#pagelist li a{
-    color: black;
-    text-decoration: none;
-    opacity: 0.5;
+.pageNation {
+    color: #999;
 }
-
-#pagelist li a:hover {
-    opacity: 1;
-}
-
-#pagelist li a.active {
-    opacity: 1;
-    font-weight: 700;
-    color: black;
-}
-
 
 /* 리스트박스 */
 .qna_main_under_nav_listbox {

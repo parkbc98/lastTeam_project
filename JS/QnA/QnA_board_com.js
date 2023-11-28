@@ -1,21 +1,46 @@
 'use strict';
+//axios 13
 
-// 작성된 게시글 제목 작성자이름 작성시간 내용 가져오기
+let PostData,
+    post_title,
+    post_type,
+    post_date,
+    userName,
+    comment;
 
-'use strict';
+async function getPostData() {
+    try {
+        const response = await axios.get('http://localhost:3000/post_info');
 
-// 작성된 게시글 제목 작성자이름 작성시간 내용 가져오기
+        PostData = response.data;
+    } catch (err) {
+        console.log('데이터를 가져오는 중 오류 발생');
+        console.log(err.message);
+    }
 
-// 게시글 등록버튼 눌렀을 때
-// 2.더미상품정보 받아오기 후 post data에 같이 묶어서 저장해주기
-// 3,등록버튼 누르면 메인페이지로 돌아가기
+    //게시글
+    let QnA_bc_topnav = document.getElementsByClassName('QnA_bc_topnav'),
+        comment = document.getElementsByClassName('comment');
 
-// 메인페이지
-// 4. 카테고리 선택해서 해당 카테고리 글만 나오게하기
-// 5. 나온 글들에서 검색박스에 쓴 내용이 있는 글만 나오게하기
+    function post_clone() {
 
-// 상품정보선택
-// 1. 검색 결과 수 나눠서 표시하기
-// 4. 상품 선택시 글쓰는 곳에 정보주면서 창닫기
-// 4. 상품카테고리 선택해서 해당 카테고리 글만 나오게하기
-// 5. 나온 글들에서 검색박스에 쓴 내용이 있는 글만 나오게하기
+
+        // 데이터 받아서 게시글 작성
+        QnA_bc_topnav[0].innerHTML = `
+                <h3>
+                    ${PostData[i].post_title}
+                </h3>
+                    <div class="post_type">${PostData[i].post_type}</div>
+                    <div class="post_time">${PostData[i].post_date}</div>
+                    <div class="post_writer">${PostData[i].post_username}</div>
+                </div>
+            `
+        
+        comment[i].innerHTML = `
+        ${PostData[i].content}
+        `
+    }
+    post_clone();
+}
+
+getPostData();
