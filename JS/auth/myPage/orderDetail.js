@@ -65,10 +65,12 @@ proInfo.addEventListener("click", () => {
 
 // 주문취소
 canceBoxListA.addEventListener("click", () => {
+    let orderDetailsWrap = document.querySelector(".orderDetails_wrap");
     
     if (confirm('주문을 취소하시겠습니까?')) {
-        window.location.href = '../myPage/orderList.html';
+        orderDetailsWrap.remove();
         alert('주문이 취소되었습니다.');
+        window.location.href = '../myPage/orderList.html';
     } 
 });
 
