@@ -6,19 +6,53 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../../CSS/new_n_event/write_content.css">
    <script src="https://kit.fontawesome.com/17d026183e.js" crossorigin="anonymous"></script>
+   <script defer src="../../JS/new_n_event/write_content.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    <title>콤마나인 공식 홈페이지</title>
    <style type="text/css">
    </style>
-</head>
+   
+<!-- noto sans 폰트 -->
+<!-- font-family: 'Noto Sans KR', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+<!-- 아이콘 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+<!-- include javascript -->
+<script defer src=".\JS\common\includeHTML.js" type="module"></script>
+<link rel="stylesheet" href="./CSS/common/talkingBtn.css">
+<link rel="stylesheet" href="./CSS/common/talkingBox.css">
+<!-- 임시 -->
+<link rel="stylesheet" href="./CSS/common/asideTest.css"> 
+<!-- <script defer src="./JS/common/asideTest.js"></script> -->
+<link rel="stylesheet" href="./CSS/common/header.css">
+<link rel="stylesheet" href="./CSS/common/footer.css">
+
+<!-- index -->
+<link rel="stylesheet" href="./CSS/index.css">
+<script defer src="./JS/index.js" type="module"></script>
+
+</head>
 <body>
+   <!-- talking btn -->
+<div class="talkingBtn-include"></div>
+<!-- talking box -->
+<div class="talkingBox-include visibilityHidden" w3-include-html=".\HTML\common\talkingBox.html"></div>
+<!-- include header -->
+<div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
+<!-- include aside -->
+<aside id="aside" class="active_aside aside-include" w3-include-html=".\HTML\common\asideTest.html"></aside>
+<div id="dimmer" class="dimmer active_dimmer"></div>
+
    <!-- 컨테이너 -->
    <div class="container">
       <!-- 전체 마진, 패딩 -->
       <div class="content">
          <!-- 컨텐츠 wrap -->
+         <!-- <form action="../news_n_event/"></form> -->
          <div class="boardWriteForm">
-
             <div class="board_wrap">
                <!-- 제목영역 -->
                <div class="title_wrap">
@@ -27,13 +61,13 @@
                   </div>
                   <div class="board_category">
                      <div class="board_select_box">
-                        <select name="" id="" class="category_list_select_box">
-                           <option value="">NEWS</option>
-                           <option value="">EVENT</option>
+                        <select name="" id="category_box" class="category_list_select_box">
+                           <option value="NEWS">NEWS</option>
+                           <option value="EVENT">EVENT</option>
                         </select>
                      </div>
                      <div class="title_input_box">
-                        <input type="text">
+                        <input id="title_section" type="text">
                      </div>
                   </div>
                </div>
@@ -43,57 +77,56 @@
                      <div class="font_tool_wrap">
                         <button>
                            <select name="" id="" class="fontImpotance_select_box">
-                              <option value="">표준</option>
-                              <option value="" style="font-weight: bold; font-size: 32px;">제목 1</option>
-                              <option value="" style="font-weight: bold; font-size: 26px;">제목 2</option>
-                              <option value="" style="font-weight: bold; font-size: 20px;">제목 3</option>
-                              <option value="" style="font-weight: bold; font-size: 14px;">제목 4</option>
-                              <option value="">코드</option>
+                              <option value="p">표준</option>
+                              <option value="h1" style="font-weight: bold; font-size: 32px;">제목 1</option>
+                              <option value="h2" style="font-weight: bold; font-size: 26px;">제목 2</option>
+                              <option value="h3" style="font-weight: bold; font-size: 20px;">제목 3</option>
+                              <option value="h4" style="font-weight: bold; font-size: 14px;">제목 4</option>
                            </select>
                         </button>
                         <button>
                            <select name="" id="" class="fontStyle_select_box" style="width: 120px;">
-                              <option value="">Dotum</option>
-                              <option value="">Gulim</option>
-                              <option value="">Batang</option>
-                              <option value="">Gungsuh</option>
-                              <option value="">Arial</option>
-                              <option value="">Tahoma</option>
-                              <option value="">Verdana</option>
-                              <option value="">Fixedsys</option>
-                              <option value="">Times New Roman</option>
-                              <option value="">Helvetica</option>
-                              <option value="">Sans-serif</option>
-                              <option value="">Palatino</option>
-                              <option value="">Comic Sans Ms</option>
-                              <option value="">Sand</option>
-                              <option value="">Courier New</option>
-                              <option value="">Courier</option>
-                              <option value="">Monospace</option>
-                              <option value="">Georgia</option>
-                              <option value="">SimSun</option>
-                              <option value="">SimHei</option>
-                              <option value="">MS PGothic</option>
-                              <option value="">MS PMincho</option>
-                              <option value="">MS UI PGothic</option>
-                              <option value="">Meiryo</option>
+                              <option value="Dotum">Dotum</option>
+                              <option value="Gulim">Gulim</option>
+                              <option value="Batang">Batang</option>
+                              <option value="Gungsuh">Gungsuh</option>
+                              <option value="Arial">Arial</option>
+                              <option value="Tahoma">Tahoma</option>
+                              <option value="Verdana">Verdana</option>
+                              <option value="Fixedsys">Fixedsys</option>
+                              <option value="Times New Roman">Times New Roman</option>
+                              <option value="Helvetica">Helvetica</option>
+                              <option value="Sans-serif">Sans-serif</option>
+                              <option value="Palatino">Palatino</option>
+                              <option value="Comic Sans Ms">Comic Sans Ms</option>
+                              <option value="Sand">Sand</option>
+                              <option value="Courier New">Courier New</option>
+                              <option value="Courier">Courier</option>
+                              <option value="Monospace">Monospace</option>
+                              <option value="Georgia">Georgia</option>
+                              <option value="SimSun">SimSun</option>
+                              <option value="SimHei">SimHei</option>
+                              <option value="MS PGothic">MS PGothic</option>
+                              <option value="MS PMincho">MS PMincho</option>
+                              <option value="MS UI PGothic">MS UI PGothic</option>
+                              <option value="Meiryo">Meiryo</option>
                            </select>
                         </button>
                         <button>
                            <select name="" id="" class="fontSize_select_box" style="width: 45px;">
-                              <option value="">8</option>
-                              <option value="">9</option>
-                              <option value="">10</option>
-                              <option value="">12</option>
-                              <option value="">14</option>
-                              <option value="">16</option>
-                              <option value="">18</option>
-                              <option value="">20</option>
-                              <option value="">22</option>
-                              <option value="">24</option>
-                              <option value="">26</option>
-                              <option value="">28</option>
-                              <option value="">30</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                              <option value="12">12</option>
+                              <option value="14">14</option>
+                              <option value="16">16</option>
+                              <option value="18">18</option>
+                              <option value="20">20</option>
+                              <option value="22">22</option>
+                              <option value="24">24</option>
+                              <option value="26">26</option>
+                              <option value="28">28</option>
+                              <option value="30">30</option>
                            </select>
                         </button>
                         <button class="fontBold_button"><i class="fa-solid fa-bold"></i></button>
@@ -131,12 +164,11 @@
                   <div class="main_text_line"></div>
                   <div class="main_text">
                      <div class="main_text_body">
-                        <textarea name="" id="" cols="30" rows="10">
-                        </textarea>
+                        <textarea name="" id="main_text" cols="30" rows="10" onkeyup="letterCount()"></textarea>
                      </div>
                   </div>
                   <div class="tool_bar_bottom">
-                     <span class="letter_num">문자 : 0</span>
+                     <span class="letter_num">문자 : <p class="letter_count"></p></span>
                   </div>
                </div>
                <!-- 첨부영역 -->
@@ -145,46 +177,47 @@
                      <div>
                         <span>UCC URL</span>
                      </div>
-                     <input type="url">
+                     <input type="url" id="insert_url">
                   </div>
                   <div>
                      <span>첨부파일1</span>
-                     <input type="file">
+                     <input type="file" class="insert_file">
                   </div>
                   <div>
                      <span>첨부파일2</span>
-                     <input type="file">
+                     <input type="file" class="insert_file">
                   </div>
                   <div>
                      <span>첨부파일3</span>
-                     <input type="file">
+                     <input type="file" class="insert_file">
                   </div>
                   <div>
                      <span>첨부파일4</span>
-                     <input type="file">
+                     <input type="file" class="insert_file">
                   </div>
                   <div>
                      <span>첨부파일5</span>
-                     <input type="file" >
+                     <input type="file" class="insert_file">
                   </div>
                   <div id="password_block">
                      <div>
                         <span>비밀번호</span>
                      </div>
-                     <input type="password">
+                     <input type="password" id="board_password">
                   </div>
                </div>
                <!-- 등록/취소 영역 -->
             </div>
             <div>
                <div class="push_cancel_wrap">
-                  <button id="push_button">등록</button>
-                  <button id="cancel_button">취소</button>
+                  <button type="submit" value="등록" id="push_button">등록</button>
+                  <a href="./news_n_event_main.html"><span>취소</span></a>
                </div>
             </div>
          </div>
       </div>
    </div>
+   <!-- include footer -->
+<div class="footer-include" w3-include-html=".\HTML\common\footer.html"></div>
 </body>
-
 </html>

@@ -7,76 +7,57 @@
    <link rel="stylesheet" href="../../CSS/new_n_event/news_n_event_main.css">
    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
    <script src="https://kit.fontawesome.com/17d026183e.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    <script defer src="./aside_nav_module.js"></script>
+   <script defer src="../../JS/new_n_event/news_n_event_main.js"></script>
    <title>뉴스/이벤트 - 콤마나인</title>
+   
+<!-- noto sans 폰트 -->
+<!-- font-family: 'Noto Sans KR', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+<!-- 아이콘 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- include javascript -->
+<script defer src=".\JS\common\includeHTML.js" type="module"></script>
+<link rel="stylesheet" href="./CSS/common/talkingBtn.css">
+<link rel="stylesheet" href="./CSS/common/talkingBox.css">
+<!-- 임시 -->
+<link rel="stylesheet" href="./CSS/common/asideTest.css"> 
+<!-- <script defer src="./JS/common/asideTest.js"></script> -->
+<link rel="stylesheet" href="./CSS/common/header.css">
+<link rel="stylesheet" href="./CSS/common/footer.css">
+
+<!-- index -->
+<link rel="stylesheet" href="./CSS/index.css">
+<script defer src="./JS/index.js" type="module"></script>
+
 </head>
 
 <body>
-   <header>
-      <div>
-         <button class="test_btn" onclick="aside_open()"></button>
-      </div>
-   </header>
-   <!-- 어사이드 네브 -->
-   <aside id="aside" class="active_aside">
-      <div class="aside_container">
-         <div class="aside_wrap">
-            <div class="aside_wrap_1">
-               <ul class="nav_parent_wrap1">
-                  <li class="nav_parent_li flow">
-                     <a href="javascript:void(0)" id="onlineshop_btn" onclick="onlineshop_btn_op()" >ONLINE SHOP<i id="arrow1" class="xi-angle-right-thin"></i></a>
-                     <ul class="nav_child_wrap1">
-                        <li class="nav_child_li"><a href="">NEW ARRIVALS</a></li>
-                        <li class="nav_child_li"><a href="">캐니언 IGT 라인</a></li>
-                        <li class="nav_child_li"><a href="">시드니 라인</a></li>
-                        <li class="nav_child_li"><a href="">캐니언 라인</a></li>
-                        <li class="nav_child_li"><a href="">체어</a></li>
-                        <li class="nav_child_li"><a href="">랜턴</a></li>
-                        <li class="nav_child_li"><a href="">타프</a></li>
-                        <li class="nav_child_li"><a href="">스탠드</a></li>
-                        <li class="nav_child_li"><a href="">선반</a></li>
-                        <li class="nav_child_li"><a href="">테이블</a></li>
-                        <li class="nav_child_li"><a href="">화로 테이블</a></li>
-                        <li class="nav_child_li"><a href="">화로</a></li>
-                        <li class="nav_child_li"><a href="">Other</a></li>
-                        <li class="nav_child_li"><a href="">Accessories</a></li>
-                        <li class="nav_child_li"><a href="">개인 결제창</a></li>
-                     </ul>
-                  </li>
-                  <li class="nav_parent_li flow">
-                     <a href="javascript:void(0)" id="brand_btn" onclick="brand_btn_op()" >BRAND<i id="arrow2" class="xi-angle-right-thin"></i></a>
-                     <ul class="nav_child_wrap2">
-                        <li class="nav_child_li"><a href="">STORY</a></li>
-                        <li class="nav_child_li"><a href="">LOCATION</a></li>
-                     </ul>
-                  </li>
-                  <li class="nav_parent_li"><a href="">COMMA CAMP</a></li>
-                  <li class="nav_parent_li"><a href="">뉴스&이벤트</a></li>
-                  <li class="nav_parent_li"><a href="">문의게시판</a></li>
-                  <li class="nav_parent_li"><a href="">공지사항</a></li>
-               </ul>
-            </div>
-            <div class="aside_wrap_2">
-               <ul class="nav_parent_wrap2">
-                  <li class="nav_parent_li"><a href="">로그인</a></li>
-                  <li class="nav_parent_li"><a href="">마이페이지</a></li>
-               </ul>
-            </div>
-         </div>
-      </div>
-   </aside>
-   <!-- 어사이드 네브 끝 -->
+   <!-- talking btn -->
+<div class="talkingBtn-include"></div>
+<!-- talking box -->
+<div class="talkingBox-include visibilityHidden" w3-include-html=".\HTML\common\talkingBox.html"></div>
+<!-- include header -->
+<div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
+<!-- include aside -->
+<aside id="aside" class="active_aside aside-include" w3-include-html=".\HTML\common\asideTest.html"></aside>
+<div id="dimmer" class="dimmer active_dimmer"></div>
+
    <!-- 전체, NEWS, EVENT 메뉴 블럭 -->
    <div class="container">
+      <!-- 딤머 가림막 aside 할떄 가져가기 -->
       <div id="dimmer" class="dimmer active_dimmer" onclick="aside_close()"></div>
       <div class="content_board">
          <div class="menu_wrap">
-            <a href="./news_n_event_main.html">전체</a><a href="./news/newsList.html">NEWS</a><a
-               href="./event/eventList.html">EVENT</a>
+            <span>전체</span><span>NEWS</span><span>EVENT</span>
          </div>
          <!-- 리스트 컨테이너 -->
          <ul class="li_wrap">
-            <li>
+            <!-- <li>
                <div class="thumbnail">
                   <a href="./news/newsDetail.html" class="img">
                      <img src="./img_src/img_src1.jpg" alt="">
@@ -87,156 +68,25 @@
                   <p class="name">멤버or관리자ID</p>
                   <p class="date">2023-09-07</p>
                </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src2.jpg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">제 2회 콤마나인 카페 벙캠 후기</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src3.jpg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">신제품 출시 안내 -캐니언 TF(IGT 1UNIT)</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src4.png" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인 in 대만 타이페이 PLAY WILD [LOVE 2023 FESTIVAL]</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src5.jpg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">(뉴스)콤마나인 엠배서더 2기 발대식</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src6.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인과 함께하는 크리스마스캠핑</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src7.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인 시드니라인은 사랑입니다. 이모지</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src8.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인과 함께한 2022년</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src9.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인 이벤트 참여해 봅니다</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src10.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">2023년에도 콤마나인과 함께</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src11.jpeg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">연말이벤트 참여합니다</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-            <li>
-               <div class="thumbnail">
-                  <a href="" class="img">
-                     <img src="./img_src/img_src12.jpg" alt="">
-                  </a>
-               </div>
-               <div class="summary">
-                  <a href="" class="subject">콤마나인 처음 만나다</a>
-                  <p class="name">멤버or관리자ID</p>
-                  <p class="date">2023-09-07</p>
-               </div>
-            </li>
-         </ul>
+            </li> -->
          <!-- 페이지 버튼 블럭 -->
-         <div class="pageButton_wrap">
-            <a href="" class="pageButton_left"><i class="fa-solid fa-chevron-left"></i></a>
-            <ol class="pageButton_list">
-               <li><a href="">1</a></li>
-               <li><a href="">2</a></li>
-               <li><a href="">3</a></li>
-            </ol>
-            <a href="" class="pageButton_right"><i class="fa-solid fa-chevron-right"></i></a>
-         </div>
+      </div>
+      <div class="pageButton_wrap">
+         <a href="javascript:void(0)" class="pageButton_left"><i class="fa-solid fa-chevron-left" id="btn1"></i></a>
+         <ol class="pageButton_list">
+            <!-- <li><span>1</span></li>
+            <li><span>2</span></li>
+            <li><span>3</span></li> -->
+         </ol>
+         <a href="javascript:void(0)" class="pageButton_right"><i class="fa-solid fa-chevron-right" id="btn2"></i></a>
          <!-- 글쓰기 버튼 블럭 -->
          <div class="writeButton_wrap">
             <a href="./write_content.html" class="writeButton">글쓰기</a>
          </div>
       </div>
    </div>
+   <!-- include footer -->
+<div class="footer-include" w3-include-html=".\HTML\common\footer.html"></div>
 </body>
 
 </html>
