@@ -2,18 +2,19 @@
 
 let category_menu = document.querySelectorAll('.menu_wrap>span');
 let nationPreNexBtn = document.getElementsByClassName('fa-solid');
-let boardPassword, id, boardInfo, allBoardInfo, showBoardLength, categoryArray, pageNation, pastNation, currentPage, currentCategory, totNationBtn;
+let boardPassword, boardInfo, allCategoryArray, categoryArray, pageNation, pastNation, currentPage, currentCategory, totNationBtn;
 let pastSpan = category_menu[0];
-let limitNationbtn = 1;
+let limitNationbtn = 0;
 
-console.log(pastSpan);
-
+// 데이터 불러오기 함수
 async function getboardInfo() {
    try {
       const response = await axios.get('http://localhost:3000/boardData');
       boardInfo = response.data;
-      allBoardInfo = response.data;
+      allCategoryArray = response.data;
+      // console.log(boardInfo);
       categoryArray = boardInfo.reduce((acc, curr) => {
+         console.log(acc)
          const { category } = curr;
          if (acc[category]) acc[category].push(curr);
          else acc[category] = [curr];
@@ -22,10 +23,11 @@ async function getboardInfo() {
    } catch (err) {
       console.log(err.message);
    }
-   boardClone(allBoardInfo);
-   nationClone(allBoardInfo);
+   boardClone(allCategoryArray);
+   nationClone(allCategoryArray);
 }
 
+// 메인 컨텐츠 복사 생성 함수
 function boardClone(Array, currentPage = 1) {
    let li_wrap = document.getElementsByClassName('li_wrap');
    li_wrap[0].innerHTML = '',
@@ -51,14 +53,14 @@ function boardClone(Array, currentPage = 1) {
    }
 }
 
-function nationClone(Array, limitNationbtn = 1) {
-   // console.log(limitNationbtn);
+// 네이션 복사 생성 함수
+function nationClone(Array, limitNationbtn = 0) {
    let pageButton_list = document.getElementsByClassName('pageButton_list');
-   totNationBtn = Math.ceil(Array.length / 12);
+   totNationBtn = Math.ceil(Array.length / 12);    // Math.ceil() => 인자에 있는 number를 올림해주는 함수
 
    pageButton_list[0].innerHTML = '';
-   for (let i = 1 + ((limitNationbtn-1) * 10); i <= 10 + ((limitNationbtn-1) * 10); i++) {
-      if(i <= Math.ceil(Array.length / 12))
+   for (let i = 1 + (limitNationbtn * 10); i <= 10 + (limitNationbtn * 10); i++) {
+      if (i <= totNationBtn)
          pageButton_list[0].innerHTML += `<li><span class="pageNation">${i}</span></li>`;
    }
 
@@ -79,10 +81,11 @@ function nationClone(Array, limitNationbtn = 1) {
    }
 }
 
+// 상단 카테고리 선택 함수
 function categorySelect(e) {
    switch (e.target.textContent) {
       case '전체':
-         boardClone(allBoardInfo);
+         boardClone(allCategoryArray);
          break;
       case 'NEWS':
          boardClone(categoryArray.NEWS);
@@ -93,11 +96,12 @@ function categorySelect(e) {
    }
 }
 
+// 네이션 숫자 버튼 선택 함수
 function nationSelect(e) {
    currentPage = e.target.textContent;
    switch (currentCategory) {
-      case allBoardInfo:
-         boardClone(allBoardInfo, currentPage);
+      case allCategoryArray:
+         boardClone(allCategoryArray, currentPage);
          break;
       case categoryArray.NEWS:
          boardClone(categoryArray.NEWS, currentPage);
@@ -111,45 +115,22 @@ function nationSelect(e) {
    pastNation = e.target;
 }
 
-// console.log(nationPreNexBtn);
-for (let i = 0; i < nationPreNexBtn.length; i++) {
-   // console.log(nationPreNexBtn[i]);
-   nationPreNexBtn[i].addEventListener('click', (e) => {
-      // console.log(e.target.id);
-      // console.log(currentCategory);
-
-         switch (e.target.id) {
-            case 'btn1':
-               limitNationbtn>1?limitNationbtn--:limitNationbtn=1;
-               switch (currentCategory) {
-                  case allBoardInfo:
-                     nationClone(allBoardInfo, limitNationbtn);
-                     break;
-                  case categoryArray.NEWS:
-                     nationClone(categoryArray.NEWS, limitNationbtn);
-                     break;
-                  case categoryArray.EVENT:
-                     nationClone(categoryArray.EVENT, limitNationbtn);
-                     break;
-               }
-               break;
-            case 'btn2':
-               limitNationbtn < Math.ceil(totNationBtn / 10)?limitNationbtn++:limitNationbtn=Math.ceil(totNationBtn / 10);
-               switch (currentCategory) {
-                  case allBoardInfo:
-                     nationClone(allBoardInfo, limitNationbtn);
-                     break;
-                  case categoryArray.NEWS:
-                     nationClone(categoryArray.NEWS, limitNationbtn);
-                     break;
-                  case categoryArray.EVENT:
-                     nationClone(categoryArray.EVENT, limitNationbtn);
-                     break;
-               }
-               // console.log(limitNationbtn);
-               break;               
-            }
-   });
+// 페이지네이션 좌/우 버튼 함수
+function btnSelect (currentCategory) {
+   switch (currentCategory) {
+      case allCategoryArray:
+         nationClone(allCategoryArray, limitNationbtn);
+         boardClone(allCategoryArray, currentPage);
+         break;
+      case categoryArray.NEWS:
+         nationClone(categoryArray.NEWS, limitNationbtn);
+         boardClone(categoryArray.NEWS, currentPage);
+         break;
+      case categoryArray.EVENT:
+         nationClone(categoryArray.EVENT, limitNationbtn);
+         boardClone(categoryArray.EVENT, currentPage);
+         break;
+   }
 }
 
 // < 본문 시작 >
@@ -163,5 +144,24 @@ for (let i = 0; i < category_menu.length; i++) {
       pastSpan.style.color = '#999';
       e.target.style.color = '#000';
       pastSpan = e.target;
+   });
+}
+
+for (let i = 0; i < nationPreNexBtn.length; i++) {
+   nationPreNexBtn[i].addEventListener('click', (e) => {
+      if (totNationBtn > 10) {
+         switch (e.target.id) {
+            case 'btn1':
+               limitNationbtn > 0 ? limitNationbtn-- : limitNationbtn = 0;
+               currentPage = (limitNationbtn * 10) + 1;
+               btnSelect (currentCategory);
+               break;
+            case 'btn2':
+               limitNationbtn < Math.ceil(totNationBtn / 10) - 1 ? limitNationbtn++ : limitNationbtn = Math.ceil(totNationBtn / 10) - 1;
+               currentPage = (limitNationbtn * 10) + 1;
+               btnSelect (currentCategory);
+               break;
+         }
+      }
    });
 }

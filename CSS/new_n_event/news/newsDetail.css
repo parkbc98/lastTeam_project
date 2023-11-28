@@ -48,6 +48,7 @@ content img{
 }
 
 .base_button{
+    padding-top: 2px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid #d6d6d6;
@@ -56,6 +57,7 @@ content img{
 }
 
 .list_button{
+    margin: 10px 0 0 7px;
     padding: 5px 7px;
     border: 1px solid #000;
 }
@@ -67,7 +69,7 @@ content img{
 
 .prev_next_list li>strong{
     display: inline-block;
-    padding: 5px 7px;
+    padding: 5px 8px;
     margin: 5px 0;
     color: #757575;
     font-weight:normal

@@ -9,10 +9,8 @@ let client_type = document.querySelectorAll('.client_type_radio_wrap>input'),
 //파라미터 변수들
 let clientType, solunar;
 
-
 // 고객정보 객체
-
-var clientData = {};
+let clientData = {};
 
 // ===================================================================
 
@@ -68,6 +66,15 @@ selValues[5]  - agreeCheck3
 */
 // ===================================================================
 
+// 다음 주소,우편번호 검색 오픈소스
+function execDaumPostcode() {
+   new daum.Postcode({
+      oncomplete: function (data) {
+         document.getElementById('zip-code').value = data.zonecode;
+         document.getElementById('address-1').value = data.address;
+      }
+   }).open();
+}
 
 // 약관 동의 체크박스 전체 선택 및 각개 선택 로직
 function allAgreeChecker() {
@@ -90,6 +97,7 @@ function allAgreeChecker_off() {
    }
 }
 
+// 서버에 데이터 푸쉬 로직
 async function postClientData() {
    try {
       const response = await axios.post('http://localhost:3000/clientData/', clientData);
@@ -102,30 +110,6 @@ async function postClientData() {
       console.log(err);
    }
 }
-
-// < 본문 > -- 회원가입 버튼 시작
-
-submitBtn.addEventListener('click', (e) => {
-   if (!validation(e)) {
-
-      e.preventDefault();  // 새로 렌더링되는 것을 막음
-   } else {
-      // 서버로 post 하는 구간!!!!!!!!
-      
-      console.log(clientData);
-
-      postClientData();
-
-      alert(`'${clientData.clientName}'님 콤마나인에 오신것을 환영합니다!`);
-      location.href = "../../../../index.html";     // 현재 페이지에서 이동을해 페이지 정보를 갖고 있음
-
-      // location.replace('../../../../index.html');   // 실제 서비스 처럼 메인 화면으로 가기
-   }
-});
-
-// < 본문 끝 >
-
-
 
 // 유효성 검사 / validation check 함수
 function validation() {
@@ -150,7 +134,6 @@ function validation() {
       }
    }
 
-
    // 3. 아이디 체크 (영문자, 숫자 자릿수 체크)  ==> 3 번부터 reValues[] 인덱싱 시작
    if (reValues[0].value.length >= 4 && reValues[0].value.length <= 16) {
       if (/^[A-Za-z0-9][A-Za-z0-9]*$/.test(reValues[0].value)) {
@@ -164,7 +147,6 @@ function validation() {
       reValues[0].focus();
       return false;
    }
-
 
    // 4~5. 비밀번호 (조합 확인) & 재입력 비교
    if (/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&;:()])[A-Za-z\d@$!%*#?&;:()]{8,16}$/.test(reValues[1].value)) {
@@ -180,15 +162,11 @@ function validation() {
       return false;
    }
 
-
    // 6. 이름 입력              
-
 
    // 7. address
 
-
    // 8. 전화번호
-
 
    // 9. 이메일 형식 확인
    let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])");
@@ -199,15 +177,13 @@ function validation() {
       return false;
    }
 
-
    // 10. 선택사항 입력 (생일)
    if (selValues[0].checked) {
       solunar = selValues[0].value;
    } else {
       solunar = selValues[1].value;
    }
-
-
+   
    // clientData 객체 생성
    clientData = {
       'clientType': clientType,
@@ -231,25 +207,38 @@ function validation() {
       'privateInfoAgree': reValues[15].checked,
       'sendAgree': selValues[5].checked,
    }
-
    console.log(clientData);
-
    return true;
 }
+
+// < 본문 > -- 회원가입 버튼 시작
+submitBtn.addEventListener('click', (e) => {
+   if (!validation(e)) {
+      e.preventDefault();  // 새로 렌더링되는 것을 막음
+   } else {
+      // 서버로 post 하는 구간!!!!!!!!
+      console.log(clientData);
+      postClientData();
+      alert(`'${clientData.clientName}'님 콤마나인에 오신것을 환영합니다!`);
+      location.href = "../../../../index.html";     // 현재 페이지에서 이동을해 페이지 정보를 갖고 있음
+      // location.replace('../../../../index.html');   // 실제 서비스 처럼 메인 화면으로 가기
+   }
+});
+// < 본문 끝 >
 
 
 // =============================   참고한 OPEN SOURCE ==============================
 
 
-// 집코드 및 도로명주소 상세주소 검색 함수 
-function execDaumPostcode() {
-   new daum.Postcode({
-      oncomplete: function (data) {
-         document.getElementById('zip-code').value = data.zonecode;
-         document.getElementById('address-1').value = data.address;
-      }
-   }).open();
-}
+// 집코드 및 도로명주소 상세주소 검색 함수
+// function execDaumPostcode() {
+//    new daum.Postcode({
+//       oncomplete: function (data) {
+//          document.getElementById('zip-code').value = data.zonecode;
+//          document.getElementById('address-1').value = data.address;
+//       }
+//    }).open();
+// }
 
 // 아이디 유효성 검사 정규식
 // /^[A-Za-z0-9][A-Za-z0-9]*$/.test(reValues[0].value)
@@ -259,7 +248,6 @@ function execDaumPostcode() {
 
 // 이메일 형식 검사 정규식, 객체생성 후 test()
 // let regex = new RegExp("([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\"\(\[\]!#-[^-~ \t]|(\\[\t -~]))+\")@([!#-'*+/-9=?A-Z^-~-]+(\.[!#-'*+/-9=?A-Z^-~-]+)*|\[[\t -Z^-~]*])")
-
 
 
 /*

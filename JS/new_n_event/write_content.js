@@ -28,10 +28,10 @@ let category = document.getElementById('category_box'),
    letter_count = document.getElementsByClassName('letter_count');
    letter_count[0].textContent = 0;
 let clientId;
-
 // 서버 보낼 게시물
-var getBoard = {};
+let getBoard = {};
 
+// 서버 데이터 가져오기
 async function getClientData(){
    try {
       const response = await axios.get('http://localhost:3000/clientData/1');
@@ -41,23 +41,21 @@ async function getClientData(){
    }
 }
 
+// 서버 데이터 보내기
 async function postBoardData() {
    try {
       const response = await axios.post('http://localhost:3000/boardData/', getBoard);
-
-      console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터
-      console.log('상태 코드:', response.status);       // HTTP 상태 코드
-      console.log('상태 텍스트:', response.statusText); // HTTP 상태 코드 설명
-      console.log('응답 헤더:', response.headers);      // 응답 헤더 정보
    } catch (err) {
       console.log(err);
    }
 }
 
+// textContent 내용 문자 카운팅
 function letterCount(){
    letter_count[0].textContent = main_text.value.length;
 }
 
+// 게시글 내용 서버에 보내주는 함수
 function pushBoard() {
    if(title.value.length===0){
       alert('제목을 입력 바랍니다.');
@@ -70,9 +68,8 @@ function pushBoard() {
    } else if(!(confirm('작성을 완료 하시겠습니까?'))){
       return false;
    }
-
+   
    let date = new Date;
-
    getBoard = {
       'category': category.value,
       'title': title.value,
@@ -87,22 +84,19 @@ function pushBoard() {
       'writer': clientId,
       'submitDate' : `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`,
    }
-
    console.log(getBoard);
-   
    return true;
 }
 
 // < 본문 시작 > => submit 버튼 누르면 이벤트 발생
-
-// getClientData();
+getClientData();
 
 push_button.addEventListener('click', (e) => {
    if(!pushBoard()){
-      // e.preventDefault();
+      e.preventDefault();
    } else {
       postBoardData();
       alert('작성이 완료되었습니다.');
-      window.location.replace() = "https://www.naver.com";
+      location.href = "../../HTML/news_n_event/news_n_event_main.js";
    }  
 });
