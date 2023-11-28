@@ -14,7 +14,7 @@ let paymentTitle = document.querySelector(".payment_title");
 // 배송지 정보
 let clientTitle = document.querySelector(".client_title");
 
-//======================== 주문정보 ⬇️===========================
+//======================== 주문정보 ⬇️ ===========================
 
 // orderNumber(주문번호)
 // orderDays(주문일자)
