@@ -1,0 +1,145 @@
+/* div 박스 border-top: 1px solid gray; */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    font-size: 12px;
+}
+
+.orderDetails_wrap {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    width: 40%;
+    height: fit-content;
+
+    /*margin: 150px 10px;*/
+}
+
+.orderDetails_container {
+    border-top: 1px solid gray;
+
+    padding-top: 10px;
+
+}
+
+.orderDetails_box {
+    /* 주문번호, 주문일자, 주문자, 주문처리상태 */
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+
+}
+
+.pro_info {
+    /* 주문상품 */
+    border-top: 1px solid gray;
+
+    padding-top: 10px;
+}
+
+.orderProduct_box {
+    /* 상품사진 / 상품명, 배송정보, 수량, 금액, 옵션 */
+    display: flex;
+}
+
+.proBox_list {
+    /* 배송정보, 수량, 금액, 옵션 */
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+}
+
+.order_cancel {
+    /* 주문취소 */
+    border-top: 1px solid gray;
+
+    padding-top: 10px;
+
+}
+
+.cancelBox_list a {
+    /* 주문취소 버튼 */
+    display: inline-block;
+    border: 1px solid black;
+
+
+    width: 80px;
+    height: 35px;
+
+    text-align: center;
+    line-height: 35px;
+
+}
+
+
+
+.payment_title {
+    border-top: 1px solid gray;
+
+    padding-top: 10px;
+
+
+}
+
+.paymentBox_list {
+    /* 결제수단, 총 결제금액 */
+    display: grid;
+    grid-template:1fr / repeat(2, 1fr);
+}
+
+.payment_footBox {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+}
+
+.shippping_info {
+    /* 총 주문금액, 상품 금액, 배송비, 지역별 배송비 */
+    border-top: 1px solid gray;
+
+    padding-top: 10px;
+
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+}
+
+.client_title {
+    /* 배송지 정보 */
+    border-top: 1px solid gray;
+
+    padding-top: 10px;
+
+}
+
+.client_list {
+    /* 받으시는분, 우편번호, 주소, 휴대전화, 배송메세지, 주문목록보기 */
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+}
+
+.last_box a {
+    /* 주문목록보기 */
+    display: flex;
+    border: 1px solid black;
+
+    justify-content: center;
+
+    text-align: center;
+    line-height: 30px;
+
+    background-color: black;
+    color: white;
+}
+
+.active {
+    display: none;
+}

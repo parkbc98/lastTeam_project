@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orderDetail</title>
+
+    <link rel="stylesheet" href="../../../CSS/auth/myPage/orderDetail.css">
+    <script defer src="../../../JS/auth/myPage/orderDetail.js"></script>
+
+    <!-- noto sans 폰트 -->
+<!-- font-family: 'Noto Sans KR', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+<!-- 아이콘 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- include javascript -->
+<script defer src=".\JS\common\includeHTML.js" type="module"></script>
+<link rel="stylesheet" href="./CSS/common/talkingBtn.css">
+<link rel="stylesheet" href="./CSS/common/talkingBox.css">
+<!-- 임시 -->
+<link rel="stylesheet" href="./CSS/common/asideTest.css"> 
+<!-- <script defer src="./JS/common/asideTest.js"></script> -->
+<link rel="stylesheet" href="./CSS/common/header.css">
+<link rel="stylesheet" href="./CSS/common/footer.css">
+
+<!-- index -->
+<link rel="stylesheet" href="./CSS/index.css">
+<script defer src="./JS/index.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <!-- talking btn -->
+<div class="talkingBtn-include"></div>
+<!-- talking box -->
+<div class="talkingBox-include visibilityHidden" w3-include-html=".\HTML\common\talkingBox.html"></div>
+<!-- include header -->
+<div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
+<!-- include aside -->
+<aside id="aside" class="active_aside aside-include" w3-include-html=".\HTML\common\asideTest.html"></aside>
+<div id="dimmer" class="dimmer active_dimmer"></div>
+
+    <div class="orderDetails_wrap">
+        <div class="orderDetails_container">
+            <div class="order_info "><strong>주문정보</strong></div>
+            <div class="orderDetails_box">
+                <!-- 주문번호, 주문일자, 주문자, 주문처리상태 -->
+                <div>주문번호</div>
+                <div></div>
+                <div>주문일자</div>
+                <div></div>
+                <div>주문자</div>
+                <div></div>
+                <div>주문처리상태</div>
+                <div></div>
+            </div>
+        </div>
+        <div class="pro_info">
+            <strong>주문상품</strong>
+        </div>
+        <div class="orderProduct_box">
+            <div class="pro_photo">
+                <!-- 상품사진 -->
+                <a href="../../product/productDetail.html">
+                    <img src="https://comma9.co.kr/web/product/small/202306/a0b50dfc4340234a99170c77661d699d.jpg" alt="상품이미지"
+                        width="80px" height="80px">
+                </a>
+            </div>
+            <div>
+                <!-- 주문상품, 상품명, 배송정보, 수량, 금액, 옵션 -->
+                <div>
+                    <strong>
+                        <a href="../../product/productDetail.html">시드니 / 무도장 탄</a>
+                    </strong>
+                </div>
+                <div class="proBox_list">
+                    <div>배송 :</div>
+                    <div>기본배송</div>
+                    <div>수량 :</div>
+                    <div>1개</div>
+                    <div>상품구매금액 :</div>
+                    <div>240,000원</div>
+                    <div>[옵션: 전용 하판]</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order_cancel">
+            <!-- 주문취소 -->
+            <strong>[기본배송]</strong>
+        </div>
+        <div class="cancelBox_list">
+            <a href="#">주문취소</a>
+        </div>
+
+        <div class="payment_title">
+            <strong>결제 정보</strong>
+        </div>
+        <div class="payment_info">
+            <div class="paymentBox_list">
+                <!-- 결제 정보, 결제 수단, 총 결제금액 -->
+                <div>결제수단</div>
+                <div></div>
+            </div>
+            <div class="payment_footBox">
+                <div>총 결제금액</div>
+                <div></div>
+            </div>
+
+            <div class="shippping_info">
+                <!-- 총 주문금액, 상품 금액, 배송비, 지역별 배송비 -->
+                <div>총 주문금액</div>
+                <div></div>
+                <div>상품 금액</div>
+                <div></div>
+                <div>배송비</div>
+                <div></div>
+                <div>지역별 배송비</div>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="client_title">
+            <strong>배송지 정보</strong>
+        </div>
+        <div class="client_info">
+            <div class="client_list">
+                <!-- 배송지 정보: 받으시는분, 우편번호, 주소, 휴대전화, 배송메세지, 주문목록보기 -->
+                <div>받으시는분</div>
+                <div></div>
+                <div>우편번호</div>
+                <div></div>
+                <div>주소</div>
+                <div></div>
+                <div>휴대전화</div>
+                <div></div>
+                <div>배송메시지</div>
+                <div></div>
+            </div>
+            <div class="last_box">
+                <a href="../myPage/orderList.html">주문목록보기</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- include footer -->
+<div class="footer-include" w3-include-html=".\HTML\common\footer.html"></div>
+
+</body>
+
+</html>
