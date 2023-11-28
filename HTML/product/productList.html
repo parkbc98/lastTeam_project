@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../CSS/product/productList.css">
+
+    <!-- noto sans 폰트 -->
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- 아이콘 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- include javascript -->
+    <script defer src=".\JS\common\includeHTML.js" type="module"></script>
+    <link rel="stylesheet" href="./CSS/common/talkingBtn.css">
+    <link rel="stylesheet" href="./CSS/common/talkingBox.css">
+    <!-- 임시 -->
+    <link rel="stylesheet" href="./CSS/common/asideTest.css">
+    <!-- <script defer src="./JS/common/asideTest.js"></script> -->
+    <link rel="stylesheet" href="./CSS/common/header.css">
+    <link rel="stylesheet" href="./CSS/common/footer.css">
+
+    <!-- index -->
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script defer src="./JS/index.js" type="module"></script>
 </head>
 
 <body>
+    <!-- talking btn -->
+    <div class="talkingBtn-include"></div>
+    <!-- talking box -->
+    <div class="talkingBox-include visibilityHidden" w3-include-html=".\HTML\common\talkingBox.html"></div>
+    <!-- include header -->
+    <div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
+    <!-- include aside -->
+    <aside id="aside" class="active_aside aside-include" w3-include-html=".\HTML\common\asideTest.html"></aside>
+    <div id="dimmer" class="dimmer active_dimmer"></div>
+
     <nav>
         <div class="menu">
             <div class="title">ONLINE SHOP ·</div>
-            <div>시드니</div>
+            <div class="self">시드니</div>
             <div>랜즈</div>
             <div>확장프레임</div>
             <div>캠벨</div>
@@ -20,9 +54,9 @@
             <div>연장다리</div>
             <div>Accessories</div>
         </div>
-        
+
         <div class="select">
-            <select>        
+            <select>
                 <option>분류</option>
                 <option>신상품</option>
                 <option>상품명</option>
@@ -37,7 +71,8 @@
     <main>
         <div class="grid">
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202306/055e671a20253ca1d84de8e6cf411106.jpg"></a>
+                <a href="../product/productDetail.html"><img
+                        src="https://comma9.co.kr/web/product/medium/202306/055e671a20253ca1d84de8e6cf411106.jpg"></a>
                 <div class="title">시드니 / 무도장 탄</div>
                 <div class="delivery">*12월 15일(금) 순차배송*</div>
                 <div>240,000원</div>
@@ -45,95 +80,109 @@
             </div>
 
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/small/202307/e67a78b4f803cb74d1d177b7dfe1b5e8.jpg"></a>
+                <a href="../product/productDetail.html"><img
+                        src="https://comma9.co.kr/web/product/small/202307/e67a78b4f803cb74d1d177b7dfe1b5e8.jpg"></a>
                 <div class="title">시드니 / 무도장 샌드베이지</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
-            
+
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202304/80223a058d74fe37f3a3333f1ef59a8b.jpg"></a>
+                <a href="../product/productDetail.html"><img
+                        src="https://comma9.co.kr/web/product/medium/202304/80223a058d74fe37f3a3333f1ef59a8b.jpg"></a>
                 <div class="title">시드니 / 무도장*블랙</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
 
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202212/64e2474d293f1e60c706caa20b5fc4cf.png"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202212/64e2474d293f1e60c706caa20b5fc4cf.png"></a>
                 <div class="title">시드니 / 무도장*카키</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
-            
+
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202304/3ac4d1d79ae538ec1a7345df26b8ca86.jpg"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202304/3ac4d1d79ae538ec1a7345df26b8ca86.jpg"></a>
                 <div class="title">시드니 / 블랙</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
 
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/small/202212/93eb10551bfd28e92a07a3f91bc27cfb.png"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/small/202212/93eb10551bfd28e92a07a3f91bc27cfb.png"></a>
                 <div class="title">시드니 / 카키</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
-            
+
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202309/f9daa2c70090a0d68682a23b8aa6a416.jpg"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202309/f9daa2c70090a0d68682a23b8aa6a416.jpg"></a>
                 <div class="title">시드니 / 샌드베이지</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
-            
+
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202309/b75604d9738fbd05fb20f4835e372538.jpg"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202309/b75604d9738fbd05fb20f4835e372538.jpg"></a>
                 <div class="title">시드니 / 탄</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
-            
-            <div>               
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202311/2c0750f42e8639ddd719c9816218c66a.jpg"></a>
+
+            <div>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202311/2c0750f42e8639ddd719c9816218c66a.jpg"></a>
                 <div class="title">시드니 / 크림</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
-                
+
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/small/202304/ff4a157f3488e26e75d9f5e82f7772b6.jpg"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/small/202304/ff4a157f3488e26e75d9f5e82f7772b6.jpg"></a>
                 <div class="title">시드니 / 우드</div>
                 <div>240,000원</div>
                 <div><img src="https://comma9.co.kr/web/upload/custom_116708980383884.gif"></div>
             </div>
-            
+
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202303/e0247457e2c9704191c73d22820e6ff8.webp"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202303/e0247457e2c9704191c73d22820e6ff8.webp"></a>
                 <div class="title">시드니 전용 하판</div>
                 <div>30,000원</div>
             </div>
-            
+
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202311/f39ea669d684978cbf8299a859855f35.webp"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202311/f39ea669d684978cbf8299a859855f35.webp"></a>
                 <div class="title">시드니 2단 행어</div>
                 <div>24,000원</div>
             </div>
 
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202311/767718fef53e8118c98e8e0a3642c2df.webp"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202311/767718fef53e8118c98e8e0a3642c2df.webp"></a>
                 <div class="title">황동 행어</div>
                 <div>24,000원</div>
             </div>
 
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202307/3841fb421324ad3123d602cc2f579ea2.jpg"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202307/3841fb421324ad3123d602cc2f579ea2.jpg"></a>
                 <div class="title">하프유닛 행거 프레임</div>
                 <div class="delivery">*12월 15일(금) 순차배송*</div>
                 <div>28,000원</div>
             </div>
 
             <div>
-                <a href="#"><img src="https://comma9.co.kr/web/product/medium/202306/2a8cf0192ce989fc52fa95ba11b653f2.webp"></a>
+                <a href="#"><img
+                        src="https://comma9.co.kr/web/product/medium/202306/2a8cf0192ce989fc52fa95ba11b653f2.webp"></a>
                 <div class="title">하프 유닛 박스(0.5unit)</div>
                 <div class="delivery">*12월 15일(수)부터 순차 발송*</div>
                 <div>75,000원</div>
@@ -142,14 +191,16 @@
     </main>
 
     <div class=page>
-        <div><a href=>&laquo;</a></div>
-        <div><a href=>&lsaquo;</a></div>
-        <div><a href="#">1</a></div>
+        <div><a href="#">&laquo;</a></div>
+        <div><a href="#">&lsaquo;</a></div>
+        <div class="self"><a href="#">1</a></div>
         <div><a href="./productList2.html">2</a></div>
-        <div><a href=>&rsaquo;</a></div>
-        <div><a href=>&raquo;</a></div>
+        <div><a href="./productList2.html">&rsaquo;</a></div>
+        <div><a href="./productList2.html">&raquo;</a></div>
     </div>
 
+    <!-- include footer -->
+    <div class="footer-include" w3-include-html=".\HTML\common\footer.html"></div>
 </body>
 
 </html>

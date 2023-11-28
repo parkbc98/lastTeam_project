@@ -3,6 +3,8 @@
     text-decoration: none;
 }
 
+/* 카테고리 */
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -12,8 +14,6 @@
 .menu > div {
     margin-right: 20px;
 }
-
-/* =================카테고리================ */
 
 .select {
     display: flex;
@@ -27,7 +27,7 @@
     border-style: none;
 }
 
-/* ===================분류======================= */
+/* 상품 배치 */
 
 main {
     padding: 15px;
@@ -43,7 +43,6 @@ main {
     justify-items: center;
     align-items: end;     
     margin: 40px 0 40px 0;
-    /* margin-bottom: 80px */
 }
 .grid>div>a {
     display: flex;
@@ -65,7 +64,7 @@ main {
     color: grey;
 }
 
-/*==============메인================*/
+/* 페이지 */
 
 .page {
     display: flex;
@@ -81,4 +80,6 @@ a:link, a:visited {
     color: black;
 }
 
-/*===========페이지===========*/
+.self {
+    font-weight: bold;
+}
