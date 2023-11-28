@@ -9,6 +9,45 @@ body {
     font-size: 0.8em;
 }
 
+@media(max-width:930px) {
+    body {
+        width: 90vw;
+        margin: 1em auto;
+    }
+}
+
+/* 상품정보선택 */
+.qna_board_top_nav {
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width:930px) {
+    .qna_board_top_nav {
+        width: 90vw;
+        margin: 1em auto;
+    }
+
+    .qna_board_title>p {
+        width: 3em;
+    }
+
+    .post_writer>p {
+        width: 3em;
+        margin-right: 2.1em;
+    }
+
+    .qna_board_username>.qna_user_div {
+        margin-right: 0.6em;
+    }
+}
+
+.qna_prod_choice_btn {
+    margin-left: 1em;
+    border: solid #d6d6d6 1px;
+    padding: 0.3em 0.5em;
+}
+
 .prod_image {
     display: inline-block;
     background-image: none;
@@ -18,70 +57,158 @@ body {
     text-indent: -9999em;
 }
 
+/* 게시글 제목 */
 .qna_board_title {
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 15px;
+    width: 99.8%;
     border: solid 1px;
     border-bottom: none;
+    display: flex;
+    align-items: center;
 }
 
-.qna_board_title p {
+
+.qna_board_title>p {
     display: inline-block;
+    padding: 0.4em 0 0.5em 1em;
 }
 
 .qna_board_title_listbox {
-    position: absolute;
-    top: 0;
-    right: 0px;
-}
-
-.qna_board_title_input {
     display: inline-block;
+    margin: 0.4em 0 0 2.35em;
+    width: 90.9%;
 }
 
+.qna_type {
+    width: 99.5%;
+}
+
+#qna_post_title {
+    margin: 0.4em 0;
+    width: 99%;
+}
+
+/* 작성자 */
 .qna_board_username {
-    width: 100%;
+    display: flex;
     border: solid 1px;
     border-bottom: none;
+    width: 99.8%;
 }
 
-.qna_board_username p {
-    display: inline-block;
+.post_writer {
+    margin: 0.4em 0.1em 0.4em 1em;
+    flex: 1 1 0;
 }
 
-.qna_board_username_input {
-    display: inline-block;
-    width: 90%;
+.qna_user_div {
+    flex: 15 15 0;
+    margin: 0.4em 1.7em 0 0;
 }
 
-.board_textarea {
-    border: solid 2px;
+#qna_username {
     width: 100%;
+}
+
+/* 글자 스타일 선택바 */
+.board_textarea {
+    border: solid 1px;
+    width: 99.8%;
 }
 
 .board_textarea_topnav {
     border-bottom: solid 1px;
+    padding: 0.4em 1em;
 }
 
+.board_textarea_topnav>select,
+button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin: 0 0.7em;
+
+}
+
+.board_textarea_topnav section,
+button:hover {
+    background: #d6d6d6;
+    border: 1px solid #d6d6d6;
+    border-radius: 6px;
+}
+
+.font_style {
+    display: inline-block;
+}
+
+.unorderedList_wrap {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.list_button1,
+.aline_tool_btn1 {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.list_button2,
+.aline_tool_btn2 {
+    margin-left: -2px;
+    width: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.aline_tool {
+    display: inline-block;
+}
+
+.more_aline_tool_button {
+    display: inline-block;
+    display: none;
+}
+
+@media(max-width:750px) {
+
+    .unorderedList_wrap {
+        margin: 0 0.5em;
+    }
+
+    .bold,
+    .italic {
+        display: none;
+    }
+
+    .leftAlign_button,
+    .centerAlign_button,
+    .rightAlign_button {
+        display: none;
+    }
+
+    .more_aline_tool_button {
+        display: inline-block;
+    }
+
+    .board_textarea_topnav section,
+    button:hover {
+        background: #d6d6d6;
+        border: 1px solid #d6d6d6;
+        border-radius: 6px;
+    }
+}
+
+/* 글내용 */
 .board_textarea_main {
+    margin-top: 1em;
     width: 99%;
     height: 400px;
 }
 
-.board_textarea_undnav {
-    border-top: solid 1px;
-    height: 1.5em;
-}
-
-.board_textarea_undnav p {
-    text-align: right;
-    padding-right: 1em;
-}
-
+/* add info */
 .qna_url {
     border: solid 1px;
-    border-top: none;
-    padding: 0 1em;
+    padding: 0.2em 1em;
     line-height: 2em;
 }
 
@@ -89,22 +216,28 @@ body {
     display: inline-block;
 }
 
+.qna_url p {
+    display: inline-block;
+    padding-right: 2.3em;
+}
+
 .qna_fileupload div {
     line-height: 2em;
     border: solid 1px;
     border-top: none;
-    padding: 0 1em;
+    padding: 0.2em 1em;
     line-height: 2em;
 }
 
 .qna_fileupload p {
     display: inline-block;
+    padding-right: 1.8em;
 }
 
 .qna_board_pw {
     border: solid 1px;
     border-top: none;
-    padding: 0 1em;
+    padding: 0.2em 1em;
     line-height: 2em;
 }
 
@@ -112,17 +245,22 @@ body {
     display: inline-block;
 }
 
+.qna_board_pw p {
+    padding-right: 2em;
+}
+
 .qna_board_public {
     border: solid 1px;
     border-top: none;
+    padding: 0.5em 0;
 }
 
 .qna_board_public * {
     padding: 0 1em;
-    line-height: 2em;
     display: inline-block;
 }
 
+/* 개인정보 */
 .qna_board_privacy {
     display: flex;
     margin-top: 0.5em;
@@ -140,6 +278,7 @@ body {
     padding: 0 1em;
 }
 
+/* 등록 */
 .qna_board_upload {
     margin-top: 1em;
     display: flex;
@@ -152,7 +291,7 @@ body {
     background-color: #000;
     color: #ffffff;
     width: 49.8%;
-    padding: 2px;
+    margin: 0;
     height: 2em;
     cursor: pointer;
 }

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body>nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>nav>div {
+    margin: 2em;
+}
+
+body>nav>div>p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-width: 0 0 1px;
+    font-size: .8em;
+}
+
+.okbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.okbtn button {
+    width: 4em;
+    height: 3em;
+    border: solid 1px;
+    background: #ffffff;
+}

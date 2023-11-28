@@ -6,29 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>문의게시판</title>
     <link rel="stylesheet" href="../../CSS/QnA/QnA_main.css">
+    <script src="https://kit.fontawesome.com/17d026183e.js" crossorigin="anonymous"></script>
+    <script defer src="../../JS/QnA/QnA_main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- noto sans 폰트 -->
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- 아이콘 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <script src="../../JS/QnA/QnA_main.js"></script>
+    <!-- include javascript -->
+    <script defer src=".\JS\common\includeHTML.js" type="module"></script>
+    <link rel="stylesheet" href="./CSS/common/talkingBtn.css">
+    <link rel="stylesheet" href="./CSS/common/talkingBox.css">
+    <!-- 임시 -->
+    <link rel="stylesheet" href="./CSS/common/asideTest.css">
+    <!-- <script defer src="./JS/common/asideTest.js"></script> -->
+    <link rel="stylesheet" href="./CSS/common/header.css">
+    <link rel="stylesheet" href="./CSS/common/footer.css">
+
+    <!-- index -->
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script defer src="./JS/index.js" type="module"></script>
+
 </head>
 
 <body>
-    <!-- 문의게시판 > 공지사항 넘어가는 링크 상단 중앙 -->
-    <!-- 우측 글쓰기 버튼 -->
-    <!-- 좌 우 50% 정렬된 리스트 박스 
-카데고리 전체 상품문의 배송문의 취소/교환/환불문의 A/S 문의 답변상태 전체글보기 답변전 글보기 답변완료 글보기-->
-    <!-- 게시글 20줄
-게시글 하단 얇은 라인 -->
-    <!-- 제목
-카테고리 만족도 게시날짜 조회수 작성자 -->
-    <!-- 페이지 건너뛰기 넘버10 하단 중앙정렬 -->
-    <!-- 얇은 라인 -->
-    <!-- 좌우50% 정렬된 리스트박스
-    기간 일주일 한달 세달 전체 / 제목 내용 글쓴이 아이디 별명 상품정보-->
-    <!-- 입력박스 검색버튼 -->
-    <!-- 얇은 라인 -->
+    <!-- talking btn -->
+    <div class="talkingBtn-include"></div>
+    <!-- talking box -->
+    <div class="talkingBox-include visibilityHidden" w3-include-html=".\HTML\common\talkingBox.html"></div>
+    <!-- include header -->
+    <div class="header-include" w3-include-html=".\HTML\common\header.html"></div>
+    <!-- include aside -->
+    <aside id="aside" class="active_aside aside-include" w3-include-html=".\HTML\common\asideTest.html"></aside>
+    <div id="dimmer" class="dimmer active_dimmer"></div>
+
     <nav class="qna_main_top_nav">
         <ul>
             <li><a href="#">문의게시판</a></li>
-            <li><a href="../new_n_event/news/newsList.html">공지사항</a></li>
+            <li><a href="../../HTML/news_n_event/news_n_event_main.html">뉴스 &amp; 이벤트</a></li>
         </ul>
         <div class="qna_main_board_btn">
             <a href="./QnA_board.html">
@@ -39,210 +59,60 @@
         </div>
 
         <div class="qna_main_top_nav_listbox">
-            <select name="qna_main_top_nav_list" id="qna_main_top_nav_list" style="width:49%;">
-                <option value="전체">전체</option>
+            <select name="qna_type_select" id="qna_type_select" class="qna_type_select"
+                onchange="categorySelect(this.value)">
+                <option class="qnaType" value="전체">전체</option>
                 <option value="상품문의">상품문의</option>
                 <option value="배송문의">배송문의</option>
-                <option value="취소/교환/환불문의">취소&#47;교환&#47;환불문의</option>
-                <option value="A/S문의">A&#47;S문의</option>
-            </select>
-            <select name="qna_main_top_nav_mood" id="qna_main_top_nav_mood" style="width:49%;">
-                <option value="전체글보기">전체글보기</option>
-                <option value="답변전 글보기">답변전 글보기</option>
-                <option value="답변완료 글보기">답변전 글보기</option>
+                <option value="취소문의">취소문의</option>
+                <option value="교환문의">교환문의</option>
+                <option value="환불문의">환불문의</option>
+                <option value="AS문의">AS문의</option>
             </select>
         </div>
     </nav>
 
     <main>
         <ul class="qna_main_content">
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
-            <li>
-                <p>
-                    문의글제목
-                </p>
-                <div>카테고리 별이5개 작성시간 조회수 작성자
-                </div>
-            </li>
         </ul>
     </main>
 
-    <nav class="qna_main_under_nav">
-        <ul>
-            <li>&#60;</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>&#62;</li>
+    <nav id="qna_main_pagelist">
+        <i class="fa-solid fa-chevron-left" id="btn1"></i>
+        <ul class="pagelist">
         </ul>
+        <i class="fa-solid fa-chevron-right" id="btn2"></i>
+    </nav>
 
-        <hr>
+    <hr>
 
-        <div class="qna_main_under_nav_listbox">
-            <select name="qna_main_under_nav_date" id="qna_main_under_nav_date" style="width:49%;">
-                <option value="일주일">일주일</option>
-                <option value="한달">한달</option>
-                <option value="세달">세달</option>
-                <option value="전체">전체</option>
-            </select>
-            <select name="qna_main_under_nav_info" id="qna_main_under_nav_info" style="width:49%;">
-                <option value="제목">제목</option>
-                <option value="내용">내용</option>
-                <option value="글쓴이">글쓴이</option>
-                <option value="아이디">아이디</option>
-                <option value="별명">별명</option>
-                <option value="상품정보">상품정보</option>
-            </select>
-        </div>
+    <div class="qna_main_under_nav_listbox">
+        <select name="qna_postdate" id="qna_postdate" class="qna_postdate">
+            <option value="일주일">일주일</option>
+            <option value="한달">한달</option>
+            <option value="세달">세달</option>
+            <option value="전체">전체</option>
+        </select>
+        <select name="qna_postinfo" id="qna_postinfo" class="qna_postinfo">
+            <option value="제목">제목</option>
+            <option value="내용">내용</option>
+            <option value="글쓴이">글쓴이</option>
+            <option value="아이디">아이디</option>
+            <option value="별명">별명</option>
+            <option value="상품정보">상품정보</option>
+        </select>
+    </div>
 
-        <input type="text" class="qna_main_under_nav_input">
+    <div class="qna_serach_box">
+        <input type="text" class="qna_search_input">
 
-        <button>
+        <button class="search_btn">
             검색
         </button>
-
-        <hr>
-
-    </nav>
+    </div>
+    <hr>
+    <!-- include footer -->
+    <div class="footer-include" w3-include-html=".\HTML\common\footer.html"></div>
 </body>
 
 </html>

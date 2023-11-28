@@ -1,0 +1,1048 @@
+{
+  "post_info": [
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "배송문의",
+      "post_title": "배송문의제목",
+      "post_username": "배송문의작성자",
+      "post_date": "2023.10.28 9:7",
+      "content": "배송문의글",
+      "id": 2
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "상품문의",
+      "post_username": "상품문의작성자",
+      "post_date": "2023.10.28 9:11",
+      "content": "상품문의",
+      "id": 3
+    },
+    {
+      "post_type": "AS문의",
+      "post_title": "AS문의작성글",
+      "post_username": "AS문의작성자",
+      "post_date": "2023.10.28 9:14",
+      "content": "AS문의",
+      "id": 5
+    },
+    {
+      "post_type": "취소문의",
+      "post_title": "취소문의제목",
+      "post_username": "취소문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "취소문의글",
+      "id": 6
+    },
+    {
+      "post_type": "교환문의",
+      "post_title": "교환문의제목",
+      "post_username": "교환문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "교환문의글",
+      "id": 7
+    },
+    {
+      "post_type": "환불문의",
+      "post_title": "환불문의제목",
+      "post_username": "환불문의작성자",
+      "post_date": "2023.10.28 9:31",
+      "content": "환불문의글",
+      "id": 8
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "123",
+      "post_username": "123",
+      "post_date": "2023.10.28 14:38",
+      "content": "123",
+      "id": 9
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "123",
+      "post_username": "123",
+      "post_date": "2023.10.28 14:57",
+      "content": "123",
+      "id": 11
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "123",
+      "post_username": "123",
+      "post_date": "2023.10.28 14:58",
+      "content": "123",
+      "id": 12
+    },
+    {
+      "post_type": "상품문의",
+      "post_title": "1233",
+      "post_username": "1233",
+      "post_date": "2023.10.28 14:59",
+      "content": "1233",
+      "id": 13
+    }
+  ],
+  "buy_history": [
+    {
+      "prod_img": "img",
+      "prod_name": "1번상품",
+      "prod_price": "prod_price",
+      "id": 1
+    },
+    {
+      "prod_img": "img",
+      "prod_name": "1번상품",
+      "prod_price": "prod_price",
+      "id": 2
+    },
+    {
+      "prod_img": "img",
+      "prod_name": "1번상품",
+      "prod_price": "prod_price",
+      "id": 3
+    },
+    {
+      "prod_img": "img",
+      "prod_name": "1번상품",
+      "prod_price": "prod_price",
+      "id": 4
+    },
+    {
+      "prod_img": "img",
+      "prod_name": "1번상품",
+      "prod_price": "prod_price",
+      "id": 5
+    }
+  ],
+  "buyhistory_info": [
+    {
+      "prod_img": "img",
+      "prod_name": "1번상품",
+      "prod_price": "prod_price",
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    }
+  ]
+}
