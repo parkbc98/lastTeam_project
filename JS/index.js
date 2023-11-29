@@ -1,6 +1,6 @@
 'use strict'
 
-import { slideImg } from "https://lastteamproject.web.app/slideImg.js";
+import { slideImg } from "./slideImg.js";
 
 // ====== 더미데이터 ===========================================================
 

@@ -94,27 +94,27 @@ function nationClone(Array, limitNationBtn = 0) {
                 postClone(PostDataInfo, currentPage);
                 break;
             case post_typeArray.상품문의:
-                onClone(post_typeArray.상품문의, limitNationBtn);
+                nationClone(post_typeArray.상품문의, limitNationBtn);
                 postClone(post_typeArray.상품문의, currentPage);
                 break;
             case post_typeArray.배송문의:
-                onClone(post_typeArray.배송문의, limitNationBtn);
+                nationClone(post_typeArray.배송문의, limitNationBtn);
                 postClone(post_typeArray.배송문의, currentPage);
                 break;
             case post_typeArray취소문의:
-                onClone(post_typeArray취소문의, limitNationBtn);
+                nationClone(post_typeArray취소문의, limitNationBtn);
                 postClone(post_typeArray취소의, currentPage);
                 break;
             case post_typeArray.교환문의:
-                onClone(post_typeArray.교환문의, limitNationBtn);
+                nationClone(post_typeArray.교환문의, limitNationBtn);
                 postClone(post_typeArray.교환문의, currentPage);
                 break;
             case post_typeArray.환불문의:
-                onClone(post_typeArray.환불문의, limitNationBtn);
+                nationClone(post_typeArray.환불문의, limitNationBtn);
                 postClone(post_typeArray.환불문의, currentPage);
                 break;
             case post_typeArray.AS문의:
-                onClone(post_typeAr배송y.AS문의, limitNationBtn);
+                nationClone(post_typeAr배송y.AS문의, limitNationBtn);
                 postClone(post_typeArray.AS문의, currentPage);
                 break;
         }
