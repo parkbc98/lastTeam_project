@@ -88,7 +88,7 @@ body {
     margin-right: -190px;
 }
 
-.logo_area a {
+.logo_area>h1>a {
     font-size: 32px;
 }
 
@@ -100,4 +100,8 @@ body {
     gap: 15px;
 
     padding-right: 50px;
+}
+
+.artcate>li>a {
+    font-size: 16px;
 }
