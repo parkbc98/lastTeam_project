@@ -1,4 +1,4 @@
-body *{
+body * {
     font-size: 12px;
     text-decoration: none;
 }
@@ -11,7 +11,7 @@ body *{
     justify-content: center;
 }
 
-.menu > div {
+.menu>div {
     margin-right: 20px;
 }
 
@@ -35,15 +35,16 @@ main {
 
 .grid {
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(3,1fr);
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 }
 
 .grid>div {
     display: grid;
     justify-items: center;
-    align-items: end;     
+    align-items: end;
     margin: 40px 0 40px 0;
 }
+
 .grid>div>a {
     display: flex;
     justify-content: center;
@@ -73,10 +74,11 @@ main {
 }
 
 .page>div {
-    padding : 7px;
+    padding: 7px;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: black;
 }
 

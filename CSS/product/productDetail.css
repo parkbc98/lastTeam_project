@@ -1,12 +1,13 @@
-* {
+body * {
     font-size: 12px;
 }
 
 /* 상세페이지*/
 
-.page { 
+.page {
     display: inline-block;
-    width: calc(100% - 420px); margin-bottom: 50px;
+    width: calc(100% - 420px);
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -47,8 +48,9 @@
     color: red;
 }
 
-.video { 
-    width: 60vw; height: calc(60vw*0.6);
+.video {
+    width: 60vw;
+    height: calc(60vw*0.6);
 }
 
 .recommenditem {
@@ -68,13 +70,16 @@
 }
 
 .recommenditem>div>img {
-    width: 100%; height: 100%; object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* 구매 파트 */
 
 .order {
-    width: 370px; height: 100vh;
+    width: 370px;
+    height: 100vh;
     padding: 0px 50px 0px 20px;
     position: fixed;
     top: 100px;
@@ -82,18 +87,19 @@
     overflow: scroll;
 
     -ms-overflow-style: none;
-    
-    ::-webkit-scrollbar { /*특정 부분 스크롤바 없애기*/
-     display: none; 
+
+    ::-webkit-scrollbar {
+        /*특정 부분 스크롤바 없애기*/
+        display: none;
     }
 }
 
 .order {
-  -ms-overflow-style: none;
-} 
+    -ms-overflow-style: none;
+}
 
 .order::-webkit-scrollbar {
- display:none;
+    display: none;
 }
 
 .productname {
@@ -264,12 +270,12 @@
     margin: 0px 0px 30px 0px;
 }
 
-.detail span{
+.detail span {
     margin-right: 10px;
     color: #bcbcbc;
 }
 
-.detail .bold{
+.detail .bold {
     color: #000;
 }
 
@@ -277,11 +283,11 @@
     color: red;
 }
 
-.detailtext>div{
+.detailtext>div {
     display: none;
 }
 
-.detailtext>div.pop{
+.detailtext>div.pop {
     display: block;
 }
 
@@ -289,7 +295,8 @@
 
 @media screen and (max-width:1150px) {
     .page {
-        width: 100%; margin-bottom: 0;
+        width: 100%;
+        margin-bottom: 0;
     }
 
     .video {
@@ -302,7 +309,8 @@
     }
 
     .order {
-        position: relative; top: 0;
+        position: relative;
+        top: 0;
         width: 95%;
         margin-top: 50px;
     }
@@ -320,6 +328,6 @@
 
 @media screen and (min-width:1360px) and (max-width:100vw) {
     .recommenditem>div>img {
-            width: 80%;
+        width: 80%;
     }
 }

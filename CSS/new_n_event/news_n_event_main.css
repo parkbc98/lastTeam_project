@@ -1,41 +1,43 @@
-*{
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
-body a{
+body a {
    text-decoration: none;
    font-size: 12px;
    color: #000;
 }
 
-p{
+p {
    font-size: 12px;
-   color : #757575
+   color: #757575
 }
 
-ul, ol, li{
+ul,
+ol,
+li {
    list-style: none;
    padding-inline-start: 0px;
 }
 
-.container{
+.container {
    padding: 180px 20px 50px 20px;
    width: 100%;
 }
 
-.content_board{
+.content_board {
    max-width: 1130px;
    margin: 0 auto;
 }
 
-.menu_wrap{
+.menu_wrap {
    text-align: center;
    margin-bottom: 15px;
 }
 
-.menu_wrap>span{
+.menu_wrap>span {
    font-size: 12px;
    color: #999;
    font-size: 12px;
@@ -43,11 +45,11 @@ ul, ol, li{
    cursor: pointer;
 }
 
-.menu_wrap>span:nth-child(1){
+.menu_wrap>span:nth-child(1) {
    color: #000;
 }
 
-.li_wrap{
+.li_wrap {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    table-layout: fixed;
@@ -58,7 +60,7 @@ ul, ol, li{
    border-bottom: 1px solid #d6d6d6;
 }
 
-.li_wrap>li{
+.li_wrap>li {
    width: 100%;
    display: inline-block;
    border-collapse: collapse;
@@ -68,40 +70,40 @@ ul, ol, li{
    left: -2px;
 }
 
-.thumbnail{
+.thumbnail {
    width: 360px;
    height: 240px;
    padding: 0 7px;
    margin: 0 0 14px;
 }
 
-.img{
+.img {
    vertical-align: top;
    background-color: #fff;
    width: 248.594px;
    height: 357.984px;
 }
 
-.summary{
+.summary {
    padding: 0px 7px;
 }
 
-.subject{
+.subject {
    display: block;
    margin: 0px 0px 10px;
 }
 
-.name{
+.name {
    margin: 0px 0px 7px;
    display: flex;
    justify-content: space-between;
 }
 
-.date{
+.date {
    margin: 0px
 }
 
-.pageButton_wrap{
+.pageButton_wrap {
    max-width: 1130px;
    text-align: center;
    margin: 0 auto;
@@ -110,23 +112,25 @@ ul, ol, li{
    vertical-align: middle;
 }
 
-.pageButton_list,.pageButton_list>li{
+.pageButton_list,
+.pageButton_list>li {
    display: inline-block;
    padding: 0px 8px;
    margin: 0;
 }
 
-.pageButton_left,.pageButton_right{
+.pageButton_left,
+.pageButton_right {
    font-size: 12px;
    color: #999;
 }
 
-.writeButton_wrap{
+.writeButton_wrap {
    margin: 10px 0;
    text-align: right;
 }
 
-.writeButton{
+.writeButton {
    display: inline-block;
    height: 36px;
    line-height: 36px;
@@ -138,19 +142,19 @@ ul, ol, li{
    padding: 0 10px;
 }
 
-.xi-lock-o{
+.xi-lock-o {
    display: inline-block;
    margin-right: 10px;
 }
 
-.pageNation{
+.pageNation {
    color: #999;
    cursor: pointer;
 }
 
 /* ================ 어사이드 css ================== */
 
-aside{
+aside {
    position: fixed;
    background-color: #fff;
    left: 0;
@@ -161,24 +165,25 @@ aside{
    transition: .4s;
    overflow: auto ease-out;
    z-index: 500;
-   overflow:scroll;
+   overflow: scroll;
 }
 
-.active_aside{
-   left: -265px;;
+.active_aside {
+   left: -265px;
+   ;
 }
 
-.aside_container{
+.aside_container {
    height: 100%;
    padding-top: 50px;
 }
 
-.aside_wrap{
+.aside_wrap {
    margin: 0 15px;
    padding-bottom: 200px;
 }
 
-.nav_parent_li>a{
+.nav_parent_li>a {
    display: block;
    font-size: 15px;
    font-weight: bold;
@@ -189,65 +194,67 @@ aside{
    border-top: 1px solid #d6d6d6;
 }
 
-.nav_child_li{
+.nav_child_li {
    padding: 9px 30px;
 }
 
-.nav_child_li>a{
+.nav_child_li>a {
    font-size: 13px;
    display: block;
 }
 
-.nav_child_wrap1,.nav_child_wrap2{
+.nav_child_wrap1,
+.nav_child_wrap2 {
    transition: all 0.4s ease-in-out;
    overflow: hidden;
    height: 0;
 }
 
-.nav_child_wrap1.active{
+.nav_child_wrap1.active {
    transition: all 0.4s ease-in-out;
    height: 540px;
 }
 
-.nav_child_wrap2.active{
+.nav_child_wrap2.active {
    transition: all 0.4s ease-in-out;
    height: 80px;
 }
 
 
 /* js에서 버튼 클래스 네임 right->down으로 바꾸면 바뀜 */
-.xi-angle-right-thin,.xi-angle-down-thin{
+.xi-angle-right-thin,
+.xi-angle-down-thin {
    position: absolute;
-   color: #a6a6a6; 
+   color: #a6a6a6;
    right: 6px;
    top: 15px;
    line-height: 47px;
 }
 
 /* nav_child_wrap1,2 js로 위로 슬라이드 시켜서 없애면 됨 */
-.flow{
+.flow {
    overflow: hidden;
 }
 
-.dimmer{
+.dimmer {
    position: fixed;
    left: 0;
    top: 0;
    right: 0;
    bottom: 0;
    z-index: 300;
-   background-color: rgba(18,18,18,0.36);
+   background-color: rgba(18, 18, 18, 0.36);
    backdrop-filter: blur(5px);
-   background: rgba(0,0,0,.4);
+   background: rgba(0, 0, 0, .4);
    transition: 0.3s ease-out;
    visibility: visible;
 }
 
-.active_dimmer{
+.active_dimmer {
    visibility: hidden;
 }
 
-.test_btn{
+.test_btn {
    width: 45px;
    height: 45px;
    background-color: 000;
