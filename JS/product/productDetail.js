@@ -141,7 +141,7 @@ for (let i = 0; i < detailtitle.length; i++) {
 for (let i = 0; i < buybasket.length; i++) {
     buybasket[i].addEventListener('click', () => {
         if (buybasket[i] == buybasket[0])
-            window.open("../../HTML/auth/login/Login.html");
+            window.open("https://lastteamproject.web.app/HTML/auth/login/Login.html");
         else
             alert('장바구니에 상품이 담겼습니다.');
     })

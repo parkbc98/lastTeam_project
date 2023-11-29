@@ -28,7 +28,7 @@ post_uploadbtn.addEventListener('click', (e) => {
         'content': post_content[0].value,
     }
 
-    window.location.href = "../../HTML/QnA/QnA_main.html";
+    window.location.href = "https://lastteamproject.web.app/HTML/QnA/QnA_main.html";
 
     axios.post('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/post_info.json', post_info)
 

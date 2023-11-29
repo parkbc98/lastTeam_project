@@ -48,7 +48,7 @@ function postClone(Array, currentPage = 1) {
         if (Array[i] !== undefined) {
             qna_main_content[0].innerHTML += `
             <li class="post_num">
-                <a href="../../HTML/QnA/QnA_board_com.html">
+                <a href="https://lastteamproject.web.app/HTML/QnA/QnA_board_com.html">
                 <p class="post_title">
                 ${Array[i].post_title}
                 </p>

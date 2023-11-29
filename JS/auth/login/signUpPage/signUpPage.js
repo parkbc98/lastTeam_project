@@ -220,8 +220,8 @@ submitBtn.addEventListener('click', (e) => {
       console.log(clientData);
       postClientData();
       alert(`'${clientData.clientName}'님 콤마나인에 오신것을 환영합니다!`);
-      location.href = "../../../../index.html";     // 현재 페이지에서 이동을해 페이지 정보를 갖고 있음
-      // location.replace('../../../../index.html');   // 실제 서비스 처럼 메인 화면으로 가기
+      location.href = "https://lastteamproject.web.app/";     // 현재 페이지에서 이동을해 페이지 정보를 갖고 있음
+      // location.replace('https://lastteamproject.web.app/');   // 실제 서비스 처럼 메인 화면으로 가기
    }
 });
 // < 본문 끝 >

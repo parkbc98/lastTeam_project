@@ -3,7 +3,7 @@
 //=== 객체 ===========================================================
 var MdContainer_list = [
     {
-    img : '../../../CSS/auth/myPage/limsw/edbacbcd8589cbdd53ebdefb11af12f3.jpg' ,
+    img : 'https://lastteamproject.web.app/Element/img/auth/myPage/edbacbcd8589cbdd53ebdefb11af12f3.jpg' ,
     name : '브라이스 이너(CT-02/카키)' ,
     package : '배송: [무료]/기본배송',
     number : 1,
@@ -12,7 +12,7 @@ var MdContainer_list = [
     option : '[옵션:35cm(=10,000)]'
 }
 , {
-    img : '../../../CSS/auth/myPage/limsw/f22f95e5a67a45ef76538c7d51d03661.webp' ,
+    img : 'https://lastteamproject.web.app/Element/img/auth/myPage/f22f95e5a67a45ef76538c7d51d03661.webp' ,
     name : '캐니언 라이트X / 패브릭',
     package : '배송: [무료]/기본배송',
     number : 1,
@@ -20,7 +20,7 @@ var MdContainer_list = [
     sumPrice : 340000,
     option : '[옵션:블랙]'
 }, {
-    img : '../../../CSS/auth/myPage/limsw/ab87ec3ac74590998fe38992d08a7923.png"',
+    img : 'https://lastteamproject.web.app/Element/img/auth/myPage/ab87ec3ac74590998fe38992d08a7923.png"',
     name : '나윈 윈 체어 / 무도장* 블랙',
     package : '배송: [무료]/기본배송',
     number : 1 ,
@@ -28,7 +28,7 @@ var MdContainer_list = [
     sumPrice : 213000,
     option : '[옵션:블랙]'
 }, {
-    img : '../../../CSS/auth/myPage/limsw/edbacbcd8589cbdd53ebdefb11af12f3.jpg' ,
+    img : 'https://lastteamproject.web.app/Element/img/auth/myPage/edbacbcd8589cbdd53ebdefb11af12f3.jpg' ,
     name : '브라이스 이너(CT-02/카키)' ,
     package : '배송: [무료]/기본배송',
     number : 1,
@@ -108,7 +108,7 @@ console.log(quotaS)
 quotaS.addEventListener('click',
 ()=> {
     console.log(`견적서 출력`);
-    window.open('../../../HTML/auth/login/Login.html','팝업견적서','width=600px, height=700px');
+    window.open('https://lastteamproject.web.app/HTML/auth/login/Login.html','팝업견적서','width=600px, height=700px');
 });
 
 // =====wish List======================================================

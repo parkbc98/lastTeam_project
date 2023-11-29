@@ -97,6 +97,6 @@ push_button.addEventListener('click', (e) => {
    } else {
       postBoardData();
       alert('작성이 완료되었습니다.');
-      location.href = "../../HTML/news_n_event/news_n_event_main.js";
+      location.href = "https://lastteamproject.web.app/HTML/news_n_event/news_n_event_main.js";
    }  
 });
