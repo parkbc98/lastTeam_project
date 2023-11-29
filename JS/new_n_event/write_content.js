@@ -34,7 +34,7 @@ let getBoard = {};
 // 서버 데이터 가져오기
 async function getClientData(){
    try {
-      const response = await axios.get('http://localhost:3000/clientData/1');
+      const response = await axios.get('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/clientData/1.json');
       clientId = response.data.clientId;
    } catch (err) {
       console.log(err.message);
@@ -44,7 +44,7 @@ async function getClientData(){
 // 서버 데이터 보내기
 async function postBoardData() {
    try {
-      const response = await axios.post('http://localhost:3000/boardData/', getBoard);
+      const response = await axios.post('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/boardData.json', getBoard);
    } catch (err) {
       console.log(err);
    }

@@ -8,7 +8,7 @@ let BuyHistory,
 //서버에서 구매내역 받아오기
 async function getBuyHistory() {
     try {
-        const response = await axios.get('http://localhost:3000/buy_history');
+        const response = await axios.get('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/buy_history.json');
 
         BuyHistory = response.data;
 
@@ -52,7 +52,7 @@ async function getBuyHistory() {
         
         window.close();
         
-            axios.post('http://localhost:3000/buyhistory_info', buyhistory_info)
+            axios.post('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/buyhistory_info.json', buyhistory_info)
         
                 .then(response => {
                     console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터

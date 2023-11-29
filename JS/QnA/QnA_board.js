@@ -30,7 +30,7 @@ post_uploadbtn.addEventListener('click', (e) => {
 
     window.location.href = "../../HTML/QnA/QnA_main.html";
 
-    axios.post('http://localhost:3000/post_info', post_info)
+    axios.post('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/post_info.json', post_info)
 
         .then(response => {
             console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터

@@ -9,7 +9,7 @@ let limitNationbtn = 0;
 // 데이터 불러오기 함수
 async function getboardInfo() {
    try {
-      const response = await axios.get('http://localhost:3000/boardData');
+      const response = await axios.get('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/boardData.json');
       boardInfo = response.data;
       allCategoryArray = response.data;
       // console.log(boardInfo);

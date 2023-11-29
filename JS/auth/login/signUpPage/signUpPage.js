@@ -100,7 +100,7 @@ function allAgreeChecker_off() {
 // 서버에 데이터 푸쉬 로직
 async function postClientData() {
    try {
-      const response = await axios.post('http://localhost:3000/clientData/', clientData);
+      const response = await axios.post('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/clientData.json', clientData);
 
       console.log('응답 데이터:', response.data);       // 서버에서 반환한 데이터
       console.log('상태 코드:', response.status);       // HTTP 상태 코드

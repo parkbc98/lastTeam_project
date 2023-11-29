@@ -10,7 +10,7 @@ let PostData,
 
 async function getPostData() {
     try {
-        const response = await axios.get('http://localhost:3000/post_info');
+        const response = await axios.get('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/post_info.json');
 
         PostData = response.data;
     } catch (err) {
