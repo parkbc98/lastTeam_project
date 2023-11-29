@@ -1,10 +1,11 @@
-*{
+* {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
     padding-top: 80px;
 }
+
 .header-include {
     position: fixed;
     z-index: 10;
@@ -13,49 +14,72 @@ body {
     right: 0;
     background-color: #fff;
 }
+
 /* ===== header_wrap ============================================================== */
-.header_wrap *{
+.header_wrap * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+    font-size: 16px;
 }
+
 .header_wrap {
     display: flex;
     align-items: center;
     height: 80px;
 }
+
 /* a태그 */
-.header_wrap a:link {text-decoration: none; color: black;}
-.header_wrap a:visited {text-decoration: none; color: black;}
-.header_wrap a:hover {text-decoration: none; color: black;}
-.header_wrap a:active {text-decoration: none; color: black;}
+.header_wrap a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.header_wrap a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.header_wrap a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.header_wrap a:active {
+    text-decoration: none;
+    color: black;
+}
 
 /* ===== hamber_momenu ============================================================= */
-.hamber_momenu{
+.hamber_momenu {
     width: 100px;
     display: flex;
     justify-content: end;
     align-items: center;
 }
-.hambergerBtn{
+
+.hambergerBtn {
     display: flex;
     flex-direction: column;
 }
-.hambergerBtn:hover{
+
+.hambergerBtn:hover {
     cursor: pointer;
 }
-.hambergerBtn>span:nth-child(1){
+
+.hambergerBtn>span:nth-child(1) {
     font-size: 40px;
 }
-.hambergerBtn>span:nth-child(2){
+
+.hambergerBtn>span:nth-child(2) {
     font-size: 12px;
     text-align: center;
     margin-top: -5px;
 }
 
 /* ===== logo_area ================================================================= */
-.logo_area{
+.logo_area {
     flex-grow: 1;
 
     display: flex;
@@ -64,10 +88,14 @@ body {
     margin-right: -190px;
 }
 
+.logo_area a {
+    font-size: 32px;
+}
+
 
 /* ===== account_area ============================================================== */
 
-.artcate{
+.artcate {
     display: flex;
     gap: 15px;
 
