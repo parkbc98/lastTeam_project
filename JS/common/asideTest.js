@@ -30,9 +30,9 @@ export function asideRun () {
         nav_child_wrap1[0].classList.toggle('active');
 
         if (nav_child_wrap1[0].classList.contains('active')) {
-            document.getElementById('arrow1').setAttribute('class','xi-angle-right-thin');
-        } else {
             document.getElementById('arrow1').setAttribute('class','xi-angle-down-thin');
+        } else {
+            document.getElementById('arrow1').setAttribute('class','xi-angle-right-thin');
         }
     }
 
@@ -40,9 +40,9 @@ export function asideRun () {
         nav_child_wrap2[0].classList.toggle('active');
 
         if (nav_child_wrap2[0].classList.contains('active')) {
-            document.getElementById('arrow2').setAttribute('class','xi-angle-right-thin');
-        } else {
             document.getElementById('arrow2').setAttribute('class','xi-angle-down-thin');
+        } else {
+            document.getElementById('arrow2').setAttribute('class','xi-angle-right-thin');
         }
     }
 

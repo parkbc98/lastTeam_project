@@ -5,8 +5,33 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://lastteamproject.web.app/CSS/new_n_event/news/newsDetail.css">
    <title>CAMPING NINE</title>
+
+   <!-- noto sans 폰트 -->
+    <!-- font-family: 'Noto Sans KR', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/17d026183e.js" crossorigin="anonymous"></script>
+
+    <!-- include javascript -->
+    <script defer src="https://lastteamproject.web.app/JS\common\includeHTML.js" type="module"></script>
+    <link rel="stylesheet" href="https://lastteamproject.web.app/CSS/common/talkingBtn.css">
+    <link rel="stylesheet" href="https://lastteamproject.web.app/CSS/common/talkingBox.css">
+    <!-- 임시 -->
+    <link rel="stylesheet" href="https://lastteamproject.web.app/CSS/common/asideTest.css"> 
+    <!-- <script defer src="https://lastteamproject.web.app/JS/common/asideTest.js"></script> -->
+    <link rel="stylesheet" href="https://lastteamproject.web.app/CSS/common/header.css">
+    <link rel="stylesheet" href="https://lastteamproject.web.app/CSS/common/footer.css">
 </head>
 <body>
+   <!-- include header -->
+   <div class="header-include" w3-include-html="https://lastteamproject.web.app/HTML\common\header.html"></div>
+   <!-- include aside -->
+   <aside id="aside" class="active_aside aside-include" w3-include-html="https://lastteamproject.web.app/HTML\common\asideTest.html"></aside>
+   <div id="dimmer" class="dimmer active_dimmer"></div>
+
    <div class="container">
       <div class="content_board">
          <div class="board_view">
@@ -42,5 +67,8 @@
          </div>
       </div>
    </div>
+
+   <!-- include footer -->
+   <div class="footer-include" w3-include-html="https://lastteamproject.web.app/HTML\common\footer.html"></div>
 </body>
 </html>

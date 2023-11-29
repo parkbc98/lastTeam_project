@@ -108,7 +108,7 @@ console.log(quotaS)
 quotaS.addEventListener('click',
 ()=> {
     console.log(`견적서 출력`);
-    window.open('https://lastteamproject.web.app/HTML/auth/login/Login.html','팝업견적서','width=600px, height=700px');
+    window.open('https://lastteamproject.web.app/HTML/auth/login/LoginModule.html','팝업견적서','width=600px, height=700px');
 });
 
 // =====wish List======================================================

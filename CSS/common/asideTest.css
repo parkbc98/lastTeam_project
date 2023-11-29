@@ -3,6 +3,7 @@
 aside * {
    color: black;
    text-decoration: none;
+   list-style: none;
 }
 
 aside{
@@ -81,9 +82,9 @@ aside::-webkit-scrollbar {
  .xi-angle-right-thin,.xi-angle-down-thin{
     position: absolute;
     color: #a6a6a6; 
-    right: 6px;
+    right: 15px;
     top: 15px;
-    line-height: 47px;
+    line-height: 22px;
  }
  
  /* nav_child_wrap1,2 js로 위로 슬라이드 시켜서 없애면 됨 */
