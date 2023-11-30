@@ -2,20 +2,20 @@ export function slideImg (mainProductListContainer, slideContainer, slideItems) 
 
     let speedTime = 2000;
     let moveDuring = 10; // 부르럽게 움직이기
-    let movementNum = slideItems[0].offsetWidth+10; // 이미지 너비
+    let movementNum // 이미지 너비
     // let movementNum = 20.5; // 이미지 너비
     console.log(movementNum);
     // 요소위치 체크
     let calc = 0;
-    let slideLenght;
+    let slideLenght = slideItems.length;
 
     // 슬라이드요소를 끝단에 복제하기
     let cloned = slideContainer.innerHTML;
     slideContainer.innerHTML += cloned;
 
     function sliding() {
+        movementNum = slideItems[0].offsetWidth+10;
         let moveSum = calc*movementNum; // 움직일값 누적변수
-        slideLenght = slideItems.length;
         // speedTime 동안 movementNum 만큼 이동
         // moveDuring 마다 movementNum / (speedTime / moveDuring) 만큼 이동
 
