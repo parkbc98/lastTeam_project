@@ -218,7 +218,7 @@ textarea{
    padding-top: 10px;
 }
 
-.push_cancel_wrap input,body a{
+.push_cancel_wrap input,.container a{
    border: 1px solid #000;
    cursor: pointer;
 }
