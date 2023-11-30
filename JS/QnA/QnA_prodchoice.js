@@ -10,7 +10,7 @@ async function getBuyHistory() {
     try {
         const response = await axios.get('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/buy_history.json');
 
-        BuyHistory = response.data;
+        BuyHistory = Object.values(response.data);
 
     } catch (err) {
         console.log('데이터를 가져오는 중 오류 발생');

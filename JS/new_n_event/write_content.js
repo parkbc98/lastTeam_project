@@ -35,7 +35,7 @@ let getBoard = {};
 async function getClientData(){
    try {
       const response = await axios.get('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/clientData/1.json');
-      clientId = response.data.clientId;
+      clientId = Object.values(response.data).clientId;
    } catch (err) {
       console.log(err.message);
    }

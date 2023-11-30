@@ -10,8 +10,8 @@ let limitNationbtn = 0;
 async function getboardInfo() {
    try {
       const response = await axios.get('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/boardData.json');
-      boardInfo = response.data;
-      allCategoryArray = response.data;
+      boardInfo = Object.values(response.data);
+      allCategoryArray = Object.values(response.data);
       // console.log(boardInfo);
       categoryArray = boardInfo.reduce((acc, curr) => {
          console.log(acc)

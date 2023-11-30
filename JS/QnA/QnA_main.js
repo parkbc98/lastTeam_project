@@ -18,9 +18,9 @@ async function getPostData() {
     try {
         const response = await axios.get('https://lastteamproject-default-rtdb.asia-southeast1.firebasedatabase.app/post_info.json');
 
-        PostData = response.data;
+        PostData = Object.values(response.data);
         console.log(PostData);
-        PostDataInfo = response.data;
+        PostDataInfo = Object.values(response.data);
         post_typeArray = PostData.reduce((acc, curr) => {
             const { post_type } = curr;
             if (acc[post_type]) acc[post_type].push(curr);
