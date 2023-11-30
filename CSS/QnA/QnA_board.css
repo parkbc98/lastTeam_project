@@ -3,14 +3,14 @@
     padding: 0;
 }
 
-body {
+.body {
     width: 900px;
     margin: auto;
     font-size: 0.8em;
 }
 
 @media(max-width:930px) {
-    body {
+    .body {
         width: 90vw;
         margin: 1em auto;
     }

@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+.body {
     width: 900px;
     margin: auto;
     font-size: 0.8em;
@@ -11,7 +11,7 @@ body {
 }
 
 @media(max-width:930px) {
-    body {
+    .body {
         width: 90vw;
         margin: 1em auto;
     }
@@ -55,7 +55,7 @@ body {
     color: #000;
 }
 
-body p {
+.body p {
     margin: 3em 0 1.5em 0;
     color: #000;
 }

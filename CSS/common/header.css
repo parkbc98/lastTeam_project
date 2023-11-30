@@ -91,7 +91,9 @@ body {
 .logo_area>h1>a {
     font-size: 32px;
 }
-
+.logo_area>h1>a>i{
+    font-size: 32px;
+}
 
 /* ===== account_area ============================================================== */
 
