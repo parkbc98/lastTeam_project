@@ -1,29 +1,32 @@
-
 /* ======== 전체 ============================================================================= */
-.footer-container *{
+.footer-container * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
+
 .footer-container {
     display: flex;
     padding: 20px 50px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
+
 .footer-container a {
     display: inline-block;
     width: fit-content;
     color: black;
 }
+
 .footer-container * {
     font-size: 12px;
 }
 
 /* ======== sns ============================================================================== */
-.sns-container, .info-container {
+.sns-container,
+.info-container {
     display: flex;
     flex-direction: column;
-    flex: 1 1 200px; 
+    flex: 1 1 200px;
     gap: 10px;
 }
 
@@ -32,10 +35,11 @@
 
 
 /* ======== 회사정보 ========================================================================== */
-.shopinfo-container{
+.shopinfo-container {
     flex-grow: 2;
 }
-.shopinfo-container p{
+
+.shopinfo-container p {
     text-align: end;
     white-space: pre;
 }

@@ -7,7 +7,7 @@ export function slideImg (mainProductListContainer, slideContainer, slideItems) 
     console.log(movementNum);
     // 요소위치 체크
     let calc = 0;
-    let slideLenght = slideItems.length;
+    let slideLenght;
 
     // 슬라이드요소를 끝단에 복제하기
     let cloned = slideContainer.innerHTML;
@@ -15,6 +15,7 @@ export function slideImg (mainProductListContainer, slideContainer, slideItems) 
 
     function sliding() {
         let moveSum = calc*movementNum; // 움직일값 누적변수
+        slideLenght = slideItems.length;
         // speedTime 동안 movementNum 만큼 이동
         // moveDuring 마다 movementNum / (speedTime / moveDuring) 만큼 이동
 
