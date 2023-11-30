@@ -7,6 +7,7 @@
     color: #fff;
     overflow: visible;
     user-select: none;
+    font-size: 16px;
 }
 
 .talkingBox-include a:link {text-decoration: none; color: black;}
