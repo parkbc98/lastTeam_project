@@ -74,7 +74,7 @@ for(let i = 0; i < mainProductArrya.length; i++) {
     mainProductContainer.classList.add('main-product-container', `product_${i}`);
     mainProductContainer.innerHTML = 
         `<!-- 상품 링크 a태그 -->
-        <a href="https://lastteamproject.web.app/HTML/rpoduct/productDetail.html">
+        <a href="https://lastteamproject.web.app/HTML/product/productDetail.html">
             <!-- 상품이미지 -->
             <div class="main-product-img-container">
                 <img src="" alt="">
