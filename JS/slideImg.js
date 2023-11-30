@@ -14,7 +14,6 @@ export function slideImg (mainProductListContainer, slideContainer, slideItems) 
     slideContainer.innerHTML += cloned;
 
     function sliding() {
-        movementNum = slideItems[0].offsetWidth+10;
         let moveSum = calc*movementNum; // 움직일값 누적변수
         // speedTime 동안 movementNum 만큼 이동
         // moveDuring 마다 movementNum / (speedTime / moveDuring) 만큼 이동
@@ -35,6 +34,7 @@ export function slideImg (mainProductListContainer, slideContainer, slideItems) 
     }
     
     let slideShow = setInterval(()=>{
+        movementNum = slideItems[0].offsetWidth+10;
         sliding();
         calc++;
     }, (speedTime + 1000)); // 뒤에 더하는 시간은 슬라이드 간격
