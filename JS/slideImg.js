@@ -2,7 +2,7 @@ export function slideImg (mainProductListContainer, slideContainer, slideItems) 
 
     let speedTime = 2000;
     let moveDuring = 10; // 부르럽게 움직이기
-    let movementNum // 이미지 너비
+    let movementNum = slideItems[0].offsetWidth+10; // 이미지 너비
     // let movementNum = 20.5; // 이미지 너비
     console.log(movementNum);
     // 요소위치 체크
@@ -34,7 +34,7 @@ export function slideImg (mainProductListContainer, slideContainer, slideItems) 
     }
     
     let slideShow = setInterval(()=>{
-        movementNum = slideItems[0].offsetWidth+10; // 이미지 너비
+        // 이미지 너비
         sliding();
         calc++;
     }, (speedTime + 1000)); // 뒤에 더하는 시간은 슬라이드 간격
