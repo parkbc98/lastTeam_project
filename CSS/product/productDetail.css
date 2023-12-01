@@ -293,7 +293,7 @@ body * {
 
 /* 창 크기별 반응형 */
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1200px) {
     .page {
         width: 100%;
         margin-bottom: 0;
