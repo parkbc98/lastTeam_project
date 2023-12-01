@@ -34,7 +34,7 @@ export function slideImg (mainProductListContainer, slideContainer, slideItems) 
     }
     
     let slideShow = setInterval(()=>{
-        movementNum = slideItems[0].offsetWidth+10;
+        movementNum = slideItems[0].offsetWidth+10; // 이미지 너비
         sliding();
         calc++;
     }, (speedTime + 1000)); // 뒤에 더하는 시간은 슬라이드 간격
