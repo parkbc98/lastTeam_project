@@ -49,8 +49,9 @@ body * {
 }
 
 .video {
-    width: 50vw;
     height: calc(50vw*0.6);
+    /* 여기가 바뀌었다구! */
+    width: 50vw; /* 여기가 바뀌었다구! */
 }
 
 .recommenditem {
